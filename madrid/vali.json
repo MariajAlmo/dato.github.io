@@ -1,0 +1,1 @@
+{"type":{"1":"error","2":"warning","0":"warning"},"message":{"1":"Invalid stop_headsign; maybe has extra space characters","2":"Repeated pair (trip_id, departure_time)","0":"Stop has no stop times"},"table":{"1":"stop_times","2":"stop_times","0":"stops"}}
