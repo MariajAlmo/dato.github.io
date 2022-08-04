@@ -1,0 +1,4 @@
+,type,message,table
+1,error,Invalid stop_headsign; maybe has extra space characters,stop_times
+2,warning,"Repeated pair (trip_id, departure_time)",stop_times
+0,warning,Stop has no stop times,stops
