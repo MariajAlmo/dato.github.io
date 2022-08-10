@@ -1,0 +1,1626 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d5bc704c4ce740ab73883b161e9d010a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://unpkg.com/leaflet.featuregroup.subgroup@1.0.2/dist/leaflet.featuregroup.subgroup.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d5bc704c4ce740ab73883b161e9d010a" ></div>
+        
+</body>
+<script>    
+    
+            var map_d5bc704c4ce740ab73883b161e9d010a = L.map(
+                "map_d5bc704c4ce740ab73883b161e9d010a",
+                {
+                    center: [40.4202335015822, -3.70113530594139],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_27a7c784eab56d1bec7728fffcc3c8f5 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d5bc704c4ce740ab73883b161e9d010a);
+        
+    
+        function geo_json_bf13bf6ee5875d372aa613132b41ce95_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "red", "weight": 2};
+            }
+        }
+
+        function geo_json_bf13bf6ee5875d372aa613132b41ce95_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_bf13bf6ee5875d372aa613132b41ce95 = L.geoJson(null, {
+                onEachFeature: geo_json_bf13bf6ee5875d372aa613132b41ce95_onEachFeature,
+            
+                style: geo_json_bf13bf6ee5875d372aa613132b41ce95_styler,
+        });
+
+        function geo_json_bf13bf6ee5875d372aa613132b41ce95_add (data) {
+            geo_json_bf13bf6ee5875d372aa613132b41ce95
+                .addData(data)
+                .addTo(map_d5bc704c4ce740ab73883b161e9d010a);
+        }
+            geo_json_bf13bf6ee5875d372aa613132b41ce95_add({"features": [{"geometry": {"coordinates": [[-3.7122633, 40.4076697], [-3.7124843, 40.4079596]], "type": "LineString"}, "id": "(5970506961, 319482828, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "3", "length": 37.273, "maxspeed": null, "name": "Gran V\u00eda de San Francisco", "oneway": true, "osmid": 7972314, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.713372, 40.409247], [-3.7134197, 40.4093442]], "type": "LineString"}, "id": "(3907316613, 7720989331, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "3", "length": 11.538, "maxspeed": null, "name": "Gran V\u00eda de San Francisco", "oneway": true, "osmid": 7972314, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7132373, 40.4089866], [-3.713372, 40.409247]], "type": "LineString"}, "id": "(5970484986, 3907316613, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "3", "length": 31.12, "maxspeed": null, "name": "Gran V\u00eda de San Francisco", "oneway": true, "osmid": 7972314, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7139328, 40.4110126], [-3.7139292, 40.4110421]], "type": "LineString"}, "id": "(3912981160, 3912981162, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "2", "length": 3.294, "maxspeed": null, "name": "Calle de Bail\u00e9n", "oneway": true, "osmid": 387848379, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7138635, 40.410848], [-3.7139328, 40.4110126]], "type": "LineString"}, "id": "(5970506960, 3912981160, 0)", "properties": {"access": null, "highway": "secondary", "lanes": null, "length": 19.22, "maxspeed": "50", "name": "Plaza de San Francisco", "oneway": true, "osmid": 7732896, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7138127, 40.4120807], [-3.7137895, 40.4122872]], "type": "LineString"}, "id": "(5970484990, 3910889543, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "2", "length": 23.046, "maxspeed": null, "name": "Calle de Bail\u00e9n", "oneway": true, "osmid": 387848379, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7135454, 40.4150602], [-3.7134736, 40.4150591]], "type": "LineString"}, "id": "(26213499, 3910891205, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 6.08, "maxspeed": "50", "name": "Calle Mayor", "oneway": false, "osmid": 417019345, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7133738, 40.4150581], [-3.7134736, 40.4150591]], "type": "LineString"}, "id": "(1179022053, 3910891205, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 8.45, "maxspeed": "30", "name": "Calle Mayor", "oneway": false, "osmid": 4264184, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7134895, 40.4149286], [-3.7134736, 40.4150591]], "type": "LineString"}, "id": "(3910891196, 3910891205, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "2", "length": 14.573, "maxspeed": null, "name": "Calle de Bail\u00e9n", "oneway": true, "osmid": 388101135, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7134736, 40.4150591], [-3.7133738, 40.4150581]], "type": "LineString"}, "id": "(3910891205, 1179022053, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 8.45, "maxspeed": "30", "name": "Calle Mayor", "oneway": false, "osmid": 4264184, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7134736, 40.4150591], [-3.7134678, 40.4151069]], "type": "LineString"}, "id": "(3910891205, 3208075566, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "2", "length": 5.338, "maxspeed": null, "name": "Calle de Bail\u00e9n", "oneway": true, "osmid": 7726327, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7134736, 40.4150591], [-3.7135454, 40.4150602]], "type": "LineString"}, "id": "(3910891205, 26213499, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 6.08, "maxspeed": "50", "name": "Calle Mayor", "oneway": false, "osmid": 417019345, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7135163, 40.4147099], [-3.7134895, 40.4149286]], "type": "LineString"}, "id": "(5970484991, 3910891196, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "2", "length": 24.424, "maxspeed": null, "name": "Calle de Bail\u00e9n", "oneway": true, "osmid": 388101135, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7113504, 40.4230832], [-3.7112911, 40.423118]], "type": "LineString"}, "id": "(960747240, 26067836, 0)", "properties": {"access": null, "highway": "primary", "lanes": "4", "length": 6.338, "maxspeed": "50", "name": "Plaza de Espa\u00f1a", "oneway": true, "osmid": 4334160, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7117224, 40.4228648], [-3.7113504, 40.4230832]], "type": "LineString"}, "id": "(9307495432, 960747240, 0)", "properties": {"access": null, "highway": "primary", "lanes": "4", "length": 39.767, "maxspeed": "50", "name": "Plaza de Espa\u00f1a", "oneway": true, "osmid": 4334160, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7106782, 40.4232845], [-3.7105711, 40.4232165]], "type": "LineString"}, "id": "(26066639, 8013638299, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 11.805, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 4328841, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7106782, 40.4232845], [-3.710694, 40.423295]], "type": "LineString"}, "id": "(26066639, 5268725086, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 1.775, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 4328841, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7101534, 40.4229487], [-3.7102356, 40.4230022]], "type": "LineString"}, "id": "(26066640, 938516034, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 9.155, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 4328841, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7101534, 40.4229487], [-3.7102588, 40.4228473]], "type": "LineString"}, "id": "(26066640, 4110080057, 0)", "properties": {"access": "destination", "highway": "residential", "lanes": null, "length": 14.378, "maxspeed": null, "name": "Calle del Doctor Carracido", "oneway": true, "osmid": 80429290, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7102356, 40.4230022], [-3.7101534, 40.4229487]], "type": "LineString"}, "id": "(938516034, 26066640, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 9.155, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 4328841, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7102356, 40.4230022], [-3.7103955, 40.4231041]], "type": "LineString"}, "id": "(938516034, 5385241355, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 17.652, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 4328841, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.710694, 40.423295], [-3.7106782, 40.4232845]], "type": "LineString"}, "id": "(5268725086, 26066639, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 1.775, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 4328841, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.710694, 40.423295], [-3.7107271, 40.4233307]], "type": "LineString"}, "id": "(5268725086, 9307490311, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "3", "length": 4.859, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": true, "osmid": 591366754, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7103955, 40.4231041], [-3.7102356, 40.4230022]], "type": "LineString"}, "id": "(5385241355, 938516034, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 17.652, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 4328841, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7103955, 40.4231041], [-3.7104932, 40.4231671]], "type": "LineString"}, "id": "(5385241355, 8013638298, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 10.838, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 4328841, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7104932, 40.4231671], [-3.7103955, 40.4231041]], "type": "LineString"}, "id": "(8013638298, 5385241355, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 10.838, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 4328841, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7104932, 40.4231671], [-3.7105348, 40.4231935]], "type": "LineString"}, "id": "(8013638298, 8013638300, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 4.585, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 4328841, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7105711, 40.4232165], [-3.7105348, 40.4231935]], "type": "LineString"}, "id": "(8013638299, 8013638300, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 3.998, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 4328841, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7105711, 40.4232165], [-3.7106782, 40.4232845]], "type": "LineString"}, "id": "(8013638299, 26066639, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 11.805, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 4328841, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7105348, 40.4231935], [-3.7104932, 40.4231671]], "type": "LineString"}, "id": "(8013638300, 8013638298, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 4.585, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 4328841, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7105348, 40.4231935], [-3.7105711, 40.4232165]], "type": "LineString"}, "id": "(8013638300, 8013638299, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 3.998, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 4328841, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7107271, 40.4233307], [-3.7107946, 40.4234037]], "type": "LineString"}, "id": "(9307490311, 2598785477, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "3", "length": 9.927, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": true, "osmid": 591366754, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.707185, 40.4210577], [-3.7071053, 40.4211317]], "type": "LineString"}, "id": "(26066631, 4110068961, 0)", "properties": {"access": null, "highway": "living_street", "lanes": null, "length": 10.641, "maxspeed": null, "name": "Calle de los Libreros", "oneway": true, "osmid": 7732067, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.707185, 40.4210577], [-3.7073818, 40.4211867]], "type": "LineString"}, "id": "(26066631, 5350055329, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 21.984, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 32597086, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7076368, 40.4213503], [-3.7073818, 40.4211867]], "type": "LineString"}, "id": "(1414829210, 5350055329, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 28.229, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 32597086, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7073818, 40.4211867], [-3.707185, 40.4210577]], "type": "LineString"}, "id": "(5350055329, 26066631, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 21.984, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 32597086, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7073818, 40.4211867], [-3.7076368, 40.4213503]], "type": "LineString"}, "id": "(5350055329, 1414829210, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 28.229, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 32597086, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7039144, 40.4201795], [-3.7039039, 40.4202748]], "type": "LineString"}, "id": "(25907101, 3429367556, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 10.634, "maxspeed": null, "name": "Calle de Mesonero Romanos", "oneway": true, "osmid": 7971563, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7039462, 40.4200851], [-3.7039144, 40.4201795]], "type": "LineString"}, "id": "(3429367543, 25907101, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 10.837, "maxspeed": null, "name": "Calle de Mesonero Romanos", "oneway": true, "osmid": 335911670, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7011016, 40.4200052], [-3.7011484, 40.4200381]], "type": "LineString"}, "id": "(26341673, 6109456225, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": null, "length": 5.393, "maxspeed": "30", "name": "Calle de Hortaleza", "oneway": true, "osmid": 4487679, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7011016, 40.4200052], [-3.7009577, 40.4199922]], "type": "LineString"}, "id": "(26341673, 1522690072, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 12.267, "maxspeed": null, "name": "Gran V\u00eda", "oneway": false, "osmid": 32597088, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7011016, 40.4200052], [-3.7012093, 40.4200147]], "type": "LineString"}, "id": "(26341673, 6109456226, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 9.178, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 43410312, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7005989, 40.4199445], [-3.7009577, 40.4199922]], "type": "LineString"}, "id": "(26341674, 1522690072, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 30.834, "maxspeed": null, "name": "Gran V\u00eda", "oneway": false, "osmid": 32597088, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7009577, 40.4199922], [-3.7005989, 40.4199445]], "type": "LineString"}, "id": "(1522690072, 26341674, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 30.834, "maxspeed": null, "name": "Gran V\u00eda", "oneway": false, "osmid": 32597088, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7009577, 40.4199922], [-3.7011016, 40.4200052]], "type": "LineString"}, "id": "(1522690072, 26341673, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 12.267, "maxspeed": null, "name": "Gran V\u00eda", "oneway": false, "osmid": 32597088, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7014665, 40.4200195], [-3.7016306, 40.4200221]], "type": "LineString"}, "id": "(3429367538, 3429417269, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 13.895, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 43410312, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7014665, 40.4200195], [-3.7012093, 40.4200147]], "type": "LineString"}, "id": "(3429367538, 6109456226, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 21.78, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 43410312, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7011589, 40.4200706], [-3.7011556, 40.4200933]], "type": "LineString"}, "id": "(3429367546, 3429367549, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": null, "length": 2.54, "maxspeed": "30", "name": "Calle de Hortaleza", "oneway": true, "osmid": 4487679, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7011556, 40.4200933], [-3.7011387, 40.4201413]], "type": "LineString"}, "id": "(3429367549, 6109456233, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": null, "length": 5.526, "maxspeed": "30", "name": "Calle de Hortaleza", "oneway": true, "osmid": 4487679, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7016306, 40.4200221], [-3.7014665, 40.4200195]], "type": "LineString"}, "id": "(3429417269, 3429367538, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 13.895, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 43410312, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7011484, 40.4200381], [-3.7011589, 40.4200706]], "type": "LineString"}, "id": "(6109456225, 3429367546, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": null, "length": 3.722, "maxspeed": "30", "name": "Calle de Hortaleza", "oneway": true, "osmid": 4487679, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7012093, 40.4200147], [-3.7014665, 40.4200195]], "type": "LineString"}, "id": "(6109456226, 3429367538, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 21.78, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 43410312, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7012093, 40.4200147], [-3.7011016, 40.4200052]], "type": "LineString"}, "id": "(6109456226, 26341673, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 9.178, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 43410312, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6996714, 40.4197567], [-3.6996469, 40.4198208]], "type": "LineString"}, "id": "(21969744, 3429376984, 0)", "properties": {"access": null, "highway": "residential", "lanes": "2", "length": 7.423, "maxspeed": "30", "name": "Calle del Clavel", "oneway": false, "osmid": 4487807, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6996724, 40.4197532], [-3.6996468, 40.4197458]], "type": "LineString"}, "id": "(26341675, 4590471792, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 2.318, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 419119406, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6996724, 40.4197532], [-3.6996714, 40.4197567]], "type": "LineString"}, "id": "(26341675, 21969744, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 0.398, "maxspeed": null, "name": "Calle de la Virgen de los Peligros", "oneway": true, "osmid": 419119411, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6996724, 40.4197532], [-3.6998303, 40.4197919]], "type": "LineString"}, "id": "(26341675, 5970506955, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 14.043, "maxspeed": null, "name": "Gran V\u00eda", "oneway": false, "osmid": 32597088, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6996469, 40.4198208], [-3.6996714, 40.4197567]], "type": "LineString"}, "id": "(3429376984, 21969744, 0)", "properties": {"access": null, "highway": "residential", "lanes": "2", "length": 7.423, "maxspeed": "30", "name": "Calle del Clavel", "oneway": false, "osmid": 4487807, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6996468, 40.4197458], [-3.6992608, 40.4196334]], "type": "LineString"}, "id": "(4590471792, 5385241352, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 34.985, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 419119406, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6996468, 40.4197458], [-3.6996724, 40.4197532]], "type": "LineString"}, "id": "(4590471792, 26341675, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 2.318, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 419119406, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6992608, 40.4196334], [-3.6996468, 40.4197458]], "type": "LineString"}, "id": "(5385241352, 4590471792, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 34.985, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 419119406, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6968706, 40.4189428], [-3.6969217, 40.4189562]], "type": "LineString"}, "id": "(21968056, 4309740714, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 4.575, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 651543117, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6968706, 40.4189428], [-3.696795, 40.4188397]], "type": "LineString"}, "id": "(21968056, 26341678, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 13.13, "maxspeed": "50", "name": "Gran V\u00eda", "oneway": true, "osmid": 804457302, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6970921, 40.4190066], [-3.6973666, 40.419079]], "type": "LineString"}, "id": "(25906411, 1522690055, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 24.593, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 651543114, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6970921, 40.4190066], [-3.6970396, 40.4189921]], "type": "LineString"}, "id": "(25906411, 8426942035, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 4.728, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 651543114, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6974291, 40.419097], [-3.6973666, 40.419079]], "type": "LineString"}, "id": "(26341677, 1522690055, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 5.657, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 419119406, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.696795, 40.4188397], [-3.6968083, 40.4187718]], "type": "LineString"}, "id": "(26341678, 4309854559, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": null, "length": 7.634, "maxspeed": "50", "name": "Calle de Alcal\u00e1", "oneway": true, "osmid": 4328843, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.696795, 40.4188397], [-3.6966527, 40.4187521]], "type": "LineString"}, "id": "(26341678, 435728967, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 15.492, "maxspeed": "50", "name": "Gran V\u00eda", "oneway": true, "osmid": 46098085, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6973666, 40.419079], [-3.6974291, 40.419097]], "type": "LineString"}, "id": "(1522690055, 26341677, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 5.657, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 419119406, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6973666, 40.419079], [-3.6970921, 40.4190066]], "type": "LineString"}, "id": "(1522690055, 25906411, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 24.593, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 651543114, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6969217, 40.4189562], [-3.6970396, 40.4189921]], "type": "LineString"}, "id": "(4309740714, 8426942035, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 10.75, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 651543114, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6969217, 40.4189562], [-3.6968706, 40.4189428]], "type": "LineString"}, "id": "(4309740714, 21968056, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 4.575, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 651543117, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6968083, 40.4187718], [-3.6968204, 40.4187452]], "type": "LineString"}, "id": "(4309854559, 6109512294, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": null, "length": 3.13, "maxspeed": "50", "name": "Calle de Alcal\u00e1", "oneway": true, "osmid": 4328843, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6968204, 40.4187452], [-3.6968482, 40.4187131]], "type": "LineString"}, "id": "(6109512294, 6109512293, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": null, "length": 4.275, "maxspeed": "50", "name": "Calle de Alcal\u00e1", "oneway": true, "osmid": 4328843, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6970396, 40.4189921], [-3.6970394, 40.4190774]], "type": "LineString"}, "id": "(8426942035, 1522690058, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 9.485, "maxspeed": null, "name": "Calle del Marqu\u00e9s de Valdeiglesias", "oneway": true, "osmid": 4616510, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6970396, 40.4189921], [-3.6970921, 40.4190066]], "type": "LineString"}, "id": "(8426942035, 25906411, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 4.728, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 651543114, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6970396, 40.4189921], [-3.6969217, 40.4189562]], "type": "LineString"}, "id": "(8426942035, 4309740714, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 10.75, "maxspeed": "30", "name": "Gran V\u00eda", "oneway": false, "osmid": 651543114, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6998848, 40.4198053], [-3.6998303, 40.4197919]], "type": "LineString"}, "id": "(25906418, 5970506955, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 4.848, "maxspeed": null, "name": "Gran V\u00eda", "oneway": false, "osmid": 32597088, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6998848, 40.4198053], [-3.7000801, 40.4198562]], "type": "LineString"}, "id": "(25906418, 6109456246, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 17.475, "maxspeed": null, "name": "Gran V\u00eda", "oneway": false, "osmid": 32597088, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6998303, 40.4197919], [-3.6996724, 40.4197532]], "type": "LineString"}, "id": "(5970506955, 26341675, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 14.043, "maxspeed": null, "name": "Gran V\u00eda", "oneway": false, "osmid": 32597088, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6998303, 40.4197919], [-3.6998848, 40.4198053]], "type": "LineString"}, "id": "(5970506955, 25906418, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 4.848, "maxspeed": null, "name": "Gran V\u00eda", "oneway": false, "osmid": 32597088, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7000801, 40.4198562], [-3.6998848, 40.4198053]], "type": "LineString"}, "id": "(6109456246, 25906418, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 17.475, "maxspeed": null, "name": "Gran V\u00eda", "oneway": false, "osmid": 32597088, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7000801, 40.4198562], [-3.7004084, 40.419916]], "type": "LineString"}, "id": "(6109456246, 6109456256, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 28.576, "maxspeed": null, "name": "Gran V\u00eda", "oneway": false, "osmid": 32597088, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7004084, 40.419916], [-3.7000801, 40.4198562]], "type": "LineString"}, "id": "(6109456256, 6109456246, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 28.576, "maxspeed": null, "name": "Gran V\u00eda", "oneway": false, "osmid": 32597088, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6987302, 40.4235518], [-3.6986266, 40.4237089]], "type": "LineString"}, "id": "(5970506953, 25906277, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": null, "length": 19.546, "maxspeed": "30", "name": "Calle de Hortaleza", "oneway": true, "osmid": 4487679, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6966036, 40.4263838], [-3.6965537, 40.4263401]], "type": "LineString"}, "id": "(904853734, 370503621, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 6.438, "maxspeed": null, "name": "Calle de Santa Teresa", "oneway": true, "osmid": 32897836, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6958072, 40.4282104], [-3.6958238, 40.4281679]], "type": "LineString"}, "id": "(25934453, 3418127829, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "3", "length": 4.93, "maxspeed": "50", "name": "Calle de Santa Engracia", "oneway": true, "osmid": 24507449, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6958072, 40.4282104], [-3.6957973, 40.4282449]], "type": "LineString"}, "id": "(25934453, 5970506951, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 3.927, "maxspeed": "50", "name": "Calle de Santa Engracia", "oneway": false, "osmid": 24812300, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6959013, 40.4280527], [-3.6959951, 40.4279988]], "type": "LineString"}, "id": "(25934459, 5214866747, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "3", "length": 9.948, "maxspeed": "50", "name": "Calle de Santa Engracia", "oneway": true, "osmid": 310136161, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6958565, 40.4281057], [-3.6959013, 40.4280527]], "type": "LineString"}, "id": "(3418127828, 25934459, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "3", "length": 7.008, "maxspeed": "50", "name": "Calle de Santa Engracia", "oneway": true, "osmid": 24507449, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6958238, 40.4281679], [-3.6958565, 40.4281057]], "type": "LineString"}, "id": "(3418127829, 3418127828, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "3", "length": 7.45, "maxspeed": "50", "name": "Calle de Santa Engracia", "oneway": true, "osmid": 24507449, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6958353, 40.4283354], [-3.6958809, 40.4284392]], "type": "LineString"}, "id": "(5970484999, 8583869920, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 12.17, "maxspeed": "50", "name": "Calle de Santa Engracia", "oneway": false, "osmid": 24812300, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6958353, 40.4283354], [-3.6957973, 40.4282449]], "type": "LineString"}, "id": "(5970484999, 5970506951, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 10.565, "maxspeed": "50", "name": "Calle de Santa Engracia", "oneway": false, "osmid": 24812300, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6957973, 40.4282449], [-3.6958353, 40.4283354]], "type": "LineString"}, "id": "(5970506951, 5970484999, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 10.565, "maxspeed": "50", "name": "Calle de Santa Engracia", "oneway": false, "osmid": 24812300, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6957973, 40.4282449], [-3.6958072, 40.4282104]], "type": "LineString"}, "id": "(5970506951, 25934453, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 3.927, "maxspeed": "50", "name": "Calle de Santa Engracia", "oneway": false, "osmid": 24812300, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6958809, 40.4284392], [-3.6958353, 40.4283354]], "type": "LineString"}, "id": "(8583869920, 5970484999, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 12.17, "maxspeed": "50", "name": "Calle de Santa Engracia", "oneway": false, "osmid": 24812300, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6969381, 40.4308569], [-3.6970531, 40.4308455]], "type": "LineString"}, "id": "(141886881, 5214866745, 0)", "properties": {"access": null, "highway": "residential", "lanes": "1", "length": 9.816, "maxspeed": "30", "name": "Calle de Manuel Cortina", "oneway": true, "osmid": 14461022, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6969381, 40.4308569], [-3.6970563, 40.431091]], "type": "LineString"}, "id": "(141886881, 141917742, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 27.887, "maxspeed": "50", "name": "Calle de Santa Engracia", "oneway": false, "osmid": 302578732, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6969381, 40.4308569], [-3.696877, 40.4307409]], "type": "LineString"}, "id": "(141886881, 4169858409, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 13.897, "maxspeed": "50", "name": "Calle de Santa Engracia", "oneway": false, "osmid": 302578732, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6970563, 40.431091], [-3.6969381, 40.4308569]], "type": "LineString"}, "id": "(141917742, 141886881, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 27.887, "maxspeed": "50", "name": "Calle de Santa Engracia", "oneway": false, "osmid": 302578732, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6967897, 40.4308534], [-3.6969381, 40.4308569]], "type": "LineString"}, "id": "(1591330161, 141886881, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 12.567, "maxspeed": null, "name": "Calle de Caracas", "oneway": true, "osmid": 14463039, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.696877, 40.4307409], [-3.6969381, 40.4308569]], "type": "LineString"}, "id": "(4169858409, 141886881, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 13.897, "maxspeed": "50", "name": "Calle de Santa Engracia", "oneway": false, "osmid": 302578732, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.696877, 40.4307409], [-3.6968453, 40.4306683]], "type": "LineString"}, "id": "(4169858409, 5970506950, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 8.507, "maxspeed": "50", "name": "Calle de Santa Engracia", "oneway": false, "osmid": 302578732, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6970531, 40.4308455], [-3.6971205, 40.4308363]], "type": "LineString"}, "id": "(5214866745, 1591330158, 0)", "properties": {"access": null, "highway": "residential", "lanes": "1", "length": 5.796, "maxspeed": "30", "name": "Calle de Manuel Cortina", "oneway": true, "osmid": 14461022, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6968453, 40.4306683], [-3.696877, 40.4307409]], "type": "LineString"}, "id": "(5970506950, 4169858409, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 8.507, "maxspeed": "50", "name": "Calle de Santa Engracia", "oneway": false, "osmid": 302578732, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.697753, 40.4326959], [-3.6978731, 40.4329801]], "type": "LineString"}, "id": "(616220786, 98959052, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "4", "length": 33.196, "maxspeed": "50", "name": "Calle de Santa Engracia", "oneway": true, "osmid": 131431668, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6976976, 40.4326259], [-3.697753, 40.4326959]], "type": "LineString"}, "id": "(5970506949, 616220786, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "3", "length": 9.087, "maxspeed": "50", "name": "Calle de Santa Engracia", "oneway": true, "osmid": 334741195, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6986068, 40.4346649], [-3.6987187, 40.4349348]], "type": "LineString"}, "id": "(1016578323, 60030248, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "4", "length": 31.47, "maxspeed": "50", "name": "Calle de Santa Engracia", "oneway": true, "osmid": 392502705, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6985884, 40.4346229], [-3.6986068, 40.4346649]], "type": "LineString"}, "id": "(9672874689, 1016578323, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "4", "length": 4.923, "maxspeed": "50", "name": "Calle de Santa Engracia", "oneway": true, "osmid": 392502704, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6992771, 40.4362302], [-3.6994226, 40.4365876]], "type": "LineString"}, "id": "(5970506947, 3426732167, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "4", "length": 41.605, "maxspeed": "50", "name": "Calle de Santa Engracia", "oneway": true, "osmid": 334741193, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7007008, 40.4395314], [-3.7007602, 40.4396769]], "type": "LineString"}, "id": "(2283361231, 60017591, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "4", "length": 16.942, "maxspeed": "50", "name": "Calle de Santa Engracia", "oneway": true, "osmid": 44737275, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7006612, 40.439444], [-3.7007008, 40.4395314]], "type": "LineString"}, "id": "(5970506946, 2283361231, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "4", "length": 10.28, "maxspeed": "50", "name": "Calle de Santa Engracia", "oneway": true, "osmid": 44737275, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7017696, 40.4420142], [-3.7019284, 40.4420207]], "type": "LineString"}, "id": "(26413587, 5214866725, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 13.458, "maxspeed": null, "name": "Calle de R\u00edos Rosas", "oneway": true, "osmid": 45764847, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7017116, 40.4418872], [-3.7017696, 40.4420142]], "type": "LineString"}, "id": "(302786451, 26413587, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "4", "length": 14.95, "maxspeed": "50", "name": "Calle de Santa Engracia", "oneway": true, "osmid": 44737275, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7019284, 40.4420207], [-3.7019831, 40.4420243]], "type": "LineString"}, "id": "(5214866725, 1203847202, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 4.646, "maxspeed": null, "name": "Calle de R\u00edos Rosas", "oneway": true, "osmid": 45764847, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7016655, 40.4417752], [-3.7017116, 40.4418872]], "type": "LineString"}, "id": "(5970506945, 302786451, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "4", "length": 13.051, "maxspeed": "50", "name": "Calle de Santa Engracia", "oneway": true, "osmid": 44737275, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7027533, 40.4442999], [-3.7028721, 40.4443149]], "type": "LineString"}, "id": "(26413367, 5214866723, 0)", "properties": {"access": null, "highway": "residential", "lanes": "1", "length": 10.191, "maxspeed": "30", "name": "Calle de Mar\u00eda de Guzm\u00e1n", "oneway": true, "osmid": 4339401, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7026842, 40.4441349], [-3.7027533, 40.4442999]], "type": "LineString"}, "id": "(1654250183, 26413367, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "4", "length": 19.256, "maxspeed": "50", "name": "Calle de Santa Engracia", "oneway": true, "osmid": 45764848, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7028721, 40.4443149], [-3.7029475, 40.4443072]], "type": "LineString"}, "id": "(5214866723, 1654250188, 0)", "properties": {"access": null, "highway": "residential", "lanes": "1", "length": 6.438, "maxspeed": "30", "name": "Calle de Mar\u00eda de Guzm\u00e1n", "oneway": true, "osmid": 4339401, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7035195, 40.4460549], [-3.7035488, 40.4461163]], "type": "LineString"}, "id": "(5970506944, 26413361, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "4", "length": 7.264, "maxspeed": "50", "name": "Calle de Santa Engracia", "oneway": true, "osmid": 335587484, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7036001, 40.4494289], [-3.7037405, 40.4494428]], "type": "LineString"}, "id": "(26413061, 6934437087, 0)", "properties": {"access": null, "highway": "living_street", "lanes": null, "length": 11.98, "maxspeed": "20", "name": "Calle de Carnicer", "oneway": true, "osmid": 7971951, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7036001, 40.4494289], [-3.7036316, 40.4492109]], "type": "LineString"}, "id": "(26413061, 5970506943, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 24.387, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 219141073, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.703649, 40.4490978], [-3.7036661, 40.4489788]], "type": "LineString"}, "id": "(2283386640, 5963987031, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 13.311, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 219141073, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.703649, 40.4490978], [-3.7036316, 40.4492109]], "type": "LineString"}, "id": "(2283386640, 5970506943, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 12.662, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 219141073, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7036661, 40.4489788], [-3.703649, 40.4490978]], "type": "LineString"}, "id": "(5963987031, 2283386640, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 13.311, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 219141073, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7036316, 40.4492109], [-3.703649, 40.4490978]], "type": "LineString"}, "id": "(5970506943, 2283386640, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 12.662, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 219141073, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7036316, 40.4492109], [-3.7036001, 40.4494289]], "type": "LineString"}, "id": "(5970506943, 26413061, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 24.387, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 219141073, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7032474, 40.451809], [-3.703121, 40.4517839]], "type": "LineString"}, "id": "(339391878, 6934412482, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 11.053, "maxspeed": null, "name": "Calle de Teruel", "oneway": true, "osmid": 9939547, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7032474, 40.451809], [-3.7032616, 40.4517156]], "type": "LineString"}, "id": "(339391878, 2972134285, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 10.455, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 219141072, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7032474, 40.451809], [-3.7032301, 40.4519149]], "type": "LineString"}, "id": "(339391878, 339391897, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 11.866, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 1014474060, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7032301, 40.4519149], [-3.7032474, 40.451809]], "type": "LineString"}, "id": "(339391897, 339391878, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 11.866, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 1014474060, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7032616, 40.4517156], [-3.7032846, 40.4515624]], "type": "LineString"}, "id": "(2972134285, 5970506942, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 17.146, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 219141072, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7032616, 40.4517156], [-3.7032474, 40.451809]], "type": "LineString"}, "id": "(2972134285, 339391878, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 10.455, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 219141072, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7033197, 40.4513214], [-3.7032846, 40.4515624]], "type": "LineString"}, "id": "(5963987032, 5970506942, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 26.962, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 219141072, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7032846, 40.4515624], [-3.7033197, 40.4513214]], "type": "LineString"}, "id": "(5970506942, 5963987032, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 26.962, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 219141072, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7032846, 40.4515624], [-3.7032616, 40.4517156]], "type": "LineString"}, "id": "(5970506942, 2972134285, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 17.146, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 219141072, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6980802, 40.452476], [-3.6980918, 40.452353]], "type": "LineString"}, "id": "(81473206, 3971975785, 0)", "properties": {"access": null, "highway": "residential", "lanes": "2", "length": 13.712, "maxspeed": null, "name": "Calle del Aviador Zorita", "oneway": true, "osmid": 238871458, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6984913, 40.4524969], [-3.6981987, 40.4524833]], "type": "LineString"}, "id": "(81604554, 2385139801, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "4", "length": 24.804, "maxspeed": "50", "name": "Avenida del General Per\u00f3n", "oneway": true, "osmid": 229977869, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6981987, 40.4524833], [-3.6980802, 40.452476]], "type": "LineString"}, "id": "(2385139801, 81473206, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "4", "length": 10.059, "maxspeed": "50", "name": "Avenida del General Per\u00f3n", "oneway": true, "osmid": 229977869, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6970597, 40.4550684], [-3.6970397, 40.4550922]], "type": "LineString"}, "id": "(81603242, 8875682614, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 3.141, "maxspeed": null, "name": "Avenida del Presidente Carmona", "oneway": false, "osmid": 9941013, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6970597, 40.4550684], [-3.6970647, 40.4550017]], "type": "LineString"}, "id": "(81603242, 1728461548, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 7.429, "maxspeed": null, "name": "Avenida del Presidente Carmona", "oneway": false, "osmid": 9941013, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6970906, 40.4547033], [-3.6971953, 40.4547104]], "type": "LineString"}, "id": "(81603243, 81603738, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 8.894, "maxspeed": null, "name": "Avenida del Presidente Carmona", "oneway": true, "osmid": 43410343, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6970906, 40.4547033], [-3.6970677, 40.4549668]], "type": "LineString"}, "id": "(81603243, 5342725023, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 29.364, "maxspeed": null, "name": "Avenida del Presidente Carmona", "oneway": false, "osmid": 553501873, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6967683, 40.455077], [-3.6970397, 40.4550922]], "type": "LineString"}, "id": "(264208242, 8875682614, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 23.025, "maxspeed": null, "name": "Avenida del Presidente Carmona", "oneway": false, "osmid": 9941013, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6970647, 40.4550017], [-3.6970597, 40.4550684]], "type": "LineString"}, "id": "(1728461548, 81603242, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 7.429, "maxspeed": null, "name": "Avenida del Presidente Carmona", "oneway": false, "osmid": 9941013, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6970647, 40.4550017], [-3.6970677, 40.4549668]], "type": "LineString"}, "id": "(1728461548, 5342725023, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 3.889, "maxspeed": null, "name": "Avenida del Presidente Carmona", "oneway": false, "osmid": 9941013, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6970677, 40.4549668], [-3.6970647, 40.4550017]], "type": "LineString"}, "id": "(5342725023, 1728461548, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 3.889, "maxspeed": null, "name": "Avenida del Presidente Carmona", "oneway": false, "osmid": 9941013, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6970677, 40.4549668], [-3.6970906, 40.4547033]], "type": "LineString"}, "id": "(5342725023, 81603243, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 29.364, "maxspeed": null, "name": "Avenida del Presidente Carmona", "oneway": false, "osmid": 553501873, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6970397, 40.4550922], [-3.6967683, 40.455077]], "type": "LineString"}, "id": "(8875682614, 264208242, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 23.025, "maxspeed": null, "name": "Avenida del Presidente Carmona", "oneway": false, "osmid": 9941013, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6970397, 40.4550922], [-3.6970597, 40.4550684]], "type": "LineString"}, "id": "(8875682614, 81603242, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 3.141, "maxspeed": null, "name": "Avenida del Presidente Carmona", "oneway": false, "osmid": 9941013, "reversed": true}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            var feature_group_4fb28be6d450dbd0754c3757697467ab = L.featureGroup(
+                {}
+            ).addTo(map_d5bc704c4ce740ab73883b161e9d010a);
+        
+    
+        function geo_json_18214712a2b78a8bba7024554d338a40_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "green", "weight": 7};
+            }
+        }
+
+        function geo_json_18214712a2b78a8bba7024554d338a40_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_18214712a2b78a8bba7024554d338a40 = L.geoJson(null, {
+                onEachFeature: geo_json_18214712a2b78a8bba7024554d338a40_onEachFeature,
+            
+                style: geo_json_18214712a2b78a8bba7024554d338a40_styler,
+        });
+
+        function geo_json_18214712a2b78a8bba7024554d338a40_add (data) {
+            geo_json_18214712a2b78a8bba7024554d338a40
+                .addData(data)
+                .addTo(feature_group_4fb28be6d450dbd0754c3757697467ab);
+        }
+            geo_json_18214712a2b78a8bba7024554d338a40_add({"features": [{"geometry": {"coordinates": [[-3.71237599280285, 40.4075674584144], [-3.71196572085214, 40.4072935767116], [-3.71179571578615, 40.4070535773924], [-3.71197572121856, 40.4069235782641], [-3.71199572174089, 40.4068935776185], [-3.71199572321821, 40.4068535790428], [-3.71198572309498, 40.4068135792736], [-3.71191572171968, 40.4067035805505], [-3.71152570786568, 40.4065635801597], [-3.71146570656036, 40.4065735797586], [-3.71128570088549, 40.4067835779882], [-3.71128570000116, 40.406863578429], [-3.71152570667432, 40.407073577027504], [-3.71171571385056, 40.4070735773498], [-3.71179571578615, 40.4070535773924], [-3.71196572085214, 40.4072935767116], [-3.71212428707064, 40.40776270113609], [-3.71281574401718, 40.40836357050009], [-3.7129157461222, 40.4084935701826], [-3.7130357497165, 40.4086535689812], [-3.71314575271822, 40.4088135676512], [-3.71318319183378, 40.4090940285728], [-3.71341575969565, 40.4093135646272], [-3.71345576133097, 40.40939356382071], [-3.7135957628601, 40.409683563565], [-3.71370576718505, 40.4099035622234], [-3.71389577105301, 40.4102835583084], [-3.7138957715768, 40.4104035588751], [-3.71381576748282, 40.4105135572856], [-3.71382576740714, 40.410623557335505], [-3.71379576516837, 40.4106535566954], [-3.71377576436112, 40.4106835576358], [-3.71377576498206, 40.410713557910306], [-3.71378576488892, 40.4107435575858], [-3.71382576744938, 40.4107835558862], [-3.71371400337546, 40.4109871627577], [-3.71395577037224, 40.4110535558954], [-3.71395576958206, 40.4111435545288], [-3.71391576687892, 40.4115535521525], [-3.71388576307331, 40.411883549321], [-3.7138757634692, 40.4119735496465], [-3.71373804556285, 40.4121491813822], [-3.71384576206542, 40.412253548333], [-3.71382575933334, 40.41239354606049], [-3.71376575492649, 40.4130035434362], [-3.71375575401497, 40.4131035425486], [-3.71370575256994, 40.4135035406569], [-3.71365574654919, 40.4139935367818], [-3.71359574291536, 40.4144835356192], [-3.71357574207705, 40.41464353304671], [-3.71341239736143, 40.414799846463104], [-3.71351573765703, 40.4151235318938], [-3.71349573617869, 40.415293531396], [-3.71348573672983, 40.4153935298887], [-3.71347573407333, 40.4155035288498], [-3.71345573393726, 40.415693528678304], [-3.71339572916783, 40.416153524833504], [-3.71336572916564, 40.416323524847], [-3.71332572471258, 40.4166635215348], [-3.71297569977174, 40.419673506101105], [-3.71289569682025, 40.4203335011797], [-3.71288569557934, 40.4204035015194], [-3.71287569319513, 40.420483500107906], [-3.71283569217344, 40.4207834984544], [-3.712815690919, 40.4209034976697], [-3.71274568661234, 40.4211034969814], [-3.71279568598545, 40.42182349316911], [-3.71287568832214, 40.422013491274], [-3.71295569113344, 40.422203490963], [-3.71289568790651, 40.4222834894526], [-3.71275568164149, 40.4224134888037], [-3.71263567870673, 40.4224834887104], [-3.7121156599089, 40.4227834865701], [-3.71182356650827, 40.422800637578305], [-3.71170564407083, 40.423013485338096], [-3.71123562832113, 40.4232834839918], [-3.71114562558114, 40.4233334836028], [-3.71088561487965, 40.42348348387289], [-3.71054560437335, 40.423273484158095], [-3.71051696529709, 40.4230519060504], [-3.71015559413051, 40.423043485128], [-3.70916556399114, 40.4224134900882], [-3.70797552798532, 40.4216734926805], [-3.70761551656484, 40.4214334941148], [-3.70745560004835, 40.4211427174884], [-3.70718550240521, 40.4211534951246], [-3.70686549397519, 40.420953497445694], [-3.70643547963499, 40.420683499371506], [-3.70618547235187, 40.4205134990958], [-3.70596546507437, 40.4204035000585], [-3.70588546428641, 40.420383501333504], [-3.70567545703393, 40.4203735002244], [-3.70547544981245, 40.420373500391506], [-3.70519544193443, 40.4203634998043], [-3.70480542798213, 40.4203335013589], [-3.70429255297588, 40.4201710049336], [-3.70393539974374, 40.4202735010894], [-3.7034553848369, 40.4202435013404], [-3.70300537027417, 40.4202135005766], [-3.70240535031412, 40.4201635020678], [-3.70231534747933, 40.420153501497296], [-3.70164532542209, 40.4201235021706], [-3.70118530891291, 40.420103500926], [-3.70108154783931, 40.4200013000184], [-3.69965526112592, 40.4198435027118], [-3.69935321863076, 40.4196153531909], [-3.69820521476608, 40.4194235055002], [-3.69736518762064, 40.4191735065459], [-3.69704517647314, 40.419063507027], [-3.69691517327435, 40.419013506961], [-3.69683517049791, 40.418883506901295], [-3.69690517434711, 40.4187335088628], [-3.69712518255294, 40.4186735087566], [-3.69856523146068, 40.4182935103231], [-3.69867523450639, 40.4182535118717], [-3.69935525628614, 40.4181435129061], [-3.6994352593403, 40.4182435109717], [-3.69957526169954, 40.4186235099732], [-3.69967526481543, 40.419013506769], [-3.69974526575676, 40.419373504691], [-3.69965526112592, 40.4198435027118], [-3.69988608031805, 40.4200265495532], [-3.70118530891291, 40.420103500926], [-3.70113530594139, 40.4202335015822], [-3.70089529762848, 40.4206334976552], [-3.70061528592206, 40.4210834966348], [-3.70034879479615, 40.421276007924], [-3.69991525923275, 40.422003490667905], [-3.69968525007377, 40.422323488879], [-3.69931523679379, 40.4228334855822], [-3.69895522187548, 40.4233234836186], [-3.69880521614794, 40.4235534814016], [-3.69869872434991, 40.4236193151998], [-3.69864521034668, 40.4237834799311], [-3.69826519348764, 40.4243934763633], [-3.69811518875848, 40.4246434751948], [-3.69799518388963, 40.4248334745596], [-3.69779517529248, 40.4251434718234], [-3.69716515010408, 40.4260934664508], [-3.69710514900167, 40.426203465738496], [-3.6967143140902, 40.426383530112], [-3.696785134846, 40.4266734631094], [-3.69667513118122, 40.4265534637308], [-3.69659512898895, 40.4266434639814], [-3.69638512240805, 40.4268834624786], [-3.69625511694286, 40.4270334611889], [-3.69616511191045, 40.427123461895], [-3.69580509778371, 40.4275734591065], [-3.69572509676387, 40.4276834585108], [-3.69554509068425, 40.4278334576803], [-3.69567509191369, 40.4280734553756], [-3.695695080791, 40.4284031753535], [-3.69583509615659, 40.4283434548379], [-3.69598509979844, 40.4286934527654], [-3.69608510188907, 40.42892345056929], [-3.6962751074008, 40.4293534491704], [-3.69635510843385, 40.429533447686495], [-3.69642510995846, 40.429713446895], [-3.6964651097611, 40.4298034461067], [-3.69671019174008, 40.4308114902558], [-3.69694512266974, 40.4309034406072], [-3.69696512154071, 40.4309534395108], [-3.69707512629115, 40.431183438832], [-3.69731513107255, 40.431733435502], [-3.69737513226586, 40.4318834347058], [-3.69755513553818, 40.4323134323488], [-3.69767513944144, 40.432553430062], [-3.69763801757434, 40.432751852108], [-3.69779514105495, 40.4328334299108], [-3.69789514544734, 40.4330834273458], [-3.69811514853935, 40.43359342442071], [-3.69822515262175, 40.4338534243534], [-3.69834515348603, 40.43414342123769], [-3.69856516058453, 40.4346334186753], [-3.69842442141596, 40.4346930588471], [-3.69873516361234, 40.4350234167956], [-3.69884516501342, 40.4352934159522], [-3.69909517065728, 40.43587341151], [-3.69922517536698, 40.436173410619105], [-3.69917298604426, 40.436391244673], [-3.69951518232777, 40.4368334067008], [-3.69956518409353, 40.4369434056096], [-3.69969518581824, 40.4372434041434], [-3.70025519792907, 40.4385633972424], [-3.70039520216794, 40.4388733952993], [-3.70052650302438, 40.4395722528492], [-3.70078521039074, 40.4397633901234], [-3.70111521813558, 40.4405433865012], [-3.70121522066478, 40.4407833846757], [-3.70150537140309, 40.4418636224716], [-3.70180523396624, 40.442133376363294], [-3.70230524538764, 40.4432833707538], [-3.70254373196757, 40.4441996667738], [-3.70278525448469, 40.444403364688704], [-3.70326526352721, 40.4455133570741], [-3.7033767375133, 40.4460594716322], [-3.70356526736455, 40.446203353167505], [-3.70375527165017, 40.4466833509839], [-3.70382527179493, 40.446893350154], [-3.70378526950443, 40.4469033501271], [-3.70373526828637, 40.446943349379296], [-3.7036952655277, 40.4471433486896], [-3.70372526709667, 40.4471833483008], [-3.7039252726789, 40.447273346894], [-3.70389527035468, 40.447523346845294], [-3.70385526711218, 40.447783344741296], [-3.70382526358606, 40.4480333424616], [-3.7037552589367, 40.448473340142094], [-3.70371525513572, 40.44874333945089], [-3.70364524978171, 40.4492133371104], [-3.70350473282609, 40.449292922341506], [-3.70359524670842, 40.4495333342134], [-3.70351523852606, 40.4500733309566], [-3.70346523559947, 40.450423329143504], [-3.70342523332052, 40.4506633287238], [-3.70335522758377, 40.4511633255967], [-3.70310467501363, 40.451646698457694], [-3.70325521832494, 40.4518333227098], [-3.70323521753151, 40.451953321337506], [-3.70319521266187, 40.45222332032169], [-3.70315521098212, 40.452473317378], [-3.70308520372081, 40.4529733145006], [-3.70280519472163, 40.4529433154116], [-3.70258518715885, 40.4529233154006], [-3.70246788005825, 40.4527856960632], [-3.70218517397018, 40.4528933155013], [-3.70117514162631, 40.4528133158886], [-3.70048511913701, 40.452763316716705], [-3.69996510145932, 40.452713317300095], [-3.69935508342143, 40.4526933176725], [-3.69906507252003, 40.4526933177648], [-3.69875506306554, 40.4526833170124], [-3.6983783096297, 40.452450076985905], [-3.69826504695796, 40.45266331645129], [-3.69809504073436, 40.4526533162826], [-3.69745502053732, 40.4525933176789], [-3.69729501362751, 40.452583317681295], [-3.69729501198125, 40.4528033153452], [-3.69728501027605, 40.4529833155693], [-3.6972650103528, 40.453143315279505], [-3.69723500554435, 40.4534833130066], [-3.69712500117264, 40.4534833122692], [-3.69705499506701, 40.4542133081418], [-3.69701498882831, 40.454723304413506], [-3.69711499145195, 40.45484330416551], [-3.69699993374347, 40.455057475252495]], "type": "LineString"}, "id": "4", "properties": {"shape_id": "003_A"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            var marker_f48bb774e59ac104e07d230820708a34 = L.marker(
+                [40.40752, -3.71238],
+                {"name": "paradas"}
+            ).addTo(feature_group_4fb28be6d450dbd0754c3757697467ab);
+        
+    
+        var popup_1eafd2745db60740e057992408aee902 = L.popup({"maxWidth": 300});
+
+        
+            var html_0890f314d6073f9bd3e9bc6a4e844871 = $(`<div id="html_0890f314d6073f9bd3e9bc6a4e844871" style="width: 100.0%; height: 100.0%;">Puerta De Toledo</div>`)[0];
+            popup_1eafd2745db60740e057992408aee902.setContent(html_0890f314d6073f9bd3e9bc6a4e844871);
+        
+
+        marker_f48bb774e59ac104e07d230820708a34.bindPopup(popup_1eafd2745db60740e057992408aee902)
+        ;
+
+        
+    
+    
+            var marker_3f57a2178d72646782afee031b6f3d5c = L.marker(
+                [40.40771, -3.71212],
+                {"name": "paradas"}
+            ).addTo(feature_group_4fb28be6d450dbd0754c3757697467ab);
+        
+    
+        var popup_4f196d63463c5c6ceaf4bcce1f5063ad = L.popup({"maxWidth": 300});
+
+        
+            var html_1b18c7d6435039cb0f10accf9c9a8e1d = $(`<div id="html_1b18c7d6435039cb0f10accf9c9a8e1d" style="width: 100.0%; height: 100.0%;">Puerta De Toledo</div>`)[0];
+            popup_4f196d63463c5c6ceaf4bcce1f5063ad.setContent(html_1b18c7d6435039cb0f10accf9c9a8e1d);
+        
+
+        marker_3f57a2178d72646782afee031b6f3d5c.bindPopup(popup_4f196d63463c5c6ceaf4bcce1f5063ad)
+        ;
+
+        
+    
+    
+            var marker_398b64e673eb85666bf3b022349e3940 = L.marker(
+                [40.40905, -3.71318],
+                {"name": "paradas"}
+            ).addTo(feature_group_4fb28be6d450dbd0754c3757697467ab);
+        
+    
+        var popup_5f156d5b2ff5772fe82f16b512ef4e9f = L.popup({"maxWidth": 300});
+
+        
+            var html_8b76ba234e1400c79c10bb8953e04801 = $(`<div id="html_8b76ba234e1400c79c10bb8953e04801" style="width: 100.0%; height: 100.0%;">La Paloma</div>`)[0];
+            popup_5f156d5b2ff5772fe82f16b512ef4e9f.setContent(html_8b76ba234e1400c79c10bb8953e04801);
+        
+
+        marker_398b64e673eb85666bf3b022349e3940.bindPopup(popup_5f156d5b2ff5772fe82f16b512ef4e9f)
+        ;
+
+        
+    
+    
+            var marker_4f2d02771f611a658cf6bf1652076084 = L.marker(
+                [40.41094, -3.71371],
+                {"name": "paradas"}
+            ).addTo(feature_group_4fb28be6d450dbd0754c3757697467ab);
+        
+    
+        var popup_eaea5995c617e3bdb5d91e76aeda11ee = L.popup({"maxWidth": 300});
+
+        
+            var html_c211969e327196eb7e7a4b54261f84af = $(`<div id="html_c211969e327196eb7e7a4b54261f84af" style="width: 100.0%; height: 100.0%;">San Francisco El Grande</div>`)[0];
+            popup_eaea5995c617e3bdb5d91e76aeda11ee.setContent(html_c211969e327196eb7e7a4b54261f84af);
+        
+
+        marker_4f2d02771f611a658cf6bf1652076084.bindPopup(popup_eaea5995c617e3bdb5d91e76aeda11ee)
+        ;
+
+        
+    
+    
+            var marker_f1a0011c017e0bb5c688f1125dabc59e = L.marker(
+                [40.4121, -3.71374],
+                {"name": "paradas"}
+            ).addTo(feature_group_4fb28be6d450dbd0754c3757697467ab);
+        
+    
+        var popup_a0377956a2950f16c8381fa3d369389d = L.popup({"maxWidth": 300});
+
+        
+            var html_3997b5b3df1fddc318df2d42359ec9ae = $(`<div id="html_3997b5b3df1fddc318df2d42359ec9ae" style="width: 100.0%; height: 100.0%;">Las Vistillas</div>`)[0];
+            popup_a0377956a2950f16c8381fa3d369389d.setContent(html_3997b5b3df1fddc318df2d42359ec9ae);
+        
+
+        marker_f1a0011c017e0bb5c688f1125dabc59e.bindPopup(popup_a0377956a2950f16c8381fa3d369389d)
+        ;
+
+        
+    
+    
+            var marker_9b99fb0b2f35fe10baa1417f70a081c0 = L.marker(
+                [40.41475, -3.71341],
+                {"name": "paradas"}
+            ).addTo(feature_group_4fb28be6d450dbd0754c3757697467ab);
+        
+    
+        var popup_aaeb284a1868f6967261f7ee11a22cd8 = L.popup({"maxWidth": 300});
+
+        
+            var html_9799a6087d56c42d72d4fdab13eab2f0 = $(`<div id="html_9799a6087d56c42d72d4fdab13eab2f0" style="width: 100.0%; height: 100.0%;">Palacio Real</div>`)[0];
+            popup_aaeb284a1868f6967261f7ee11a22cd8.setContent(html_9799a6087d56c42d72d4fdab13eab2f0);
+        
+
+        marker_9b99fb0b2f35fe10baa1417f70a081c0.bindPopup(popup_aaeb284a1868f6967261f7ee11a22cd8)
+        ;
+
+        
+    
+    
+            var marker_d3942de2ebc3d8fa37b4e075c8fd968c = L.marker(
+                [40.42275, -3.71182],
+                {"name": "paradas"}
+            ).addTo(feature_group_4fb28be6d450dbd0754c3757697467ab);
+        
+    
+        var popup_2ecf6adb2cddb7cf9c362250760fef35 = L.popup({"maxWidth": 300});
+
+        
+            var html_a9bff167e469093c3526edf4c5fffa9c = $(`<div id="html_a9bff167e469093c3526edf4c5fffa9c" style="width: 100.0%; height: 100.0%;">Plaza De España</div>`)[0];
+            popup_2ecf6adb2cddb7cf9c362250760fef35.setContent(html_a9bff167e469093c3526edf4c5fffa9c);
+        
+
+        marker_d3942de2ebc3d8fa37b4e075c8fd968c.bindPopup(popup_2ecf6adb2cddb7cf9c362250760fef35)
+        ;
+
+        
+    
+    
+            var marker_c6f1c3fa0237a52878392724e6cd97db = L.marker(
+                [40.423, -3.71052],
+                {"name": "paradas"}
+            ).addTo(feature_group_4fb28be6d450dbd0754c3757697467ab);
+        
+    
+        var popup_375460a97a97cab42b7776d5f602de61 = L.popup({"maxWidth": 300});
+
+        
+            var html_0d619e32433ffc8e7a263bb3151b34de = $(`<div id="html_0d619e32433ffc8e7a263bb3151b34de" style="width: 100.0%; height: 100.0%;">Gran Vía - Plaza De España</div>`)[0];
+            popup_375460a97a97cab42b7776d5f602de61.setContent(html_0d619e32433ffc8e7a263bb3151b34de);
+        
+
+        marker_c6f1c3fa0237a52878392724e6cd97db.bindPopup(popup_375460a97a97cab42b7776d5f602de61)
+        ;
+
+        
+    
+    
+            var marker_6d8035302964a7217b524f12a4c24086 = L.marker(
+                [40.42109, -3.70746],
+                {"name": "paradas"}
+            ).addTo(feature_group_4fb28be6d450dbd0754c3757697467ab);
+        
+    
+        var popup_affa4abd2ea00b1cf6935cde925201f8 = L.popup({"maxWidth": 300});
+
+        
+            var html_ede47b6b5b006fa75c4b4b8991864894 = $(`<div id="html_ede47b6b5b006fa75c4b4b8991864894" style="width: 100.0%; height: 100.0%;">Santo Domingo</div>`)[0];
+            popup_affa4abd2ea00b1cf6935cde925201f8.setContent(html_ede47b6b5b006fa75c4b4b8991864894);
+        
+
+        marker_6d8035302964a7217b524f12a4c24086.bindPopup(popup_affa4abd2ea00b1cf6935cde925201f8)
+        ;
+
+        
+    
+    
+            var marker_6e562996e36ea0efad3cc30f135d5597 = L.marker(
+                [40.42012, -3.70429],
+                {"name": "paradas"}
+            ).addTo(feature_group_4fb28be6d450dbd0754c3757697467ab);
+        
+    
+        var popup_a3a5f3e0994120447dfae145e667a9af = L.popup({"maxWidth": 300});
+
+        
+            var html_b3783ea404a4d77c7d836f33488e0f20 = $(`<div id="html_b3783ea404a4d77c7d836f33488e0f20" style="width: 100.0%; height: 100.0%;">Gran Vía - Callao</div>`)[0];
+            popup_a3a5f3e0994120447dfae145e667a9af.setContent(html_b3783ea404a4d77c7d836f33488e0f20);
+        
+
+        marker_6e562996e36ea0efad3cc30f135d5597.bindPopup(popup_a3a5f3e0994120447dfae145e667a9af)
+        ;
+
+        
+    
+    
+            var marker_46d337aa7717f452975d488e333a6de5 = L.marker(
+                [40.41995, -3.70108],
+                {"name": "paradas"}
+            ).addTo(feature_group_4fb28be6d450dbd0754c3757697467ab);
+        
+    
+        var popup_0786fded05d2514ee3b9194c59799316 = L.popup({"maxWidth": 300});
+
+        
+            var html_6bca906f4b654f78fb07e09e42536395 = $(`<div id="html_6bca906f4b654f78fb07e09e42536395" style="width: 100.0%; height: 100.0%;">Gran Vía - Montera</div>`)[0];
+            popup_0786fded05d2514ee3b9194c59799316.setContent(html_6bca906f4b654f78fb07e09e42536395);
+        
+
+        marker_46d337aa7717f452975d488e333a6de5.bindPopup(popup_0786fded05d2514ee3b9194c59799316)
+        ;
+
+        
+    
+    
+            var marker_c0e78031e67e24eb49eb2254b567595e = L.marker(
+                [40.41957, -3.69935],
+                {"name": "paradas"}
+            ).addTo(feature_group_4fb28be6d450dbd0754c3757697467ab);
+        
+    
+        var popup_73612d235ac6333950e56b478b6844c2 = L.popup({"maxWidth": 300});
+
+        
+            var html_c32a4de138a0f2b3848e23a2c7efa3b2 = $(`<div id="html_c32a4de138a0f2b3848e23a2c7efa3b2" style="width: 100.0%; height: 100.0%;">Gran Vía - Pedro Zerolo</div>`)[0];
+            popup_73612d235ac6333950e56b478b6844c2.setContent(html_c32a4de138a0f2b3848e23a2c7efa3b2);
+        
+
+        marker_c0e78031e67e24eb49eb2254b567595e.bindPopup(popup_73612d235ac6333950e56b478b6844c2)
+        ;
+
+        
+    
+    
+            var marker_32d346a0678fad4500d1da92efb14e47 = L.marker(
+                [40.41891, -3.69715],
+                {"name": "paradas"}
+            ).addTo(feature_group_4fb28be6d450dbd0754c3757697467ab);
+        
+    
+        var popup_8856ce4c70b82772a397200adae95e9d = L.popup({"maxWidth": 300});
+
+        
+            var html_c8dafcac41515dc601dae5b3c70f5938 = $(`<div id="html_c8dafcac41515dc601dae5b3c70f5938" style="width: 100.0%; height: 100.0%;">Círculo De Bellas Artes</div>`)[0];
+            popup_8856ce4c70b82772a397200adae95e9d.setContent(html_c8dafcac41515dc601dae5b3c70f5938);
+        
+
+        marker_32d346a0678fad4500d1da92efb14e47.bindPopup(popup_8856ce4c70b82772a397200adae95e9d)
+        ;
+
+        
+    
+    
+            var marker_570ca86d4088d2380a59a66605eea22e = L.marker(
+                [40.41998, -3.69989],
+                {"name": "paradas"}
+            ).addTo(feature_group_4fb28be6d450dbd0754c3757697467ab);
+        
+    
+        var popup_c4588d173bb5facaa859166555a16078 = L.popup({"maxWidth": 300});
+
+        
+            var html_b26231898a00358ff41f6109b874ab37 = $(`<div id="html_b26231898a00358ff41f6109b874ab37" style="width: 100.0%; height: 100.0%;">Gran Vía - Pedro Zerolo</div>`)[0];
+            popup_c4588d173bb5facaa859166555a16078.setContent(html_b26231898a00358ff41f6109b874ab37);
+        
+
+        marker_570ca86d4088d2380a59a66605eea22e.bindPopup(popup_c4588d173bb5facaa859166555a16078)
+        ;
+
+        
+    
+    
+            var marker_e7f7a79b76276510c15e6e7792cec912 = L.marker(
+                [40.42123, -3.70035],
+                {"name": "paradas"}
+            ).addTo(feature_group_4fb28be6d450dbd0754c3757697467ab);
+        
+    
+        var popup_b11ce2a5e21ea6ed5c5210f62023f622 = L.popup({"maxWidth": 300});
+
+        
+            var html_5e3bded249cff1b42b8bd920704d0de7 = $(`<div id="html_5e3bded249cff1b42b8bd920704d0de7" style="width: 100.0%; height: 100.0%;">Hortaleza</div>`)[0];
+            popup_b11ce2a5e21ea6ed5c5210f62023f622.setContent(html_5e3bded249cff1b42b8bd920704d0de7);
+        
+
+        marker_e7f7a79b76276510c15e6e7792cec912.bindPopup(popup_b11ce2a5e21ea6ed5c5210f62023f622)
+        ;
+
+        
+    
+    
+            var marker_f7fe2bef9c9ecf576a160230f8d628bb = L.marker(
+                [40.42357, -3.6987],
+                {"name": "paradas"}
+            ).addTo(feature_group_4fb28be6d450dbd0754c3757697467ab);
+        
+    
+        var popup_8feb50da6b6938badf06e265e9b5691e = L.popup({"maxWidth": 300});
+
+        
+            var html_cfdf4fd02516937d83b8415ade387bc8 = $(`<div id="html_cfdf4fd02516937d83b8415ade387bc8" style="width: 100.0%; height: 100.0%;">Chueca</div>`)[0];
+            popup_8feb50da6b6938badf06e265e9b5691e.setContent(html_cfdf4fd02516937d83b8415ade387bc8);
+        
+
+        marker_f7fe2bef9c9ecf576a160230f8d628bb.bindPopup(popup_8feb50da6b6938badf06e265e9b5691e)
+        ;
+
+        
+    
+    
+            var marker_6b2897220f224e484b372ed6d2c18997 = L.marker(
+                [40.42634, -3.69671],
+                {"name": "paradas"}
+            ).addTo(feature_group_4fb28be6d450dbd0754c3757697467ab);
+        
+    
+        var popup_71a0ece29b3e581c8bb7b62763159922 = L.popup({"maxWidth": 300});
+
+        
+            var html_6e9881e119acdc1372b238ee2e5c6822 = $(`<div id="html_6e9881e119acdc1372b238ee2e5c6822" style="width: 100.0%; height: 100.0%;">Santa Bárbara</div>`)[0];
+            popup_71a0ece29b3e581c8bb7b62763159922.setContent(html_6e9881e119acdc1372b238ee2e5c6822);
+        
+
+        marker_6b2897220f224e484b372ed6d2c18997.bindPopup(popup_71a0ece29b3e581c8bb7b62763159922)
+        ;
+
+        
+    
+    
+            var marker_cd3b1626c32aa6afc3bf7db7e861f1ad = L.marker(
+                [40.42836, -3.6957],
+                {"name": "paradas"}
+            ).addTo(feature_group_4fb28be6d450dbd0754c3757697467ab);
+        
+    
+        var popup_ffffa15945cfc8c2669a2223c677a4bb = L.popup({"maxWidth": 300});
+
+        
+            var html_28961995153d8f96554313348789ba1d = $(`<div id="html_28961995153d8f96554313348789ba1d" style="width: 100.0%; height: 100.0%;">Alonso Martínez</div>`)[0];
+            popup_ffffa15945cfc8c2669a2223c677a4bb.setContent(html_28961995153d8f96554313348789ba1d);
+        
+
+        marker_cd3b1626c32aa6afc3bf7db7e861f1ad.bindPopup(popup_ffffa15945cfc8c2669a2223c677a4bb)
+        ;
+
+        
+    
+    
+            var marker_b6f4cbe5006efc9908fdd14f742b2d72 = L.marker(
+                [40.43076, -3.69671],
+                {"name": "paradas"}
+            ).addTo(feature_group_4fb28be6d450dbd0754c3757697467ab);
+        
+    
+        var popup_9af3f6ba10ec247cb18912fa4b760866 = L.popup({"maxWidth": 300});
+
+        
+            var html_f38c02d2ce44e3b018edab0b972fea0a = $(`<div id="html_f38c02d2ce44e3b018edab0b972fea0a" style="width: 100.0%; height: 100.0%;">Santa Engracia - Caracas</div>`)[0];
+            popup_9af3f6ba10ec247cb18912fa4b760866.setContent(html_f38c02d2ce44e3b018edab0b972fea0a);
+        
+
+        marker_b6f4cbe5006efc9908fdd14f742b2d72.bindPopup(popup_9af3f6ba10ec247cb18912fa4b760866)
+        ;
+
+        
+    
+    
+            var marker_d4d59a8bad7cc09ee6bb04f24ed5e8f6 = L.marker(
+                [40.4327, -3.69764],
+                {"name": "paradas"}
+            ).addTo(feature_group_4fb28be6d450dbd0754c3757697467ab);
+        
+    
+        var popup_521e9845f165a67227365ac6f8804c3f = L.popup({"maxWidth": 300});
+
+        
+            var html_22684b89c3b28df354591fff4a3bd973 = $(`<div id="html_22684b89c3b28df354591fff4a3bd973" style="width: 100.0%; height: 100.0%;">Plaza Chamberí</div>`)[0];
+            popup_521e9845f165a67227365ac6f8804c3f.setContent(html_22684b89c3b28df354591fff4a3bd973);
+        
+
+        marker_d4d59a8bad7cc09ee6bb04f24ed5e8f6.bindPopup(popup_521e9845f165a67227365ac6f8804c3f)
+        ;
+
+        
+    
+    
+            var marker_437911759085fbaafa72a93a0a9d90c3 = L.marker(
+                [40.43465, -3.69842],
+                {"name": "paradas"}
+            ).addTo(feature_group_4fb28be6d450dbd0754c3757697467ab);
+        
+    
+        var popup_2df53dd06e95d9e2c7fa3272cc491926 = L.popup({"maxWidth": 300});
+
+        
+            var html_556289348b9fca162c1e7433a5b377eb = $(`<div id="html_556289348b9fca162c1e7433a5b377eb" style="width: 100.0%; height: 100.0%;">Iglesia</div>`)[0];
+            popup_2df53dd06e95d9e2c7fa3272cc491926.setContent(html_556289348b9fca162c1e7433a5b377eb);
+        
+
+        marker_437911759085fbaafa72a93a0a9d90c3.bindPopup(popup_2df53dd06e95d9e2c7fa3272cc491926)
+        ;
+
+        
+    
+    
+            var marker_4825190808967fba25d92182fe47d5d4 = L.marker(
+                [40.43634, -3.69917],
+                {"name": "paradas"}
+            ).addTo(feature_group_4fb28be6d450dbd0754c3757697467ab);
+        
+    
+        var popup_a1d534cca3b444c0deb84a3ebbbc59b7 = L.popup({"maxWidth": 300});
+
+        
+            var html_0e01916c57edfd2705c76ccfe25b851b = $(`<div id="html_0e01916c57edfd2705c76ccfe25b851b" style="width: 100.0%; height: 100.0%;">Santa Engracia - García De Paredes</div>`)[0];
+            popup_a1d534cca3b444c0deb84a3ebbbc59b7.setContent(html_0e01916c57edfd2705c76ccfe25b851b);
+        
+
+        marker_4825190808967fba25d92182fe47d5d4.bindPopup(popup_a1d534cca3b444c0deb84a3ebbbc59b7)
+        ;
+
+        
+    
+    
+            var marker_6877c961e632d434871f58046b8ca385 = L.marker(
+                [40.43952, -3.70053],
+                {"name": "paradas"}
+            ).addTo(feature_group_4fb28be6d450dbd0754c3757697467ab);
+        
+    
+        var popup_6b4d362c26964ef921965ad3e8279509 = L.popup({"maxWidth": 300});
+
+        
+            var html_157aa6532318cfe38218eb1694ffc2ef = $(`<div id="html_157aa6532318cfe38218eb1694ffc2ef" style="width: 100.0%; height: 100.0%;">Santa Engracia - Bretón De Los Herreros</div>`)[0];
+            popup_6b4d362c26964ef921965ad3e8279509.setContent(html_157aa6532318cfe38218eb1694ffc2ef);
+        
+
+        marker_6877c961e632d434871f58046b8ca385.bindPopup(popup_6b4d362c26964ef921965ad3e8279509)
+        ;
+
+        
+    
+    
+            var marker_01fe9efa49aa8c449141564393f4ba01 = L.marker(
+                [40.44182, -3.70151],
+                {"name": "paradas"}
+            ).addTo(feature_group_4fb28be6d450dbd0754c3757697467ab);
+        
+    
+        var popup_3f1445aa27423e0f6ca5c83ab528c9a5 = L.popup({"maxWidth": 300});
+
+        
+            var html_962420953e11c565f1c04d763210228d = $(`<div id="html_962420953e11c565f1c04d763210228d" style="width: 100.0%; height: 100.0%;">Metro Ríos Rosas</div>`)[0];
+            popup_3f1445aa27423e0f6ca5c83ab528c9a5.setContent(html_962420953e11c565f1c04d763210228d);
+        
+
+        marker_01fe9efa49aa8c449141564393f4ba01.bindPopup(popup_3f1445aa27423e0f6ca5c83ab528c9a5)
+        ;
+
+        
+    
+    
+            var marker_94358e3bc0583e7ce4c2f38b3cbfb5f5 = L.marker(
+                [40.44415, -3.70254],
+                {"name": "paradas"}
+            ).addTo(feature_group_4fb28be6d450dbd0754c3757697467ab);
+        
+    
+        var popup_464044dc6f9f252fd2c2d204dee4d9b1 = L.popup({"maxWidth": 300});
+
+        
+            var html_8fbfa660173fd8b7259c561e1f8986e4 = $(`<div id="html_8fbfa660173fd8b7259c561e1f8986e4" style="width: 100.0%; height: 100.0%;">Santa Engracia - María De Guzmán</div>`)[0];
+            popup_464044dc6f9f252fd2c2d204dee4d9b1.setContent(html_8fbfa660173fd8b7259c561e1f8986e4);
+        
+
+        marker_94358e3bc0583e7ce4c2f38b3cbfb5f5.bindPopup(popup_464044dc6f9f252fd2c2d204dee4d9b1)
+        ;
+
+        
+    
+    
+            var marker_c91ae30dad9895f796e5424df82a7040 = L.marker(
+                [40.44601, -3.70338],
+                {"name": "paradas"}
+            ).addTo(feature_group_4fb28be6d450dbd0754c3757697467ab);
+        
+    
+        var popup_b5ccb9e0cac0e7cc0e628afcb1eb3f5e = L.popup({"maxWidth": 300});
+
+        
+            var html_617d2778ebf29ef338158360f57caa88 = $(`<div id="html_617d2778ebf29ef338158360f57caa88" style="width: 100.0%; height: 100.0%;">Cuatro Caminos</div>`)[0];
+            popup_b5ccb9e0cac0e7cc0e628afcb1eb3f5e.setContent(html_617d2778ebf29ef338158360f57caa88);
+        
+
+        marker_c91ae30dad9895f796e5424df82a7040.bindPopup(popup_b5ccb9e0cac0e7cc0e628afcb1eb3f5e)
+        ;
+
+        
+    
+    
+            var marker_8f2a38aa57a1bae1c8c32bc3012538df = L.marker(
+                [40.44925, -3.7035],
+                {"name": "paradas"}
+            ).addTo(feature_group_4fb28be6d450dbd0754c3757697467ab);
+        
+    
+        var popup_857de77131643898f8e2864e109745b7 = L.popup({"maxWidth": 300});
+
+        
+            var html_1c2ddc0a77c63e6fa0893521dbe51b9c = $(`<div id="html_1c2ddc0a77c63e6fa0893521dbe51b9c" style="width: 100.0%; height: 100.0%;">Alvarado</div>`)[0];
+            popup_857de77131643898f8e2864e109745b7.setContent(html_1c2ddc0a77c63e6fa0893521dbe51b9c);
+        
+
+        marker_8f2a38aa57a1bae1c8c32bc3012538df.bindPopup(popup_857de77131643898f8e2864e109745b7)
+        ;
+
+        
+    
+    
+            var marker_f43b1fb6d9ff12fa0c8a426ef73e9741 = L.marker(
+                [40.4516, -3.7031],
+                {"name": "paradas"}
+            ).addTo(feature_group_4fb28be6d450dbd0754c3757697467ab);
+        
+    
+        var popup_8f4b17a38606d6e71f5602ed6eff814a = L.popup({"maxWidth": 300});
+
+        
+            var html_34a5821289660067de31696215470e2b = $(`<div id="html_34a5821289660067de31696215470e2b" style="width: 100.0%; height: 100.0%;">Teruel</div>`)[0];
+            popup_8f4b17a38606d6e71f5602ed6eff814a.setContent(html_34a5821289660067de31696215470e2b);
+        
+
+        marker_f43b1fb6d9ff12fa0c8a426ef73e9741.bindPopup(popup_8f4b17a38606d6e71f5602ed6eff814a)
+        ;
+
+        
+    
+    
+            var marker_162bf54ee98a0ef6c8041534ca07f774 = L.marker(
+                [40.45274, -3.70247],
+                {"name": "paradas"}
+            ).addTo(feature_group_4fb28be6d450dbd0754c3757697467ab);
+        
+    
+        var popup_449fee7a8e147cfeab6b6a648c38a55d = L.popup({"maxWidth": 300});
+
+        
+            var html_7d2e72e5a3abfda5af079ec719d67e0e = $(`<div id="html_7d2e72e5a3abfda5af079ec719d67e0e" style="width: 100.0%; height: 100.0%;">Estrecho</div>`)[0];
+            popup_449fee7a8e147cfeab6b6a648c38a55d.setContent(html_7d2e72e5a3abfda5af079ec719d67e0e);
+        
+
+        marker_162bf54ee98a0ef6c8041534ca07f774.bindPopup(popup_449fee7a8e147cfeab6b6a648c38a55d)
+        ;
+
+        
+    
+    
+            var marker_e0540e8a41825720c23f190aeb72bae6 = L.marker(
+                [40.4524, -3.69838],
+                {"name": "paradas"}
+            ).addTo(feature_group_4fb28be6d450dbd0754c3757697467ab);
+        
+    
+        var popup_3fcc5a42521d6400eb4e45cb2f891039 = L.popup({"maxWidth": 300});
+
+        
+            var html_b9253ffb95659d7ab0ca5ddf88ecac8a = $(`<div id="html_b9253ffb95659d7ab0ca5ddf88ecac8a" style="width: 100.0%; height: 100.0%;">General Perón - Aviador Zorita</div>`)[0];
+            popup_3fcc5a42521d6400eb4e45cb2f891039.setContent(html_b9253ffb95659d7ab0ca5ddf88ecac8a);
+        
+
+        marker_e0540e8a41825720c23f190aeb72bae6.bindPopup(popup_3fcc5a42521d6400eb4e45cb2f891039)
+        ;
+
+        
+    
+    
+            var marker_cb5fa05b453870e2432004db14eb2ef7 = L.marker(
+                [40.45501, -3.697],
+                {"name": "paradas"}
+            ).addTo(feature_group_4fb28be6d450dbd0754c3757697467ab);
+        
+    
+        var popup_910b53e3ddb6098d291e7ab6d76478fb = L.popup({"maxWidth": 300});
+
+        
+            var html_6a4773bd7c6c83ddbc631172959a4a9c = $(`<div id="html_6a4773bd7c6c83ddbc631172959a4a9c" style="width: 100.0%; height: 100.0%;">San Amaro</div>`)[0];
+            popup_910b53e3ddb6098d291e7ab6d76478fb.setContent(html_6a4773bd7c6c83ddbc631172959a4a9c);
+        
+
+        marker_cb5fa05b453870e2432004db14eb2ef7.bindPopup(popup_910b53e3ddb6098d291e7ab6d76478fb)
+        ;
+
+        
+    
+    
+            var feature_group_sub_group_97909f641e332ab553765dc7d286682f = L.featureGroup.subGroup(
+                feature_group_4fb28be6d450dbd0754c3757697467ab
+            );
+            feature_group_sub_group_97909f641e332ab553765dc7d286682f.addTo(map_d5bc704c4ce740ab73883b161e9d010a);
+        
+    
+            var marker_badc7ee2323a6a66d0c9a512d915ca48 = L.marker(
+                [40.40899912373146, -3.71361643704976],
+                {"name": "poi"}
+            ).addTo(feature_group_sub_group_97909f641e332ab553765dc7d286682f);
+        
+    
+            var icon_f181fdca50c4354289a1432c3b7af08d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_badc7ee2323a6a66d0c9a512d915ca48.setIcon(icon_f181fdca50c4354289a1432c3b7af08d);
+        
+    
+        var popup_5e205484afd485126c5b32dd35fc5b13 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_d13351b9f2d51a3c2c5706cfcbaa26a0 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICBBY2Nlc2libGUgZGVzZGUgbGEgcGFyYWRhOiBMYSBQYWxvbWEgRGlzdGFuY2lhOiAzNy40Nm08YnI+VGlwbzogcGFya2luZzxicj4gUGFya2luZzogbmFu" width="350" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_5e205484afd485126c5b32dd35fc5b13.setContent(i_frame_d13351b9f2d51a3c2c5706cfcbaa26a0);
+        
+
+        marker_badc7ee2323a6a66d0c9a512d915ca48.bindPopup(popup_5e205484afd485126c5b32dd35fc5b13)
+        ;
+
+        
+    
+    
+            var marker_24b4d456a3c8f6439ef15e81b7b7aee4 = L.marker(
+                [40.41503074469663, -3.71391772017604],
+                {"name": "poi"}
+            ).addTo(feature_group_sub_group_97909f641e332ab553765dc7d286682f);
+        
+    
+            var icon_0b7e70657b5d69c2c0ce7c6c5aa84864 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_24b4d456a3c8f6439ef15e81b7b7aee4.setIcon(icon_0b7e70657b5d69c2c0ce7c6c5aa84864);
+        
+    
+        var popup_0dbacf03e70805d0e89037a0a2a87799 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_7e54c219d622f43b47a5f42e0c8ed1fd = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICBBY2Nlc2libGUgZGVzZGUgbGEgcGFyYWRhOiBQYWxhY2lvIFJlYWwgRGlzdGFuY2lhOiA1My4xN208YnI+VGlwbzogcGFya2luZzxicj4gUGFya2luZzogbmFu" width="350" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_0dbacf03e70805d0e89037a0a2a87799.setContent(i_frame_7e54c219d622f43b47a5f42e0c8ed1fd);
+        
+
+        marker_24b4d456a3c8f6439ef15e81b7b7aee4.bindPopup(popup_0dbacf03e70805d0e89037a0a2a87799)
+        ;
+
+        
+    
+    
+            var marker_4245d1afb9bfd7c42b27c762dd481441 = L.marker(
+                [40.42273010048269, -3.712052600005122],
+                {"name": "poi"}
+            ).addTo(feature_group_sub_group_97909f641e332ab553765dc7d286682f);
+        
+    
+            var icon_6aefa9790d1c0e06f10237e099516fb4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4245d1afb9bfd7c42b27c762dd481441.setIcon(icon_6aefa9790d1c0e06f10237e099516fb4);
+        
+    
+        var popup_891274173585bf41cc9023c908a201af = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_0c51b9de9b961f84abc6c5a64ff82cca = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICBBY2Nlc2libGUgZGVzZGUgbGEgcGFyYWRhOiBQbGF6YSBEZSBFc3Bhw7FhIERpc3RhbmNpYTogMTkuODZtPGJyPlRpcG86IHBhcmtpbmc8YnI+IFBhcmtpbmc6IG5hbg==" width="350" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_891274173585bf41cc9023c908a201af.setContent(i_frame_0c51b9de9b961f84abc6c5a64ff82cca);
+        
+
+        marker_4245d1afb9bfd7c42b27c762dd481441.bindPopup(popup_891274173585bf41cc9023c908a201af)
+        ;
+
+        
+    
+    
+            var marker_6169da2f3d5cf9443fb96693cb6d55d9 = L.marker(
+                [40.42383690048124, -3.6992877000050015],
+                {"name": "poi"}
+            ).addTo(feature_group_sub_group_97909f641e332ab553765dc7d286682f);
+        
+    
+            var icon_6c2457a4f185c32cfc0f961bea5414b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6169da2f3d5cf9443fb96693cb6d55d9.setIcon(icon_6c2457a4f185c32cfc0f961bea5414b3);
+        
+    
+        var popup_415210fe350091b5d84d3495b1f8728f = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_7193661e69bd247ba927b592465b379b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICBBY2Nlc2libGUgZGVzZGUgbGEgcGFyYWRhOiBDaHVlY2EgRGlzdGFuY2lhOiA1OC4wbTxicj5UaXBvOiBwYXJraW5nPGJyPiBQYXJraW5nOiBuYW4=" width="350" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_415210fe350091b5d84d3495b1f8728f.setContent(i_frame_7193661e69bd247ba927b592465b379b);
+        
+
+        marker_6169da2f3d5cf9443fb96693cb6d55d9.bindPopup(popup_415210fe350091b5d84d3495b1f8728f)
+        ;
+
+        
+    
+    
+            var marker_4a15f95f84991554d7e71ff01cde1ac4 = L.marker(
+                [40.45521139332649, -3.696930841069643],
+                {"name": "poi"}
+            ).addTo(feature_group_sub_group_97909f641e332ab553765dc7d286682f);
+        
+    
+            var icon_74cf6694ecdd964364fbd8c178c3e2f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4a15f95f84991554d7e71ff01cde1ac4.setIcon(icon_74cf6694ecdd964364fbd8c178c3e2f4);
+        
+    
+        var popup_9373cafc441063f85d7d5e918c84501e = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_e43e73f9baca2345ab2f1113f85b5544 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICBBY2Nlc2libGUgZGVzZGUgbGEgcGFyYWRhOiBTYW4gQW1hcm8gRGlzdGFuY2lhOiAyMy4xMW08YnI+VGlwbzogcGFya2luZzxicj4gUGFya2luZzogU2luIG5vbWJyZQ==" width="350" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_9373cafc441063f85d7d5e918c84501e.setContent(i_frame_e43e73f9baca2345ab2f1113f85b5544);
+        
+
+        marker_4a15f95f84991554d7e71ff01cde1ac4.bindPopup(popup_9373cafc441063f85d7d5e918c84501e)
+        ;
+
+        
+    
+    
+        function geo_json_442abcf1cefac0e1e5b5d642e5f965e0_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "orange", "weight": 2};
+            }
+        }
+
+        function geo_json_442abcf1cefac0e1e5b5d642e5f965e0_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_442abcf1cefac0e1e5b5d642e5f965e0 = L.geoJson(null, {
+                onEachFeature: geo_json_442abcf1cefac0e1e5b5d642e5f965e0_onEachFeature,
+            
+                style: geo_json_442abcf1cefac0e1e5b5d642e5f965e0_styler,
+        });
+
+        function geo_json_442abcf1cefac0e1e5b5d642e5f965e0_add (data) {
+            geo_json_442abcf1cefac0e1e5b5d642e5f965e0
+                .addData(data)
+                .addTo(map_d5bc704c4ce740ab73883b161e9d010a);
+        }
+            geo_json_442abcf1cefac0e1e5b5d642e5f965e0_add({"features": [{"geometry": {"coordinates": [[-3.6970597, 40.4550684], [-3.6970397, 40.4550922]], "type": "LineString"}, "id": "(81603242, 8875682614, 0)", "properties": {"highway": "residential", "junction": null, "lanes": null, "length": 3.141, "maxspeed": null, "name": "Avenida del Presidente Carmona", "oneway": false, "osmid": 9941013, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6970597, 40.4550684], [-3.6970647, 40.4550017]], "type": "LineString"}, "id": "(81603242, 1728461548, 0)", "properties": {"highway": "residential", "junction": null, "lanes": null, "length": 7.429, "maxspeed": null, "name": "Avenida del Presidente Carmona", "oneway": false, "osmid": 9941013, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6970906, 40.4547033], [-3.6971953, 40.4547104]], "type": "LineString"}, "id": "(81603243, 81603738, 0)", "properties": {"highway": "residential", "junction": null, "lanes": null, "length": 8.894, "maxspeed": null, "name": "Avenida del Presidente Carmona", "oneway": true, "osmid": 43410343, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6970906, 40.4547033], [-3.6970677, 40.4549668]], "type": "LineString"}, "id": "(81603243, 5342725023, 0)", "properties": {"highway": "residential", "junction": null, "lanes": null, "length": 29.364, "maxspeed": null, "name": "Avenida del Presidente Carmona", "oneway": false, "osmid": 553501873, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6967683, 40.455077], [-3.6970397, 40.4550922]], "type": "LineString"}, "id": "(264208242, 8875682614, 0)", "properties": {"highway": "residential", "junction": null, "lanes": null, "length": 23.025, "maxspeed": null, "name": "Avenida del Presidente Carmona", "oneway": false, "osmid": 9941013, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6970647, 40.4550017], [-3.6970597, 40.4550684]], "type": "LineString"}, "id": "(1728461548, 81603242, 0)", "properties": {"highway": "residential", "junction": null, "lanes": null, "length": 7.429, "maxspeed": null, "name": "Avenida del Presidente Carmona", "oneway": false, "osmid": 9941013, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6970647, 40.4550017], [-3.6970677, 40.4549668]], "type": "LineString"}, "id": "(1728461548, 5342725023, 0)", "properties": {"highway": "residential", "junction": null, "lanes": null, "length": 3.889, "maxspeed": null, "name": "Avenida del Presidente Carmona", "oneway": false, "osmid": 9941013, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6970677, 40.4549668], [-3.6970647, 40.4550017]], "type": "LineString"}, "id": "(5342725023, 1728461548, 0)", "properties": {"highway": "residential", "junction": null, "lanes": null, "length": 3.889, "maxspeed": null, "name": "Avenida del Presidente Carmona", "oneway": false, "osmid": 9941013, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6970677, 40.4549668], [-3.6970906, 40.4547033]], "type": "LineString"}, "id": "(5342725023, 81603243, 0)", "properties": {"highway": "residential", "junction": null, "lanes": null, "length": 29.364, "maxspeed": null, "name": "Avenida del Presidente Carmona", "oneway": false, "osmid": 553501873, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6970397, 40.4550922], [-3.6967683, 40.455077]], "type": "LineString"}, "id": "(8875682614, 264208242, 0)", "properties": {"highway": "residential", "junction": null, "lanes": null, "length": 23.025, "maxspeed": null, "name": "Avenida del Presidente Carmona", "oneway": false, "osmid": 9941013, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6970397, 40.4550922], [-3.6970597, 40.4550684]], "type": "LineString"}, "id": "(8875682614, 81603242, 0)", "properties": {"highway": "residential", "junction": null, "lanes": null, "length": 3.141, "maxspeed": null, "name": "Avenida del Presidente Carmona", "oneway": false, "osmid": 9941013, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6959118, 40.4563488], [-3.6959017, 40.4564307]], "type": "LineString"}, "id": "(8875658813, 81478197, 0)", "properties": {"highway": "residential", "junction": null, "lanes": null, "length": 9.147, "maxspeed": null, "name": "Calle General Cabrera", "oneway": true, "osmid": 71246167, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6976107, 40.4566229], [-3.6976363, 40.4565594]], "type": "LineString"}, "id": "(81478201, 2282178382, 0)", "properties": {"highway": "residential", "junction": null, "lanes": "1", "length": 7.386, "maxspeed": "50", "name": "Calle del General Ram\u00edrez de Madrid", "oneway": true, "osmid": 9940981, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6976107, 40.4566229], [-3.6977713, 40.4566576]], "type": "LineString"}, "id": "(81478201, 5963987034, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 14.125, "maxspeed": null, "name": "Calle de San Germ\u00e1n", "oneway": false, "osmid": 43410342, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6980276, 40.4567156], [-3.6978995, 40.4566853]], "type": "LineString"}, "id": "(81478202, 2631391819, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 11.35, "maxspeed": null, "name": "Calle de San Germ\u00e1n", "oneway": false, "osmid": 43410342, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.697583, 40.4566966], [-3.6976107, 40.4566229]], "type": "LineString"}, "id": "(2282178379, 81478201, 0)", "properties": {"highway": "residential", "junction": null, "lanes": "1", "length": 8.524, "maxspeed": "50", "name": "Calle del General Ram\u00edrez de Madrid", "oneway": true, "osmid": 9940981, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6978995, 40.4566853], [-3.6980276, 40.4567156]], "type": "LineString"}, "id": "(2631391819, 81478202, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 11.35, "maxspeed": null, "name": "Calle de San Germ\u00e1n", "oneway": false, "osmid": 43410342, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6978995, 40.4566853], [-3.6977713, 40.4566576]], "type": "LineString"}, "id": "(2631391819, 5963987034, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 11.276, "maxspeed": null, "name": "Calle de San Germ\u00e1n", "oneway": false, "osmid": 43410342, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6977713, 40.4566576], [-3.6978995, 40.4566853]], "type": "LineString"}, "id": "(5963987034, 2631391819, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 11.276, "maxspeed": null, "name": "Calle de San Germ\u00e1n", "oneway": false, "osmid": 43410342, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6977713, 40.4566576], [-3.6976107, 40.4566229]], "type": "LineString"}, "id": "(5963987034, 81478201, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 14.125, "maxspeed": null, "name": "Calle de San Germ\u00e1n", "oneway": false, "osmid": 43410342, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7018974, 40.456856], [-3.7019793, 40.4567154]], "type": "LineString"}, "id": "(26412844, 8517681047, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "6", "length": 17.101, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 82567740, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7022055, 40.4562926], [-3.7021385, 40.4564282]], "type": "LineString"}, "id": "(26412845, 2567969173, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "6", "length": 16.108, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 82567740, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7021385, 40.4564282], [-3.7022055, 40.4562926]], "type": "LineString"}, "id": "(2567969173, 26412845, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "6", "length": 16.108, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 82567740, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7021385, 40.4564282], [-3.702078, 40.4565448]], "type": "LineString"}, "id": "(2567969173, 5963987033, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "6", "length": 13.939, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 82567740, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.702078, 40.4565448], [-3.7021385, 40.4564282]], "type": "LineString"}, "id": "(5963987033, 2567969173, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "6", "length": 13.939, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 82567740, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.702078, 40.4565448], [-3.7019793, 40.4567154]], "type": "LineString"}, "id": "(5963987033, 8517681047, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "6", "length": 20.727, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 82567740, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7019793, 40.4567154], [-3.702078, 40.4565448]], "type": "LineString"}, "id": "(8517681047, 5963987033, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "6", "length": 20.727, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 82567740, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7019793, 40.4567154], [-3.7018974, 40.456856]], "type": "LineString"}, "id": "(8517681047, 26412844, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "6", "length": 17.101, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 82567740, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7028179, 40.4545422], [-3.702647, 40.4545206]], "type": "LineString"}, "id": "(26412874, 3905066558, 0)", "properties": {"highway": "residential", "junction": null, "lanes": null, "length": 14.658, "maxspeed": null, "name": "Calle de las Mercedes", "oneway": true, "osmid": 9939350, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7028179, 40.4545422], [-3.7028227, 40.4545169]], "type": "LineString"}, "id": "(26412874, 5970485002, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "6", "length": 2.842, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 82567737, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7028179, 40.4545422], [-3.7027581, 40.4548219]], "type": "LineString"}, "id": "(26412874, 8462531327, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "6", "length": 31.51, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 218065266, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7028546, 40.4543549], [-3.7028227, 40.4545169]], "type": "LineString"}, "id": "(2447008939, 5970485002, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "6", "length": 18.215, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 82567737, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7028227, 40.4545169], [-3.7028546, 40.4543549]], "type": "LineString"}, "id": "(5970485002, 2447008939, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "6", "length": 18.215, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 82567737, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7028227, 40.4545169], [-3.7028179, 40.4545422]], "type": "LineString"}, "id": "(5970485002, 26412874, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "6", "length": 2.842, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 82567737, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7027581, 40.4548219], [-3.7028179, 40.4545422]], "type": "LineString"}, "id": "(8462531327, 26412874, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "6", "length": 31.51, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 218065266, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7027581, 40.4548219], [-3.7027287, 40.4549578]], "type": "LineString"}, "id": "(8462531327, 8504741816, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "6", "length": 15.315, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 218065266, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7027287, 40.4549578], [-3.7027581, 40.4548219]], "type": "LineString"}, "id": "(8504741816, 8462531327, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "6", "length": 15.315, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 218065266, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7033586, 40.4510621], [-3.7033197, 40.4513214]], "type": "LineString"}, "id": "(26412916, 5963987032, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "6", "length": 29.02, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 219141072, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7032616, 40.4517156], [-3.7032846, 40.4515624]], "type": "LineString"}, "id": "(2972134285, 5970506942, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "6", "length": 17.146, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 219141072, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7033197, 40.4513214], [-3.7033586, 40.4510621]], "type": "LineString"}, "id": "(5963987032, 26412916, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "6", "length": 29.02, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 219141072, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7033197, 40.4513214], [-3.7032846, 40.4515624]], "type": "LineString"}, "id": "(5963987032, 5970506942, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "6", "length": 26.962, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 219141072, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7032846, 40.4515624], [-3.7033197, 40.4513214]], "type": "LineString"}, "id": "(5970506942, 5963987032, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "6", "length": 26.962, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 219141072, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7032846, 40.4515624], [-3.7032616, 40.4517156]], "type": "LineString"}, "id": "(5970506942, 2972134285, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "6", "length": 17.146, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 219141072, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7037164, 40.4486439], [-3.7036661, 40.4489788]], "type": "LineString"}, "id": "(26413086, 5963987031, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "6", "length": 37.482, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 219141073, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.703649, 40.4490978], [-3.7036661, 40.4489788]], "type": "LineString"}, "id": "(2283386640, 5963987031, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "6", "length": 13.311, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 219141073, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.703649, 40.4490978], [-3.7036316, 40.4492109]], "type": "LineString"}, "id": "(2283386640, 5970506943, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "6", "length": 12.662, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 219141073, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7036661, 40.4489788], [-3.7037164, 40.4486439]], "type": "LineString"}, "id": "(5963987031, 26413086, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "6", "length": 37.482, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 219141073, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7036661, 40.4489788], [-3.703649, 40.4490978]], "type": "LineString"}, "id": "(5963987031, 2283386640, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "6", "length": 13.311, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 219141073, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7036316, 40.4492109], [-3.703649, 40.4490978]], "type": "LineString"}, "id": "(5970506943, 2283386640, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "6", "length": 12.662, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": false, "osmid": 219141073, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7039947, 40.4454648], [-3.7038181, 40.4454424]], "type": "LineString"}, "id": "(26413356, 1654250214, 0)", "properties": {"highway": "residential", "junction": null, "lanes": "1", "length": 15.15, "maxspeed": "30", "name": "Calle Maudes", "oneway": true, "osmid": 11099985, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7039947, 40.4454648], [-3.7039985, 40.4453467]], "type": "LineString"}, "id": "(26413356, 5342774136, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "5", "length": 13.136, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": true, "osmid": 553509829, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7039911, 40.445608], [-3.7039947, 40.4454648]], "type": "LineString"}, "id": "(5963987030, 26413356, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "5", "length": 15.926, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": true, "osmid": 553509829, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7040709, 40.4432763], [-3.7039008, 40.4432679]], "type": "LineString"}, "id": "(26413513, 1613048641, 0)", "properties": {"highway": "residential", "junction": null, "lanes": "1", "length": 14.425, "maxspeed": null, "name": "Calle de Crist\u00f3bal Bordi\u00fa", "oneway": true, "osmid": 4339400, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7040658, 40.4433779], [-3.7040709, 40.4432763]], "type": "LineString"}, "id": "(1613048648, 26413513, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "5", "length": 11.306, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": true, "osmid": 44737276, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7040638, 40.4434549], [-3.7040658, 40.4433779]], "type": "LineString"}, "id": "(5963987029, 1613048648, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "5", "length": 8.564, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": true, "osmid": 44737276, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7041188, 40.4416971], [-3.704123, 40.4415214]], "type": "LineString"}, "id": "(8441812510, 2095964621, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "5", "length": 19.54, "maxspeed": "50", "name": "Calle de Bravo Murillo", "oneway": true, "osmid": 45764844, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.702822, 40.4368704], [-3.7027001, 40.436571]], "type": "LineString"}, "id": "(98956600, 5963987027, 0)", "properties": {"highway": "residential", "junction": null, "lanes": "4", "length": 34.854, "maxspeed": "50", "name": "Calle General \u00c1lvarez de Castro", "oneway": false, "osmid": 11101396, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.702822, 40.4368704], [-3.7027453, 40.4368628]], "type": "LineString"}, "id": "(98956600, 306092383, 0)", "properties": {"highway": "residential", "junction": "roundabout", "lanes": "2", "length": 6.546, "maxspeed": null, "name": "Glorieta del General \u00c1lvarez de Castro", "oneway": true, "osmid": 43410336, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7027453, 40.4368628], [-3.7026699, 40.4368761]], "type": "LineString"}, "id": "(306092383, 4422722024, 0)", "properties": {"highway": "residential", "junction": "roundabout", "lanes": "2", "length": 6.55, "maxspeed": null, "name": "Glorieta del General \u00c1lvarez de Castro", "oneway": true, "osmid": 43410336, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7027001, 40.436571], [-3.702822, 40.4368704]], "type": "LineString"}, "id": "(5963987027, 98956600, 0)", "properties": {"highway": "residential", "junction": null, "lanes": "4", "length": 34.854, "maxspeed": "50", "name": "Calle General \u00c1lvarez de Castro", "oneway": false, "osmid": 11101396, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7016832, 40.4342179], [-3.7016493, 40.434089]], "type": "LineString"}, "id": "(98956258, 4229127178, 0)", "properties": {"highway": "residential", "junction": null, "lanes": "4", "length": 14.617, "maxspeed": "50", "name": "Calle de Trafalgar", "oneway": false, "osmid": 24222352, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7016832, 40.4342179], [-3.7017245, 40.4343505]], "type": "LineString"}, "id": "(98956258, 674477995, 0)", "properties": {"highway": "residential", "junction": null, "lanes": "4", "length": 15.153, "maxspeed": "50", "name": "Calle General \u00c1lvarez de Castro", "oneway": false, "osmid": 44737271, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7016832, 40.4342179], [-3.7014882, 40.4342652]], "type": "LineString"}, "id": "(98956258, 9157684325, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "6", "length": 17.322, "maxspeed": "50", "name": "Calle de Eloy Gonzalo", "oneway": false, "osmid": 219137730, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7016832, 40.4342179], [-3.7018469, 40.4341806]], "type": "LineString"}, "id": "(98956258, 2283361223, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "6", "length": 14.462, "maxspeed": "50", "name": "Calle de Eloy Gonzalo", "oneway": false, "osmid": 425082671, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7019266, 40.4348003], [-3.7018791, 40.4346956]], "type": "LineString"}, "id": "(98960966, 8455404372, 0)", "properties": {"highway": "residential", "junction": null, "lanes": "4", "length": 12.317, "maxspeed": "50", "name": "Calle General \u00c1lvarez de Castro", "oneway": false, "osmid": 44737271, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7017245, 40.4343505], [-3.7016832, 40.4342179]], "type": "LineString"}, "id": "(674477995, 98956258, 0)", "properties": {"highway": "residential", "junction": null, "lanes": "4", "length": 15.153, "maxspeed": "50", "name": "Calle General \u00c1lvarez de Castro", "oneway": false, "osmid": 44737271, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7017245, 40.4343505], [-3.7017784, 40.4344704]], "type": "LineString"}, "id": "(674477995, 5963987026, 0)", "properties": {"highway": "residential", "junction": null, "lanes": "4", "length": 14.091, "maxspeed": "50", "name": "Calle General \u00c1lvarez de Castro", "oneway": false, "osmid": 44737271, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7018469, 40.4341806], [-3.7016832, 40.4342179]], "type": "LineString"}, "id": "(2283361223, 98956258, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "6", "length": 14.462, "maxspeed": "50", "name": "Calle de Eloy Gonzalo", "oneway": false, "osmid": 425082671, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7016493, 40.434089], [-3.7016832, 40.4342179]], "type": "LineString"}, "id": "(4229127178, 98956258, 0)", "properties": {"highway": "residential", "junction": null, "lanes": "4", "length": 14.617, "maxspeed": "50", "name": "Calle de Trafalgar", "oneway": false, "osmid": 24222352, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7017784, 40.4344704], [-3.7017245, 40.4343505]], "type": "LineString"}, "id": "(5963987026, 674477995, 0)", "properties": {"highway": "residential", "junction": null, "lanes": "4", "length": 14.091, "maxspeed": "50", "name": "Calle General \u00c1lvarez de Castro", "oneway": false, "osmid": 44737271, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7017784, 40.4344704], [-3.7018791, 40.4346956]], "type": "LineString"}, "id": "(5963987026, 8455404372, 0)", "properties": {"highway": "residential", "junction": null, "lanes": "4", "length": 26.452, "maxspeed": "50", "name": "Calle General \u00c1lvarez de Castro", "oneway": false, "osmid": 44737271, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7018791, 40.4346956], [-3.7017784, 40.4344704]], "type": "LineString"}, "id": "(8455404372, 5963987026, 0)", "properties": {"highway": "residential", "junction": null, "lanes": "4", "length": 26.452, "maxspeed": "50", "name": "Calle General \u00c1lvarez de Castro", "oneway": false, "osmid": 44737271, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7018791, 40.4346956], [-3.7019266, 40.4348003]], "type": "LineString"}, "id": "(8455404372, 98960966, 0)", "properties": {"highway": "residential", "junction": null, "lanes": "4", "length": 12.317, "maxspeed": "50", "name": "Calle General \u00c1lvarez de Castro", "oneway": false, "osmid": 44737271, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7014882, 40.4342652], [-3.7016832, 40.4342179]], "type": "LineString"}, "id": "(9157684325, 98956258, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "6", "length": 17.322, "maxspeed": "50", "name": "Calle de Eloy Gonzalo", "oneway": false, "osmid": 219137730, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7027031, 40.433974], [-3.7028345, 40.4339407]], "type": "LineString"}, "id": "(98960521, 674477982, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "6", "length": 11.721, "maxspeed": "50", "name": "Calle de Eloy Gonzalo", "oneway": false, "osmid": 7971523, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7027031, 40.433974], [-3.7026769, 40.433868]], "type": "LineString"}, "id": "(98960521, 2283361221, 0)", "properties": {"highway": "residential", "junction": null, "lanes": "2", "length": 11.993, "maxspeed": "50", "name": "Calle del Cardenal Cisneros", "oneway": true, "osmid": 44336475, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7028345, 40.4339407], [-3.7027031, 40.433974]], "type": "LineString"}, "id": "(674477982, 98960521, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "6", "length": 11.721, "maxspeed": "50", "name": "Calle de Eloy Gonzalo", "oneway": false, "osmid": 7971523, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7028345, 40.4339407], [-3.7030512, 40.4338879]], "type": "LineString"}, "id": "(674477982, 5966607252, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "6", "length": 19.258, "maxspeed": "50", "name": "Calle de Eloy Gonzalo", "oneway": false, "osmid": 7971523, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7030512, 40.4338879], [-3.7028345, 40.4339407]], "type": "LineString"}, "id": "(5966607252, 674477982, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "6", "length": 19.258, "maxspeed": "50", "name": "Calle de Eloy Gonzalo", "oneway": false, "osmid": 7971523, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7041334, 40.4332082], [-3.7041275, 40.4333131]], "type": "LineString"}, "id": "(141862748, 1596698128, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "1", "length": 11.675, "maxspeed": "50", "name": "Calle de Fuencarral", "oneway": true, "osmid": 14459753, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7041334, 40.4332082], [-3.7041108, 40.4331527]], "type": "LineString"}, "id": "(141862748, 1591330245, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 6.461, "maxspeed": "50", "name": "Calle de Fuencarral", "oneway": false, "osmid": 107090824, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7038935, 40.4326593], [-3.7038154, 40.4326798]], "type": "LineString"}, "id": "(141881347, 1591330231, 0)", "properties": {"highway": "residential", "junction": null, "lanes": null, "length": 6.992, "maxspeed": null, "name": "Calle de Jord\u00e1n", "oneway": true, "osmid": 14460667, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7038935, 40.4326593], [-3.7040402, 40.4329937]], "type": "LineString"}, "id": "(141881347, 5321927325, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 39.202, "maxspeed": "50", "name": "Calle de Fuencarral", "oneway": false, "osmid": 107090824, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7041108, 40.4331527], [-3.7041334, 40.4332082]], "type": "LineString"}, "id": "(1591330245, 141862748, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 6.461, "maxspeed": "50", "name": "Calle de Fuencarral", "oneway": false, "osmid": 107090824, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7041108, 40.4331527], [-3.7040402, 40.4329937]], "type": "LineString"}, "id": "(1591330245, 5321927325, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 18.662, "maxspeed": "50", "name": "Calle de Fuencarral", "oneway": false, "osmid": 107090824, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7040402, 40.4329937], [-3.7041108, 40.4331527]], "type": "LineString"}, "id": "(5321927325, 1591330245, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 18.662, "maxspeed": "50", "name": "Calle de Fuencarral", "oneway": false, "osmid": 107090824, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7040402, 40.4329937], [-3.7038935, 40.4326593]], "type": "LineString"}, "id": "(5321927325, 141881347, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 39.202, "maxspeed": "50", "name": "Calle de Fuencarral", "oneway": false, "osmid": 107090824, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.703254, 40.4311938], [-3.7033317, 40.4313707]], "type": "LineString"}, "id": "(141862745, 8422629018, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 20.741, "maxspeed": "50", "name": "Calle de Fuencarral", "oneway": false, "osmid": 49600302, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7034188, 40.4315745], [-3.703331, 40.4315985]], "type": "LineString"}, "id": "(141881777, 1591330186, 0)", "properties": {"highway": "residential", "junction": null, "lanes": "1", "length": 7.896, "maxspeed": null, "name": "Calle de Olid", "oneway": true, "osmid": 14460716, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7034188, 40.4315745], [-3.7034782, 40.4317015]], "type": "LineString"}, "id": "(141881777, 298151462, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 14.99, "maxspeed": "50", "name": "Calle de Fuencarral", "oneway": false, "osmid": 49600302, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7034188, 40.4315745], [-3.703396, 40.4315184]], "type": "LineString"}, "id": "(141881777, 8422578416, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 6.53, "maxspeed": "50", "name": "Calle de Fuencarral", "oneway": false, "osmid": 49600302, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7034782, 40.4317015], [-3.7034188, 40.4315745]], "type": "LineString"}, "id": "(298151462, 141881777, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 14.99, "maxspeed": "50", "name": "Calle de Fuencarral", "oneway": false, "osmid": 49600302, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.703396, 40.4315184], [-3.7034188, 40.4315745]], "type": "LineString"}, "id": "(8422578416, 141881777, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 6.53, "maxspeed": "50", "name": "Calle de Fuencarral", "oneway": false, "osmid": 49600302, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.703396, 40.4315184], [-3.7033763, 40.4314737]], "type": "LineString"}, "id": "(8422578416, 8422629017, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 5.243, "maxspeed": "50", "name": "Calle de Fuencarral", "oneway": false, "osmid": 49600302, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7033763, 40.4314737], [-3.703396, 40.4315184]], "type": "LineString"}, "id": "(8422629017, 8422578416, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 5.243, "maxspeed": "50", "name": "Calle de Fuencarral", "oneway": false, "osmid": 49600302, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7033763, 40.4314737], [-3.7033317, 40.4313707]], "type": "LineString"}, "id": "(8422629017, 8422629018, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 12.059, "maxspeed": "50", "name": "Calle de Fuencarral", "oneway": false, "osmid": 49600302, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7033317, 40.4313707], [-3.7033763, 40.4314737]], "type": "LineString"}, "id": "(8422629018, 8422629017, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 12.059, "maxspeed": "50", "name": "Calle de Fuencarral", "oneway": false, "osmid": 49600302, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7033317, 40.4313707], [-3.703254, 40.4311938]], "type": "LineString"}, "id": "(8422629018, 141862745, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 20.741, "maxspeed": "50", "name": "Calle de Fuencarral", "oneway": false, "osmid": 49600302, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7024674, 40.4293825], [-3.7025941, 40.4296798]], "type": "LineString"}, "id": "(25934572, 8422578415, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 34.754, "maxspeed": "50", "name": "Calle de Fuencarral", "oneway": false, "osmid": 49600302, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7025941, 40.4296798], [-3.7024674, 40.4293825]], "type": "LineString"}, "id": "(8422578415, 25934572, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 34.754, "maxspeed": "50", "name": "Calle de Fuencarral", "oneway": false, "osmid": 49600302, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7054227, 40.4295988], [-3.7054422, 40.4296835]], "type": "LineString"}, "id": "(25934861, 2025638803, 0)", "properties": {"highway": "primary", "junction": null, "lanes": "4", "length": 9.562, "maxspeed": "50", "name": "Glorieta de Ruiz Jim\u00e9nez", "oneway": true, "osmid": 33580892, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7052449, 40.4295685], [-3.7054227, 40.4295988]], "type": "LineString"}, "id": "(1211171045, 25934861, 0)", "properties": {"highway": "primary", "junction": null, "lanes": "4", "length": 15.422, "maxspeed": "50", "name": "Calle de Carranza", "oneway": true, "osmid": 4950642, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7049656, 40.4295194], [-3.7052449, 40.4295685]], "type": "LineString"}, "id": "(5970484996, 1211171045, 0)", "properties": {"highway": "primary", "junction": null, "lanes": "4", "length": 24.263, "maxspeed": "50", "name": "Calle de Carranza", "oneway": true, "osmid": 4950642, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7060933, 40.4294304], [-3.7060547, 40.4293976]], "type": "LineString"}, "id": "(25934830, 5970485003, 0)", "properties": {"highway": "primary", "junction": null, "lanes": "4", "length": 4.897, "maxspeed": "50", "name": "Glorieta de Ruiz Jim\u00e9nez", "oneway": true, "osmid": 33580890, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7059832, 40.4293517], [-3.7058554, 40.429315]], "type": "LineString"}, "id": "(25934832, 2973015547, 0)", "properties": {"highway": "primary", "junction": null, "lanes": "4", "length": 11.561, "maxspeed": "50", "name": "Glorieta de Ruiz Jim\u00e9nez", "oneway": true, "osmid": 43410324, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7059832, 40.4293517], [-3.7059559, 40.4292147]], "type": "LineString"}, "id": "(25934832, 2973015552, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 15.408, "maxspeed": "50", "name": "Calle de San Bernardo", "oneway": true, "osmid": 258516122, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7058211, 40.4293116], [-3.7057469, 40.4293127]], "type": "LineString"}, "id": "(25934833, 25934835, 0)", "properties": {"highway": "primary", "junction": null, "lanes": "4", "length": 6.282, "maxspeed": "50", "name": "Glorieta de Ruiz Jim\u00e9nez", "oneway": true, "osmid": 551051375, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7059619, 40.4291227], [-3.7059153, 40.4292109]], "type": "LineString"}, "id": "(25934841, 2973015555, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 10.571, "maxspeed": "50", "name": "Calle de San Bernardo", "oneway": true, "osmid": 258516123, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7060346, 40.4293805], [-3.7059832, 40.4293517]], "type": "LineString"}, "id": "(2025638795, 25934832, 0)", "properties": {"highway": "primary", "junction": null, "lanes": "4", "length": 5.402, "maxspeed": "50", "name": "Glorieta de Ruiz Jim\u00e9nez", "oneway": true, "osmid": 33580890, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7058554, 40.429315], [-3.7058211, 40.4293116]], "type": "LineString"}, "id": "(2973015547, 25934833, 0)", "properties": {"highway": "primary", "junction": null, "lanes": "4", "length": 2.928, "maxspeed": "50", "name": "Glorieta de Ruiz Jim\u00e9nez", "oneway": true, "osmid": 43410324, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7059559, 40.4292147], [-3.7059619, 40.4291227]], "type": "LineString"}, "id": "(2973015552, 25934841, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 10.243, "maxspeed": "50", "name": "Calle de San Bernardo", "oneway": true, "osmid": 258516122, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7059153, 40.4292109], [-3.7058211, 40.4293116]], "type": "LineString"}, "id": "(2973015555, 25934833, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 13.746, "maxspeed": "50", "name": "Calle de San Bernardo", "oneway": true, "osmid": 258516123, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7060547, 40.4293976], [-3.7060346, 40.4293805]], "type": "LineString"}, "id": "(5970485003, 2025638795, 0)", "properties": {"highway": "primary", "junction": null, "lanes": "4", "length": 2.551, "maxspeed": "50", "name": "Glorieta de Ruiz Jim\u00e9nez", "oneway": true, "osmid": 33580890, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.706452, 40.4271719], [-3.7064863, 40.4270961]], "type": "LineString"}, "id": "(22023361, 674492248, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 8.915, "maxspeed": "50", "name": "Calle de San Bernardo", "oneway": false, "osmid": 293712004, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.706452, 40.4271719], [-3.7064342, 40.4272274]], "type": "LineString"}, "id": "(22023361, 5963987036, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 6.353, "maxspeed": "50", "name": "Calle de San Bernardo", "oneway": false, "osmid": 293712004, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7063529, 40.4274811], [-3.7064342, 40.4272274]], "type": "LineString"}, "id": "(26067273, 5963987036, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 29.037, "maxspeed": "50", "name": "Calle de San Bernardo", "oneway": false, "osmid": 293712004, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7064863, 40.4270961], [-3.706452, 40.4271719]], "type": "LineString"}, "id": "(674492248, 22023361, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 8.915, "maxspeed": "50", "name": "Calle de San Bernardo", "oneway": false, "osmid": 293712004, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7064342, 40.4272274], [-3.706452, 40.4271719]], "type": "LineString"}, "id": "(5963987036, 22023361, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 6.353, "maxspeed": "50", "name": "Calle de San Bernardo", "oneway": false, "osmid": 293712004, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7064342, 40.4272274], [-3.7063529, 40.4274811]], "type": "LineString"}, "id": "(5963987036, 26067273, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 29.037, "maxspeed": "50", "name": "Calle de San Bernardo", "oneway": false, "osmid": 293712004, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7073834, 40.4253396], [-3.7073903, 40.4252931]], "type": "LineString"}, "id": "(26066555, 5963987037, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 5.203, "maxspeed": "50", "name": "Calle de San Bernardo", "oneway": false, "osmid": 422999624, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7074215, 40.425082], [-3.7074196, 40.4250353]], "type": "LineString"}, "id": "(26066556, 5970484995, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 5.195, "maxspeed": "50", "name": "Calle de San Bernardo", "oneway": false, "osmid": 422999624, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7074215, 40.425082], [-3.7073903, 40.4252931]], "type": "LineString"}, "id": "(26066556, 5963987037, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 23.621, "maxspeed": "50", "name": "Calle de San Bernardo", "oneway": false, "osmid": 422999624, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7073903, 40.4252931], [-3.7074215, 40.425082]], "type": "LineString"}, "id": "(5963987037, 26066556, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 23.621, "maxspeed": "50", "name": "Calle de San Bernardo", "oneway": false, "osmid": 422999624, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7073903, 40.4252931], [-3.7073834, 40.4253396]], "type": "LineString"}, "id": "(5963987037, 26066555, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 5.203, "maxspeed": "50", "name": "Calle de San Bernardo", "oneway": false, "osmid": 422999624, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7074196, 40.4250353], [-3.7074215, 40.425082]], "type": "LineString"}, "id": "(5970484995, 26066556, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "2", "length": 5.195, "maxspeed": "50", "name": "Calle de San Bernardo", "oneway": false, "osmid": 422999624, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7077769, 40.422188], [-3.7077983, 40.4220944]], "type": "LineString"}, "id": "(26066664, 5970484994, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "3", "length": 10.564, "maxspeed": "30", "name": "Calle de San Bernardo", "oneway": false, "osmid": 293712003, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7077769, 40.422188], [-3.7076855, 40.4225137]], "type": "LineString"}, "id": "(26066664, 5963987038, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "3", "length": 37.033, "maxspeed": "30", "name": "Calle de San Bernardo", "oneway": false, "osmid": 293712003, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7076855, 40.4225137], [-3.7077769, 40.422188]], "type": "LineString"}, "id": "(5963987038, 26066664, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "3", "length": 37.033, "maxspeed": "30", "name": "Calle de San Bernardo", "oneway": false, "osmid": 293712003, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7077983, 40.4220944], [-3.7077769, 40.422188]], "type": "LineString"}, "id": "(5970484994, 26066664, 0)", "properties": {"highway": "tertiary", "junction": null, "lanes": "3", "length": 10.564, "maxspeed": "30", "name": "Calle de San Bernardo", "oneway": false, "osmid": 293712003, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7094676, 40.4230781], [-3.7097345, 40.4232494]], "type": "LineString"}, "id": "(3070088284, 3070088287, 0)", "properties": {"highway": "residential", "junction": null, "lanes": null, "length": 29.551, "maxspeed": null, "name": "Calle de Ricardo Le\u00f3n", "oneway": true, "osmid": 32860469, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7097345, 40.4232494], [-3.7097792, 40.4232802]], "type": "LineString"}, "id": "(3070088287, 370152153, 0)", "properties": {"highway": "residential", "junction": null, "lanes": null, "length": 5.104, "maxspeed": null, "name": "Calle de Ricardo Le\u00f3n", "oneway": true, "osmid": 32860469, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7135758, 40.414837], [-3.7136163, 40.4145119]], "type": "LineString"}, "id": "(5970484992, 26213500, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "2", "length": 36.312, "maxspeed": null, "name": "Calle de Bail\u00e9n", "oneway": true, "osmid": 7726329, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7136875, 40.4117816], [-3.7137461, 40.4117887]], "type": "LineString"}, "id": "(26480841, 4437851362, 0)", "properties": {"highway": "residential", "junction": null, "lanes": "1", "length": 5.024, "maxspeed": null, "name": "Calle de Don Pedro", "oneway": false, "osmid": 4519461, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7138442, 40.4118007], [-3.7137461, 40.4117887]], "type": "LineString"}, "id": "(3912981164, 4437851362, 0)", "properties": {"highway": "residential", "junction": null, "lanes": "1", "length": 8.412, "maxspeed": null, "name": "Calle de Don Pedro", "oneway": false, "osmid": 4519461, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7138442, 40.4118007], [-3.7139028, 40.4118077]], "type": "LineString"}, "id": "(3912981164, 3912981165, 0)", "properties": {"highway": "residential", "junction": null, "lanes": "1", "length": 5.022, "maxspeed": null, "name": "Calle de Don Pedro", "oneway": false, "osmid": 4519461, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7138442, 40.4118007], [-3.7138322, 40.4119074]], "type": "LineString"}, "id": "(3912981164, 5301591310, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "2", "length": 11.908, "maxspeed": null, "name": "Calle de Bail\u00e9n", "oneway": true, "osmid": 387848379, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7139028, 40.4118077], [-3.7138442, 40.4118007]], "type": "LineString"}, "id": "(3912981165, 3912981164, 0)", "properties": {"highway": "residential", "junction": null, "lanes": "1", "length": 5.022, "maxspeed": null, "name": "Calle de Don Pedro", "oneway": false, "osmid": 4519461, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7137461, 40.4117887], [-3.7136875, 40.4117816]], "type": "LineString"}, "id": "(4437851362, 26480841, 0)", "properties": {"highway": "residential", "junction": null, "lanes": "1", "length": 5.024, "maxspeed": null, "name": "Calle de Don Pedro", "oneway": false, "osmid": 4519461, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7137461, 40.4117887], [-3.7138442, 40.4118007]], "type": "LineString"}, "id": "(4437851362, 3912981164, 0)", "properties": {"highway": "residential", "junction": null, "lanes": "1", "length": 8.412, "maxspeed": null, "name": "Calle de Don Pedro", "oneway": false, "osmid": 4519461, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7138912, 40.4119117], [-3.7139028, 40.4118077]], "type": "LineString"}, "id": "(5301591309, 3912981165, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "2", "length": 11.606, "maxspeed": "50", "name": "Calle de Bail\u00e9n", "oneway": true, "osmid": 686216025, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7138759, 40.4120694], [-3.7138912, 40.4119117]], "type": "LineString"}, "id": "(5970484989, 5301591309, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "2", "length": 17.583, "maxspeed": null, "name": "Calle de Bail\u00e9n", "oneway": true, "osmid": 4519460, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7137354, 40.4099877], [-3.713832, 40.4102149]], "type": "LineString"}, "id": "(26482407, 26482408, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "3", "length": 26.554, "maxspeed": null, "name": "Gran V\u00eda de San Francisco", "oneway": true, "osmid": 7972314, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.713832, 40.4102149], [-3.7138409, 40.4102691]], "type": "LineString"}, "id": "(26482408, 4437834368, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "3", "length": 6.074, "maxspeed": null, "name": "Gran V\u00eda de San Francisco", "oneway": true, "osmid": 7972314, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7138392, 40.4103206], [-3.7137721, 40.4103599]], "type": "LineString"}, "id": "(26482409, 2017305758, 0)", "properties": {"highway": "residential", "junction": null, "lanes": "1", "length": 7.167, "maxspeed": "50", "name": "Gran V\u00eda de San Francisco", "oneway": true, "osmid": 191148730, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7137721, 40.4103599], [-3.7137329, 40.4103666]], "type": "LineString"}, "id": "(2017305758, 4437834374, 0)", "properties": {"highway": "residential", "junction": null, "lanes": "1", "length": 3.402, "maxspeed": "50", "name": "Gran V\u00eda de San Francisco", "oneway": true, "osmid": 191148730, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7138409, 40.4102691], [-3.7138392, 40.4103206]], "type": "LineString"}, "id": "(4437834368, 26482409, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "3", "length": 5.728, "maxspeed": null, "name": "Gran V\u00eda de San Francisco", "oneway": true, "osmid": 7972314, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7131911, 40.4087033], [-3.7130662, 40.4085343]], "type": "LineString"}, "id": "(318914928, 26482402, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "3", "length": 21.563, "maxspeed": null, "name": "Gran V\u00eda de San Francisco", "oneway": true, "osmid": 7732932, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7131911, 40.4087033], [-3.713258, 40.4086082]], "type": "LineString"}, "id": "(318914928, 3733309153, 0)", "properties": {"highway": "residential", "junction": null, "lanes": null, "length": 11.996, "maxspeed": null, "name": "Calle del \u00c1guila", "oneway": false, "osmid": 29001100, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7133135, 40.4085254], [-3.7133463, 40.4084759]], "type": "LineString"}, "id": "(318914940, 3907316588, 0)", "properties": {"highway": "residential", "junction": null, "lanes": null, "length": 6.165, "maxspeed": null, "name": "Calle del \u00c1guila", "oneway": false, "osmid": 29001100, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7133135, 40.4085254], [-3.713258, 40.4086082]], "type": "LineString"}, "id": "(318914940, 3733309153, 0)", "properties": {"highway": "residential", "junction": null, "lanes": null, "length": 10.337, "maxspeed": null, "name": "Calle del \u00c1guila", "oneway": false, "osmid": 29001100, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.713258, 40.4086082], [-3.7133135, 40.4085254]], "type": "LineString"}, "id": "(3733309153, 318914940, 0)", "properties": {"highway": "residential", "junction": null, "lanes": null, "length": 10.337, "maxspeed": null, "name": "Calle del \u00c1guila", "oneway": false, "osmid": 29001100, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.713258, 40.4086082], [-3.7131911, 40.4087033]], "type": "LineString"}, "id": "(3733309153, 318914928, 0)", "properties": {"highway": "residential", "junction": null, "lanes": null, "length": 11.996, "maxspeed": null, "name": "Calle del \u00c1guila", "oneway": false, "osmid": 29001100, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7133463, 40.4084759], [-3.7133135, 40.4085254]], "type": "LineString"}, "id": "(3907316588, 318914940, 0)", "properties": {"highway": "residential", "junction": null, "lanes": null, "length": 6.165, "maxspeed": null, "name": "Calle del \u00c1guila", "oneway": false, "osmid": 29001100, "reversed": true}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7132841, 40.4088783], [-3.7131911, 40.4087033]], "type": "LineString"}, "id": "(5970484987, 318914928, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "3", "length": 20.992, "maxspeed": null, "name": "Gran V\u00eda de San Francisco", "oneway": true, "osmid": 7732932, "reversed": false}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.7122633, 40.4076697], [-3.7124843, 40.4079596]], "type": "LineString"}, "id": "(5970506961, 319482828, 0)", "properties": {"highway": "secondary", "junction": null, "lanes": "3", "length": 37.273, "maxspeed": null, "name": "Gran V\u00eda de San Francisco", "oneway": true, "osmid": 7972314, "reversed": false}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            var feature_group_343e249cf74c9cdcb2bed2da80778636 = L.featureGroup(
+                {}
+            ).addTo(map_d5bc704c4ce740ab73883b161e9d010a);
+        
+    
+        function geo_json_709fe5aff00db12a7bd8a842f4749fd8_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "blue", "weight": 7};
+            }
+        }
+
+        function geo_json_709fe5aff00db12a7bd8a842f4749fd8_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_709fe5aff00db12a7bd8a842f4749fd8 = L.geoJson(null, {
+                onEachFeature: geo_json_709fe5aff00db12a7bd8a842f4749fd8_onEachFeature,
+            
+                style: geo_json_709fe5aff00db12a7bd8a842f4749fd8_styler,
+        });
+
+        function geo_json_709fe5aff00db12a7bd8a842f4749fd8_add (data) {
+            geo_json_709fe5aff00db12a7bd8a842f4749fd8
+                .addData(data)
+                .addTo(feature_group_343e249cf74c9cdcb2bed2da80778636);
+        }
+            geo_json_709fe5aff00db12a7bd8a842f4749fd8_add({"features": [{"geometry": {"coordinates": [[-3.69699993374347, 40.455057475252495], [-3.69707498756029, 40.455163302346705], [-3.69647496770345, 40.4551433027005], [-3.69608495575145, 40.455133302057], [-3.69606495529258, 40.4552933015118], [-3.69584120098867, 40.456348225111505], [-3.6959449409436, 40.4565532949248], [-3.69664496445787, 40.4565832953472], [-3.69673496762719, 40.4565932946626], [-3.69686497288702, 40.4566032939848], [-3.69698497569484, 40.4566132939903], [-3.6970449772343, 40.45662329496351], [-3.69720498169827, 40.4566432934805], [-3.6976249956726, 40.45672329480409], [-3.69768637548775, 40.456859641607295], [-3.69803500883134, 40.4568232935304], [-3.69817501299268, 40.456853292348306], [-3.69886503605499, 40.4570032930982], [-3.69958505824384, 40.457163291388305], [-3.69971506194741, 40.4571932915761], [-3.70029508196644, 40.4573232906692], [-3.70124511017616, 40.4575432888326], [-3.70144511774079, 40.4576032897854], [-3.70159512242998, 40.4574232894847], [-3.70188513667262, 40.45695329186871], [-3.70223276011779, 40.4566880116374], [-3.70217514866924, 40.4564132952125], [-3.70228515626484, 40.4561532975852], [-3.70241516311396, 40.4558332988136], [-3.70268517733355, 40.4551633021646], [-3.70281518449706, 40.4546333057476], [-3.70289519026898, 40.4541933077395], [-3.70293519168785, 40.4539633088727], [-3.70299519810043, 40.45357331150031], [-3.70308520372081, 40.4529733145006], [-3.70315521098212, 40.452473317378], [-3.70319521266187, 40.45222332032169], [-3.70323521753151, 40.451953321337506], [-3.70325521832494, 40.4518333227098], [-3.70352686469163, 40.45141890914329], [-3.70335522758377, 40.4511633255967], [-3.70342523332052, 40.4506633287238], [-3.70346523559947, 40.450423329143504], [-3.70351523852606, 40.4500733309566], [-3.70359524670842, 40.4495333342134], [-3.70364524978171, 40.4492133371104], [-3.70387992549458, 40.4490834352157], [-3.70371525513572, 40.44874333945089], [-3.7037552589367, 40.448473340142094], [-3.70382526358606, 40.4480333424616], [-3.70385526711218, 40.447783344741296], [-3.70389527035468, 40.447523346845294], [-3.7039252726789, 40.447273346894], [-3.70398527358708, 40.4472733477474], [-3.7041852813274, 40.447113347966], [-3.70418528203413, 40.4470733480095], [-3.70407527901458, 40.4469133490977], [-3.70402527846798, 40.4468933504651], [-3.70397527854263, 40.4466033519734], [-3.70397528273788, 40.446163354616], [-3.70411263459893, 40.4457036479186], [-3.70400528808281, 40.4455533571128], [-3.70401529039831, 40.44513335962711], [-3.70403529651972, 40.44445336333911], [-3.70405529879584, 40.443983366721], [-3.70424624602124, 40.44349563101031], [-3.70407530457015, 40.4433633699884], [-3.70410531130514, 40.442413375880705], [-3.70410531108588, 40.4422433760835], [-3.70411531333971, 40.4420033785744], [-3.70424614780829, 40.44178842608169], [-3.70412531447669, 40.4416333790346], [-3.70420532590719, 40.4394233931076], [-3.70421532581203, 40.4392733937166], [-3.70422532793144, 40.4390033942862], [-3.70423532944386, 40.438763396640496], [-3.70407532560759, 40.4387533965716], [-3.70371188570495, 40.43860699148409], [-3.70264527735872, 40.4386933970016], [-3.70273528653881, 40.437263404290306], [-3.70294529330682, 40.437163404902], [-3.70279529017821, 40.436993405478], [-3.70276528995544, 40.4367834077699], [-3.70288944481674, 40.4366209962136], [-3.702435282958, 40.436033411913], [-3.70192527014825, 40.4348834177846], [-3.70200707605539, 40.4345362584982], [-3.70166526450422, 40.4343234204626], [-3.70178526871489, 40.434293421056], [-3.70275530012328, 40.4340634220996], [-3.70312296933865, 40.4341330911583], [-3.70378533623926, 40.433803424043695], [-3.70404534510763, 40.4338234234532], [-3.70444535797826, 40.4338234247991], [-3.70449536034879, 40.4337134249536], [-3.70447536002103, 40.4336234257074], [-3.70433535611598, 40.4335134254131], [-3.70428535377379, 40.4335034267091], [-3.7041153489096, 40.4332634282494], [-3.70418722736873, 40.433018514938], [-3.70389534407855, 40.432753430039], [-3.70369533943462, 40.4323034327893], [-3.70365533810108, 40.4322034324294], [-3.70347533422992, 40.4318034357594], [-3.70341533395646, 40.4316534364485], [-3.70357737695531, 40.4315942930918], [-3.70326533037072, 40.4313234372086], [-3.7032453288766, 40.4312734377762], [-3.70321532938953, 40.4312034382675], [-3.70282531878407, 40.4302934445116], [-3.70278531955322, 40.4302034442274], [-3.70268640659656, 40.42956366506], [-3.70246531189729, 40.4294634477657], [-3.70240531050511, 40.4292334493635], [-3.70272532207731, 40.4291734500184], [-3.70282532537173, 40.4291834505624], [-3.70325533953932, 40.4292534502196], [-3.70366535265814, 40.4293234499485], [-3.70475538694737, 40.4295134476867], [-3.70495149155154, 40.4297075551481], [-3.70525540248153, 40.4295934486354], [-3.70549541146062, 40.4296334476324], [-3.70571541759497, 40.4299434465704], [-3.70612543162782, 40.42971344720569], [-3.70620950448422, 40.429375564727906], [-3.70589542464784, 40.429443449592], [-3.705915425524, 40.429353449709], [-3.70599543079106, 40.4290134515303], [-3.70615543858063, 40.4284734538656], [-3.70622544150019, 40.428163457291], [-3.706235443487, 40.4280934570474], [-3.70634544791509, 40.4275734591492], [-3.70645545256533, 40.4272734618472], [-3.70648545334854, 40.4272034621782], [-3.70662309780189, 40.4272108763476], [-3.70674546581199, 40.426693463909], [-3.70703547680136, 40.426173467272704], [-3.70722548396757, 40.4258334704956], [-3.70731548930356, 40.4256634697984], [-3.70736549144287, 40.4255334704604], [-3.70741549264796, 40.4253734730938], [-3.70743549328708, 40.425173473039], [-3.70749733836881, 40.4251334623991], [-3.7074054969807, 40.4244334782088], [-3.7074054971238, 40.424353478002], [-3.70743549982486, 40.4240234792898], [-3.70747550168023, 40.4235134824825], [-3.70749550476176, 40.42329348420991], [-3.70751550577699, 40.4231634844023], [-3.70759550988487, 40.422853486671], [-3.70763551144292, 40.422703486902705], [-3.70772551717202, 40.422303489399106], [-3.70786357146234, 40.4221807674038], [-3.70787552326583, 40.4218134916572], [-3.70797552798532, 40.4216734926805], [-3.70916556399114, 40.4224134900882], [-3.70970295878423, 40.4229938347379], [-3.71015559413051, 40.423043485128], [-3.71054560437335, 40.423273484158095], [-3.71088561487965, 40.42348348387289], [-3.71114562558114, 40.4233334836028], [-3.71123562832113, 40.4232834839918], [-3.71170564407083, 40.423013485338096], [-3.71201389608892, 40.4230337021356], [-3.7121156599089, 40.4227834865701], [-3.71263567870673, 40.4224834887104], [-3.71275568164149, 40.4224134888037], [-3.71289568790651, 40.4222834894526], [-3.71295569113344, 40.422203490963], [-3.71317569770783, 40.4223334895943], [-3.71337570350366, 40.4221934919297], [-3.71323569979093, 40.421973492394], [-3.71313569698939, 40.4219234919154], [-3.71302569522386, 40.421743493305506], [-3.71296569503735, 40.4208434985944], [-3.71287569319513, 40.420483500107906], [-3.71288569557934, 40.4204035015194], [-3.71289569682025, 40.4203335011797], [-3.71297569977174, 40.419673506101105], [-3.71332572471258, 40.4166635215348], [-3.71336572916564, 40.416323524847], [-3.71339572916783, 40.416153524833504], [-3.71345573393726, 40.415693528678304], [-3.71347573407333, 40.4155035288498], [-3.71348573672983, 40.4153935298887], [-3.71349573617869, 40.415293531396], [-3.71351573765703, 40.4151235318938], [-3.71369669044073, 40.4149332302404], [-3.71357574207705, 40.41464353304671], [-3.71359574291536, 40.4144835356192], [-3.71365574654919, 40.4139935367818], [-3.71370575256994, 40.4135035406569], [-3.71375575401497, 40.4131035425486], [-3.71376575492649, 40.4130035434362], [-3.71382575933334, 40.41239354606049], [-3.71384576206542, 40.412253548333], [-3.71395037815496, 40.412165890557695], [-3.7138757634692, 40.4119735496465], [-3.71388576307331, 40.411883549321], [-3.71391576687892, 40.4115535521525], [-3.71395576958206, 40.4111435545288], [-3.71395577037224, 40.4110535558954], [-3.7139957706052, 40.410933555606896], [-3.7139557719934, 40.4107835561424], [-3.71399577279122, 40.410723556401294], [-3.71395577164323, 40.410623557594306], [-3.7138957715768, 40.4104035588751], [-3.71389577105301, 40.4102835583084], [-3.71398706561636, 40.4100575476831], [-3.71370576718505, 40.4099035622234], [-3.7135957628601, 40.409683563565], [-3.71345576133097, 40.40939356382071], [-3.71341575969565, 40.4093135646272], [-3.71337433375965, 40.4089532109843], [-3.71314575271822, 40.4088135676512], [-3.7130357497165, 40.4086535689812], [-3.7129157461222, 40.4084935701826], [-3.71281574401718, 40.40836357050009], [-3.71237599280285, 40.4075674584144]], "type": "LineString"}, "id": "5", "properties": {"shape_id": "003_B"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            var marker_6319a0901b5463e4c29757a90e085ee6 = L.marker(
+                [40.45501, -3.697],
+                {"name": "paradas"}
+            ).addTo(feature_group_343e249cf74c9cdcb2bed2da80778636);
+        
+    
+        var popup_9b40c2e0485b0cac49f9bb70e323748e = L.popup({"maxWidth": 300});
+
+        
+            var html_64d63c9307fcbb69b4e4dc312d7b3232 = $(`<div id="html_64d63c9307fcbb69b4e4dc312d7b3232" style="width: 100.0%; height: 100.0%;">San Amaro</div>`)[0];
+            popup_9b40c2e0485b0cac49f9bb70e323748e.setContent(html_64d63c9307fcbb69b4e4dc312d7b3232);
+        
+
+        marker_6319a0901b5463e4c29757a90e085ee6.bindPopup(popup_9b40c2e0485b0cac49f9bb70e323748e)
+        ;
+
+        
+    
+    
+            var marker_7499223d465a9a2360511d40f5bda0ea = L.marker(
+                [40.4563, -3.69584],
+                {"name": "paradas"}
+            ).addTo(feature_group_343e249cf74c9cdcb2bed2da80778636);
+        
+    
+        var popup_f322791c28b7acb94706f0faf699eda3 = L.popup({"maxWidth": 300});
+
+        
+            var html_728d63b91f64f4768f7430f5267bf094 = $(`<div id="html_728d63b91f64f4768f7430f5267bf094" style="width: 100.0%; height: 100.0%;">General Cabrera</div>`)[0];
+            popup_f322791c28b7acb94706f0faf699eda3.setContent(html_728d63b91f64f4768f7430f5267bf094);
+        
+
+        marker_7499223d465a9a2360511d40f5bda0ea.bindPopup(popup_f322791c28b7acb94706f0faf699eda3)
+        ;
+
+        
+    
+    
+            var marker_36f531036fa0f4d88adace246287ab71 = L.marker(
+                [40.45681, -3.69769],
+                {"name": "paradas"}
+            ).addTo(feature_group_343e249cf74c9cdcb2bed2da80778636);
+        
+    
+        var popup_4909ebb2054b0da91e8b7e572275bf7d = L.popup({"maxWidth": 300});
+
+        
+            var html_8d0c54813e8de97764f52763f0203345 = $(`<div id="html_8d0c54813e8de97764f52763f0203345" style="width: 100.0%; height: 100.0%;">Infanta Mercedes</div>`)[0];
+            popup_4909ebb2054b0da91e8b7e572275bf7d.setContent(html_8d0c54813e8de97764f52763f0203345);
+        
+
+        marker_36f531036fa0f4d88adace246287ab71.bindPopup(popup_4909ebb2054b0da91e8b7e572275bf7d)
+        ;
+
+        
+    
+    
+            var marker_c64521432ec8861dd290905917e49d16 = L.marker(
+                [40.45664, -3.70223],
+                {"name": "paradas"}
+            ).addTo(feature_group_343e249cf74c9cdcb2bed2da80778636);
+        
+    
+        var popup_0b570fff496bb9ee9ebe5b7a3f47ffd7 = L.popup({"maxWidth": 300});
+
+        
+            var html_9a8828330df71096bf04f727a1cf47a9 = $(`<div id="html_9a8828330df71096bf04f727a1cf47a9" style="width: 100.0%; height: 100.0%;">Bravo Murillo - Lope De Haro</div>`)[0];
+            popup_0b570fff496bb9ee9ebe5b7a3f47ffd7.setContent(html_9a8828330df71096bf04f727a1cf47a9);
+        
+
+        marker_c64521432ec8861dd290905917e49d16.bindPopup(popup_0b570fff496bb9ee9ebe5b7a3f47ffd7)
+        ;
+
+        
+    
+    
+            var marker_14abf6fb84747ab8b72b87a90c3521fe = L.marker(
+                [40.45462, -3.70301],
+                {"name": "paradas"}
+            ).addTo(feature_group_343e249cf74c9cdcb2bed2da80778636);
+        
+    
+        var popup_28f38f799d71204489d383f28cf87d5d = L.popup({"maxWidth": 300});
+
+        
+            var html_b824a1e01e319b70e3453a6e4fb01529 = $(`<div id="html_b824a1e01e319b70e3453a6e4fb01529" style="width: 100.0%; height: 100.0%;">Estrecho</div>`)[0];
+            popup_28f38f799d71204489d383f28cf87d5d.setContent(html_b824a1e01e319b70e3453a6e4fb01529);
+        
+
+        marker_14abf6fb84747ab8b72b87a90c3521fe.bindPopup(popup_28f38f799d71204489d383f28cf87d5d)
+        ;
+
+        
+    
+    
+            var marker_f7bd0966af871183240172edd935f9b8 = L.marker(
+                [40.45137, -3.70353],
+                {"name": "paradas"}
+            ).addTo(feature_group_343e249cf74c9cdcb2bed2da80778636);
+        
+    
+        var popup_fe5859452f09702d701dfd0b608ecb17 = L.popup({"maxWidth": 300});
+
+        
+            var html_f3732203bd0b970b7c68a76d0e1a1b3f = $(`<div id="html_f3732203bd0b970b7c68a76d0e1a1b3f" style="width: 100.0%; height: 100.0%;">Teruel</div>`)[0];
+            popup_fe5859452f09702d701dfd0b608ecb17.setContent(html_f3732203bd0b970b7c68a76d0e1a1b3f);
+        
+
+        marker_f7bd0966af871183240172edd935f9b8.bindPopup(popup_fe5859452f09702d701dfd0b608ecb17)
+        ;
+
+        
+    
+    
+            var marker_65af20c3fb3fce9912b377d5bedbb018 = L.marker(
+                [40.44904, -3.70388],
+                {"name": "paradas"}
+            ).addTo(feature_group_343e249cf74c9cdcb2bed2da80778636);
+        
+    
+        var popup_214376e9155edfe70f1d81e06fbfbfbe = L.popup({"maxWidth": 300});
+
+        
+            var html_1301b99ed2beb64a3a93e020759ca3e8 = $(`<div id="html_1301b99ed2beb64a3a93e020759ca3e8" style="width: 100.0%; height: 100.0%;">Alvarado</div>`)[0];
+            popup_214376e9155edfe70f1d81e06fbfbfbe.setContent(html_1301b99ed2beb64a3a93e020759ca3e8);
+        
+
+        marker_65af20c3fb3fce9912b377d5bedbb018.bindPopup(popup_214376e9155edfe70f1d81e06fbfbfbe)
+        ;
+
+        
+    
+    
+            var marker_ce780c812cf80039a84579a940767066 = L.marker(
+                [40.44566, -3.70411],
+                {"name": "paradas"}
+            ).addTo(feature_group_343e249cf74c9cdcb2bed2da80778636);
+        
+    
+        var popup_d0483647df3c4dfc41552b1353896fe1 = L.popup({"maxWidth": 300});
+
+        
+            var html_317005b8ff3d098365a5bcb50feba753 = $(`<div id="html_317005b8ff3d098365a5bcb50feba753" style="width: 100.0%; height: 100.0%;">Cuatro Caminos</div>`)[0];
+            popup_d0483647df3c4dfc41552b1353896fe1.setContent(html_317005b8ff3d098365a5bcb50feba753);
+        
+
+        marker_ce780c812cf80039a84579a940767066.bindPopup(popup_d0483647df3c4dfc41552b1353896fe1)
+        ;
+
+        
+    
+    
+            var marker_6d63cc7fd984afb8102c5aefe80e60ab = L.marker(
+                [40.44345, -3.70425],
+                {"name": "paradas"}
+            ).addTo(feature_group_343e249cf74c9cdcb2bed2da80778636);
+        
+    
+        var popup_39ef7ccca676b7f506b368a91a40e5ca = L.popup({"maxWidth": 300});
+
+        
+            var html_53829696ac1a47bcd456589bc4805ef7 = $(`<div id="html_53829696ac1a47bcd456589bc4805ef7" style="width: 100.0%; height: 100.0%;">Bravo Murillo - Cristóbal Bordiú</div>`)[0];
+            popup_39ef7ccca676b7f506b368a91a40e5ca.setContent(html_53829696ac1a47bcd456589bc4805ef7);
+        
+
+        marker_6d63cc7fd984afb8102c5aefe80e60ab.bindPopup(popup_39ef7ccca676b7f506b368a91a40e5ca)
+        ;
+
+        
+    
+    
+            var marker_4882a6cb26a94bd214e82b1f14930667 = L.marker(
+                [40.44175, -3.70425],
+                {"name": "paradas"}
+            ).addTo(feature_group_343e249cf74c9cdcb2bed2da80778636);
+        
+    
+        var popup_1cd1cec090a991c5ece2d7ba53524847 = L.popup({"maxWidth": 300});
+
+        
+            var html_f975c5a1f741e3c57920944ff631e966 = $(`<div id="html_f975c5a1f741e3c57920944ff631e966" style="width: 100.0%; height: 100.0%;">Juan Zorrilla</div>`)[0];
+            popup_1cd1cec090a991c5ece2d7ba53524847.setContent(html_f975c5a1f741e3c57920944ff631e966);
+        
+
+        marker_4882a6cb26a94bd214e82b1f14930667.bindPopup(popup_1cd1cec090a991c5ece2d7ba53524847)
+        ;
+
+        
+    
+    
+            var marker_2fcd49f3141a8b54c5bce768f31e9503 = L.marker(
+                [40.43856, -3.70371],
+                {"name": "paradas"}
+            ).addTo(feature_group_343e249cf74c9cdcb2bed2da80778636);
+        
+    
+        var popup_5d30a236a9b1576dcb013a70255ba9b4 = L.popup({"maxWidth": 300});
+
+        
+            var html_469dd1fb7629990cd488afebdeacc96c = $(`<div id="html_469dd1fb7629990cd488afebdeacc96c" style="width: 100.0%; height: 100.0%;">Canal</div>`)[0];
+            popup_5d30a236a9b1576dcb013a70255ba9b4.setContent(html_469dd1fb7629990cd488afebdeacc96c);
+        
+
+        marker_2fcd49f3141a8b54c5bce768f31e9503.bindPopup(popup_5d30a236a9b1576dcb013a70255ba9b4)
+        ;
+
+        
+    
+    
+            var marker_9a9213fed50a600ba73e968e18c7c601 = L.marker(
+                [40.43657, -3.70289],
+                {"name": "paradas"}
+            ).addTo(feature_group_343e249cf74c9cdcb2bed2da80778636);
+        
+    
+        var popup_65696fdb8efaa06c0690a4196aca7985 = L.popup({"maxWidth": 300});
+
+        
+            var html_e480182d71502f33905a26c3ee391808 = $(`<div id="html_e480182d71502f33905a26c3ee391808" style="width: 100.0%; height: 100.0%;">Glorieta Álvarez De Castro</div>`)[0];
+            popup_65696fdb8efaa06c0690a4196aca7985.setContent(html_e480182d71502f33905a26c3ee391808);
+        
+
+        marker_9a9213fed50a600ba73e968e18c7c601.bindPopup(popup_65696fdb8efaa06c0690a4196aca7985)
+        ;
+
+        
+    
+    
+            var marker_097a619900cd21de13e3946492544586 = L.marker(
+                [40.43449, -3.70201],
+                {"name": "paradas"}
+            ).addTo(feature_group_343e249cf74c9cdcb2bed2da80778636);
+        
+    
+        var popup_49e2e110fe5532b54955f61e8ad305f3 = L.popup({"maxWidth": 300});
+
+        
+            var html_7e5e91ef06b98ea81baa11c485c90568 = $(`<div id="html_7e5e91ef06b98ea81baa11c485c90568" style="width: 100.0%; height: 100.0%;">Álvarez De Castro - Eloy Gonzalo</div>`)[0];
+            popup_49e2e110fe5532b54955f61e8ad305f3.setContent(html_7e5e91ef06b98ea81baa11c485c90568);
+        
+
+        marker_097a619900cd21de13e3946492544586.bindPopup(popup_49e2e110fe5532b54955f61e8ad305f3)
+        ;
+
+        
+    
+    
+            var marker_eb2d463ff25a3b85a018d8e2ddb261c9 = L.marker(
+                [40.43409, -3.70312],
+                {"name": "paradas"}
+            ).addTo(feature_group_343e249cf74c9cdcb2bed2da80778636);
+        
+    
+        var popup_9ead02fd11bf1a9e8d32352fb974ad51 = L.popup({"maxWidth": 300});
+
+        
+            var html_3adc7d9143924f087f5afd2036f38f5e = $(`<div id="html_3adc7d9143924f087f5afd2036f38f5e" style="width: 100.0%; height: 100.0%;">Quevedo</div>`)[0];
+            popup_9ead02fd11bf1a9e8d32352fb974ad51.setContent(html_3adc7d9143924f087f5afd2036f38f5e);
+        
+
+        marker_eb2d463ff25a3b85a018d8e2ddb261c9.bindPopup(popup_9ead02fd11bf1a9e8d32352fb974ad51)
+        ;
+
+        
+    
+    
+            var marker_eadaa45be07f2950cfd45892c8785180 = L.marker(
+                [40.43297, -3.70419],
+                {"name": "paradas"}
+            ).addTo(feature_group_343e249cf74c9cdcb2bed2da80778636);
+        
+    
+        var popup_4d01c9b0fb4125de1f7ac40245b8d76a = L.popup({"maxWidth": 300});
+
+        
+            var html_64f50d1f5add51406cb6daf72d1b5920 = $(`<div id="html_64f50d1f5add51406cb6daf72d1b5920" style="width: 100.0%; height: 100.0%;">Quevedo</div>`)[0];
+            popup_4d01c9b0fb4125de1f7ac40245b8d76a.setContent(html_64f50d1f5add51406cb6daf72d1b5920);
+        
+
+        marker_eadaa45be07f2950cfd45892c8785180.bindPopup(popup_4d01c9b0fb4125de1f7ac40245b8d76a)
+        ;
+
+        
+    
+    
+            var marker_7bf0e5d0700261faef3b678bfd012b7a = L.marker(
+                [40.43155, -3.70358],
+                {"name": "paradas"}
+            ).addTo(feature_group_343e249cf74c9cdcb2bed2da80778636);
+        
+    
+        var popup_8b4f04d28daad3f5c73545db31ed499c = L.popup({"maxWidth": 300});
+
+        
+            var html_8c53817c11880912dc87975f69e26779 = $(`<div id="html_8c53817c11880912dc87975f69e26779" style="width: 100.0%; height: 100.0%;">Fuencarral - Alburquerque</div>`)[0];
+            popup_8b4f04d28daad3f5c73545db31ed499c.setContent(html_8c53817c11880912dc87975f69e26779);
+        
+
+        marker_7bf0e5d0700261faef3b678bfd012b7a.bindPopup(popup_8b4f04d28daad3f5c73545db31ed499c)
+        ;
+
+        
+    
+    
+            var marker_ce47619599ea69cbcca5248d680c955d = L.marker(
+                [40.42952, -3.70269],
+                {"name": "paradas"}
+            ).addTo(feature_group_343e249cf74c9cdcb2bed2da80778636);
+        
+    
+        var popup_2fb7b57b39c886fa83aa6033e0db1fda = L.popup({"maxWidth": 300});
+
+        
+            var html_414be2d88860ca8fabcfad7e3370bf59 = $(`<div id="html_414be2d88860ca8fabcfad7e3370bf59" style="width: 100.0%; height: 100.0%;">Fuencarral - Bilbao</div>`)[0];
+            popup_2fb7b57b39c886fa83aa6033e0db1fda.setContent(html_414be2d88860ca8fabcfad7e3370bf59);
+        
+
+        marker_ce47619599ea69cbcca5248d680c955d.bindPopup(popup_2fb7b57b39c886fa83aa6033e0db1fda)
+        ;
+
+        
+    
+    
+            var marker_08ad5b2d747eb04e04f7071b2fb7f85d = L.marker(
+                [40.42966, -3.70495],
+                {"name": "paradas"}
+            ).addTo(feature_group_343e249cf74c9cdcb2bed2da80778636);
+        
+    
+        var popup_00b182cdc94ea3207ef905a5aa58d361 = L.popup({"maxWidth": 300});
+
+        
+            var html_a8c30f3cb4eecbc2e26035122a5e1817 = $(`<div id="html_a8c30f3cb4eecbc2e26035122a5e1817" style="width: 100.0%; height: 100.0%;">Carranza</div>`)[0];
+            popup_00b182cdc94ea3207ef905a5aa58d361.setContent(html_a8c30f3cb4eecbc2e26035122a5e1817);
+        
+
+        marker_08ad5b2d747eb04e04f7071b2fb7f85d.bindPopup(popup_00b182cdc94ea3207ef905a5aa58d361)
+        ;
+
+        
+    
+    
+            var marker_b94391626ccd9734a9eac50e6d2a1b7a = L.marker(
+                [40.42933, -3.70621],
+                {"name": "paradas"}
+            ).addTo(feature_group_343e249cf74c9cdcb2bed2da80778636);
+        
+    
+        var popup_3d46a85344a3980ec1ebbc83d00d5cb7 = L.popup({"maxWidth": 300});
+
+        
+            var html_7d04e1553f906f2aa95c9dda59587a24 = $(`<div id="html_7d04e1553f906f2aa95c9dda59587a24" style="width: 100.0%; height: 100.0%;">Metro San Bernardo</div>`)[0];
+            popup_3d46a85344a3980ec1ebbc83d00d5cb7.setContent(html_7d04e1553f906f2aa95c9dda59587a24);
+        
+
+        marker_b94391626ccd9734a9eac50e6d2a1b7a.bindPopup(popup_3d46a85344a3980ec1ebbc83d00d5cb7)
+        ;
+
+        
+    
+    
+            var marker_072ec1e4dffa8c8a1b648f94a37c563e = L.marker(
+                [40.42716, -3.70662],
+                {"name": "paradas"}
+            ).addTo(feature_group_343e249cf74c9cdcb2bed2da80778636);
+        
+    
+        var popup_d22d239119cb58a9659e2be9df1a2f37 = L.popup({"maxWidth": 300});
+
+        
+            var html_2392a88eeac16978506fea87edc9c01b = $(`<div id="html_2392a88eeac16978506fea87edc9c01b" style="width: 100.0%; height: 100.0%;">San Bernardo - Dos De Mayo</div>`)[0];
+            popup_d22d239119cb58a9659e2be9df1a2f37.setContent(html_2392a88eeac16978506fea87edc9c01b);
+        
+
+        marker_072ec1e4dffa8c8a1b648f94a37c563e.bindPopup(popup_d22d239119cb58a9659e2be9df1a2f37)
+        ;
+
+        
+    
+    
+            var marker_08af1d0b6e157ee4c55f7824b5de3327 = L.marker(
+                [40.42509, -3.7075],
+                {"name": "paradas"}
+            ).addTo(feature_group_343e249cf74c9cdcb2bed2da80778636);
+        
+    
+        var popup_db4f94a8a757736a868fb648e870af31 = L.popup({"maxWidth": 300});
+
+        
+            var html_59fbde07ad7c3c38d7169911ba545f8d = $(`<div id="html_59fbde07ad7c3c38d7169911ba545f8d" style="width: 100.0%; height: 100.0%;">Noviciado</div>`)[0];
+            popup_db4f94a8a757736a868fb648e870af31.setContent(html_59fbde07ad7c3c38d7169911ba545f8d);
+        
+
+        marker_08af1d0b6e157ee4c55f7824b5de3327.bindPopup(popup_db4f94a8a757736a868fb648e870af31)
+        ;
+
+        
+    
+    
+            var marker_26739328245c8987d08a475ca3aeb29b = L.marker(
+                [40.42214, -3.70786],
+                {"name": "paradas"}
+            ).addTo(feature_group_343e249cf74c9cdcb2bed2da80778636);
+        
+    
+        var popup_7a3cecf6c5298d1b3203b6f28f9926bf = L.popup({"maxWidth": 300});
+
+        
+            var html_7f95fc4d3596b30a5fc7d9c8b476ff35 = $(`<div id="html_7f95fc4d3596b30a5fc7d9c8b476ff35" style="width: 100.0%; height: 100.0%;">Santo Domingo</div>`)[0];
+            popup_7a3cecf6c5298d1b3203b6f28f9926bf.setContent(html_7f95fc4d3596b30a5fc7d9c8b476ff35);
+        
+
+        marker_26739328245c8987d08a475ca3aeb29b.bindPopup(popup_7a3cecf6c5298d1b3203b6f28f9926bf)
+        ;
+
+        
+    
+    
+            var marker_87017616bbe6429165e8b69cdafa87fd = L.marker(
+                [40.42295, -3.7097],
+                {"name": "paradas"}
+            ).addTo(feature_group_343e249cf74c9cdcb2bed2da80778636);
+        
+    
+        var popup_d400a98533aba71072cc78ad834ded8a = L.popup({"maxWidth": 300});
+
+        
+            var html_7cf64bd6320ab964f54f3768266b1fe5 = $(`<div id="html_7cf64bd6320ab964f54f3768266b1fe5" style="width: 100.0%; height: 100.0%;">Gran Vía - Plaza De España</div>`)[0];
+            popup_d400a98533aba71072cc78ad834ded8a.setContent(html_7cf64bd6320ab964f54f3768266b1fe5);
+        
+
+        marker_87017616bbe6429165e8b69cdafa87fd.bindPopup(popup_d400a98533aba71072cc78ad834ded8a)
+        ;
+
+        
+    
+    
+            var marker_bf42c540d5e5aa1e1b9aca7aa418e814 = L.marker(
+                [40.42299, -3.71201],
+                {"name": "paradas"}
+            ).addTo(feature_group_343e249cf74c9cdcb2bed2da80778636);
+        
+    
+        var popup_e3fb616ab772bfc282afd7d10a715dd9 = L.popup({"maxWidth": 300});
+
+        
+            var html_48013177a7d636884098dd7881366bc1 = $(`<div id="html_48013177a7d636884098dd7881366bc1" style="width: 100.0%; height: 100.0%;">Plaza De España</div>`)[0];
+            popup_e3fb616ab772bfc282afd7d10a715dd9.setContent(html_48013177a7d636884098dd7881366bc1);
+        
+
+        marker_bf42c540d5e5aa1e1b9aca7aa418e814.bindPopup(popup_e3fb616ab772bfc282afd7d10a715dd9)
+        ;
+
+        
+    
+    
+            var marker_0c67e193a1c66ca84fc67fdf6d5af9a2 = L.marker(
+                [40.41489, -3.7137],
+                {"name": "paradas"}
+            ).addTo(feature_group_343e249cf74c9cdcb2bed2da80778636);
+        
+    
+        var popup_7ed1c5c90731f62b29caf1d681c73d3b = L.popup({"maxWidth": 300});
+
+        
+            var html_fc66c1ffc54926d7051eada33b5fcaa1 = $(`<div id="html_fc66c1ffc54926d7051eada33b5fcaa1" style="width: 100.0%; height: 100.0%;">Palacio Real</div>`)[0];
+            popup_7ed1c5c90731f62b29caf1d681c73d3b.setContent(html_fc66c1ffc54926d7051eada33b5fcaa1);
+        
+
+        marker_0c67e193a1c66ca84fc67fdf6d5af9a2.bindPopup(popup_7ed1c5c90731f62b29caf1d681c73d3b)
+        ;
+
+        
+    
+    
+            var marker_b5cd95310d2fd195cc8eab38bdb0a2f4 = L.marker(
+                [40.41212, -3.71395],
+                {"name": "paradas"}
+            ).addTo(feature_group_343e249cf74c9cdcb2bed2da80778636);
+        
+    
+        var popup_8785394b096bc94ac8dcf0e216590dfb = L.popup({"maxWidth": 300});
+
+        
+            var html_addcf1fdf6bb108ba72c7e1f09151bea = $(`<div id="html_addcf1fdf6bb108ba72c7e1f09151bea" style="width: 100.0%; height: 100.0%;">Las Vistillas</div>`)[0];
+            popup_8785394b096bc94ac8dcf0e216590dfb.setContent(html_addcf1fdf6bb108ba72c7e1f09151bea);
+        
+
+        marker_b5cd95310d2fd195cc8eab38bdb0a2f4.bindPopup(popup_8785394b096bc94ac8dcf0e216590dfb)
+        ;
+
+        
+    
+    
+            var marker_e60b2425d7ddd8b4e0a39214ba1b62da = L.marker(
+                [40.41001, -3.71399],
+                {"name": "paradas"}
+            ).addTo(feature_group_343e249cf74c9cdcb2bed2da80778636);
+        
+    
+        var popup_b0f5561d3b0de6dfd4efea9868d32c6c = L.popup({"maxWidth": 300});
+
+        
+            var html_62be33650e8ba29eddfd8e9dc5bf6f53 = $(`<div id="html_62be33650e8ba29eddfd8e9dc5bf6f53" style="width: 100.0%; height: 100.0%;">San Francisco El Grande</div>`)[0];
+            popup_b0f5561d3b0de6dfd4efea9868d32c6c.setContent(html_62be33650e8ba29eddfd8e9dc5bf6f53);
+        
+
+        marker_e60b2425d7ddd8b4e0a39214ba1b62da.bindPopup(popup_b0f5561d3b0de6dfd4efea9868d32c6c)
+        ;
+
+        
+    
+    
+            var marker_71f4e012f4e1b718cf0833cd125cf2ff = L.marker(
+                [40.40891, -3.71337],
+                {"name": "paradas"}
+            ).addTo(feature_group_343e249cf74c9cdcb2bed2da80778636);
+        
+    
+        var popup_2ee9856cbf8a7af843b5ce66529629c7 = L.popup({"maxWidth": 300});
+
+        
+            var html_6aa873fb6f3ee352b7e746d09dd2a3aa = $(`<div id="html_6aa873fb6f3ee352b7e746d09dd2a3aa" style="width: 100.0%; height: 100.0%;">La Paloma</div>`)[0];
+            popup_2ee9856cbf8a7af843b5ce66529629c7.setContent(html_6aa873fb6f3ee352b7e746d09dd2a3aa);
+        
+
+        marker_71f4e012f4e1b718cf0833cd125cf2ff.bindPopup(popup_2ee9856cbf8a7af843b5ce66529629c7)
+        ;
+
+        
+    
+    
+            var marker_4412cafaa2cbd98293bdd2438097c664 = L.marker(
+                [40.40752, -3.71238],
+                {"name": "paradas"}
+            ).addTo(feature_group_343e249cf74c9cdcb2bed2da80778636);
+        
+    
+        var popup_2c4ed736e44cf88b9fc9bb4882caad1d = L.popup({"maxWidth": 300});
+
+        
+            var html_f24c3ee36f54c9aa8cb7471144a95721 = $(`<div id="html_f24c3ee36f54c9aa8cb7471144a95721" style="width: 100.0%; height: 100.0%;">Puerta De Toledo</div>`)[0];
+            popup_2c4ed736e44cf88b9fc9bb4882caad1d.setContent(html_f24c3ee36f54c9aa8cb7471144a95721);
+        
+
+        marker_4412cafaa2cbd98293bdd2438097c664.bindPopup(popup_2c4ed736e44cf88b9fc9bb4882caad1d)
+        ;
+
+        
+    
+    
+            var feature_group_sub_group_f114dd0b826d20d6cd088d767c14898b = L.featureGroup.subGroup(
+                feature_group_343e249cf74c9cdcb2bed2da80778636
+            );
+            feature_group_sub_group_f114dd0b826d20d6cd088d767c14898b.addTo(map_d5bc704c4ce740ab73883b161e9d010a);
+        
+    
+            var marker_d9244ded46fa1a7250d4d2671c1d237f = L.marker(
+                [40.45521139332649, -3.696930841069643],
+                {"name": "poi"}
+            ).addTo(feature_group_sub_group_f114dd0b826d20d6cd088d767c14898b);
+        
+    
+            var icon_078e251d8312a089d2e7722989fc7ec4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d9244ded46fa1a7250d4d2671c1d237f.setIcon(icon_078e251d8312a089d2e7722989fc7ec4);
+        
+    
+        var popup_4e11dfd450ee175404b0430200b4b99c = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_32d5566f4c97bb0e32b6631280c8bc8c = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICBBY2Nlc2libGUgZGVzZGUgbGEgcGFyYWRhOiBTYW4gQW1hcm8gRGlzdGFuY2lhOiAyMy4xMW08YnI+VGlwbzogcGFya2luZzxicj4gUGFya2luZzogU2luIG5vbWJyZQ==" width="350" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_4e11dfd450ee175404b0430200b4b99c.setContent(i_frame_32d5566f4c97bb0e32b6631280c8bc8c);
+        
+
+        marker_d9244ded46fa1a7250d4d2671c1d237f.bindPopup(popup_4e11dfd450ee175404b0430200b4b99c)
+        ;
+
+        
+    
+    
+            var marker_8b42ea5309d6367e9037854adbfc1154 = L.marker(
+                [40.45656332305075, -3.702988710231964],
+                {"name": "poi"}
+            ).addTo(feature_group_sub_group_f114dd0b826d20d6cd088d767c14898b);
+        
+    
+            var icon_373ad28c797181c254fd7e7adf0cd99e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8b42ea5309d6367e9037854adbfc1154.setIcon(icon_373ad28c797181c254fd7e7adf0cd99e);
+        
+    
+        var popup_1aa0410b90143559f791bfc81eb19ff9 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_1f1cc59fc1a14d4dcbd1cd20afd19cdb = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICBBY2Nlc2libGUgZGVzZGUgbGEgcGFyYWRhOiBCcmF2byBNdXJpbGxvIC0gTG9wZSBEZSBIYXJvIERpc3RhbmNpYTogNjQuODltPGJyPlRpcG86IHBhcmtpbmc8YnI+IFBhcmtpbmc6IEdhcmFqZSBMb3BlIGRlIEhhcm8=" width="350" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_1aa0410b90143559f791bfc81eb19ff9.setContent(i_frame_1f1cc59fc1a14d4dcbd1cd20afd19cdb);
+        
+
+        marker_8b42ea5309d6367e9037854adbfc1154.bindPopup(popup_1aa0410b90143559f791bfc81eb19ff9)
+        ;
+
+        
+    
+    
+            var marker_8556e3c2ee5a0805c8854bd2653a56a4 = L.marker(
+                [40.42960890048254, -3.7027388000050574],
+                {"name": "poi"}
+            ).addTo(feature_group_sub_group_f114dd0b826d20d6cd088d767c14898b);
+        
+    
+            var icon_a974f2694b0d3d34b838f4f39472fea8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8556e3c2ee5a0805c8854bd2653a56a4.setIcon(icon_a974f2694b0d3d34b838f4f39472fea8);
+        
+    
+        var popup_03ef0d26a1aa32429df5a9316e090b15 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_1ab7ccc16d54d862f0fcd0142bcc4095 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICBBY2Nlc2libGUgZGVzZGUgbGEgcGFyYWRhOiBGdWVuY2FycmFsIC0gQmlsYmFvIERpc3RhbmNpYTogMTAuN208YnI+VGlwbzogcGFya2luZzxicj4gUGFya2luZzogbmFu" width="350" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_03ef0d26a1aa32429df5a9316e090b15.setContent(i_frame_1ab7ccc16d54d862f0fcd0142bcc4095);
+        
+
+        marker_8556e3c2ee5a0805c8854bd2653a56a4.bindPopup(popup_03ef0d26a1aa32429df5a9316e090b15)
+        ;
+
+        
+    
+    
+            var marker_d85aaa05a4fc0789e138d83c9f39022f = L.marker(
+                [40.42273010048269, -3.712052600005122],
+                {"name": "poi"}
+            ).addTo(feature_group_sub_group_f114dd0b826d20d6cd088d767c14898b);
+        
+    
+            var icon_bbae7f356887890c6d23c5f2eb5f50cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d85aaa05a4fc0789e138d83c9f39022f.setIcon(icon_bbae7f356887890c6d23c5f2eb5f50cd);
+        
+    
+        var popup_8cb6938c11774610b948fc87f2f5e9a8 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_30ee0dceec2e9eaac33960c8b6dbbf27 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICBBY2Nlc2libGUgZGVzZGUgbGEgcGFyYWRhOiBQbGF6YSBEZSBFc3Bhw7FhIERpc3RhbmNpYTogMjkuMDhtPGJyPlRpcG86IHBhcmtpbmc8YnI+IFBhcmtpbmc6IG5hbg==" width="350" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_8cb6938c11774610b948fc87f2f5e9a8.setContent(i_frame_30ee0dceec2e9eaac33960c8b6dbbf27);
+        
+
+        marker_d85aaa05a4fc0789e138d83c9f39022f.bindPopup(popup_8cb6938c11774610b948fc87f2f5e9a8)
+        ;
+
+        
+    
+    
+            var marker_0e7d1ed8a7d443fb1bd02fa060e9903a = L.marker(
+                [40.41503074469663, -3.71391772017604],
+                {"name": "poi"}
+            ).addTo(feature_group_sub_group_f114dd0b826d20d6cd088d767c14898b);
+        
+    
+            var icon_3bda3665111d8da4ce7792c7f73abbb4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0e7d1ed8a7d443fb1bd02fa060e9903a.setIcon(icon_3bda3665111d8da4ce7792c7f73abbb4);
+        
+    
+        var popup_78092d2cb39ed5e7ba47848cb143521e = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_82e6c2d326e2aec3b15c19a3850cdcc1 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICBBY2Nlc2libGUgZGVzZGUgbGEgcGFyYWRhOiBQYWxhY2lvIFJlYWwgRGlzdGFuY2lhOiAyNC4xOW08YnI+VGlwbzogcGFya2luZzxicj4gUGFya2luZzogbmFu" width="350" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_78092d2cb39ed5e7ba47848cb143521e.setContent(i_frame_82e6c2d326e2aec3b15c19a3850cdcc1);
+        
+
+        marker_0e7d1ed8a7d443fb1bd02fa060e9903a.bindPopup(popup_78092d2cb39ed5e7ba47848cb143521e)
+        ;
+
+        
+    
+    
+            var marker_7f5b47ebe59e45348ba886de4f7b2d80 = L.marker(
+                [40.40899912373146, -3.71361643704976],
+                {"name": "poi"}
+            ).addTo(feature_group_sub_group_f114dd0b826d20d6cd088d767c14898b);
+        
+    
+            var icon_9e6d4007c8b6b469e7fbc777ba7febb7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7f5b47ebe59e45348ba886de4f7b2d80.setIcon(icon_9e6d4007c8b6b469e7fbc777ba7febb7);
+        
+    
+        var popup_858b720f663a6caac387dc2dfefa8f5e = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_325a411eab34fc9654aae0789af18af0 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICBBY2Nlc2libGUgZGVzZGUgbGEgcGFyYWRhOiBMYSBQYWxvbWEgRGlzdGFuY2lhOiAyMy4xM208YnI+VGlwbzogcGFya2luZzxicj4gUGFya2luZzogbmFu" width="350" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_858b720f663a6caac387dc2dfefa8f5e.setContent(i_frame_325a411eab34fc9654aae0789af18af0);
+        
+
+        marker_7f5b47ebe59e45348ba886de4f7b2d80.bindPopup(popup_858b720f663a6caac387dc2dfefa8f5e)
+        ;
+
+        
+    
+    
+            var layer_control_0b2d6f898fcaa072b34be08c3dbd14c7 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_27a7c784eab56d1bec7728fffcc3c8f5,
+                },
+                overlays :  {
+                    "network Ida" : geo_json_bf13bf6ee5875d372aa613132b41ce95,
+                    "Linea Ida" : feature_group_4fb28be6d450dbd0754c3757697467ab,
+                    "POI ida" : feature_group_sub_group_97909f641e332ab553765dc7d286682f,
+                    "network Vuelta" : geo_json_442abcf1cefac0e1e5b5d642e5f965e0,
+                    "Linea Vuelta" : feature_group_343e249cf74c9cdcb2bed2da80778636,
+                    "POI vuelta" : feature_group_sub_group_f114dd0b826d20d6cd088d767c14898b,
+                },
+            };
+            L.control.layers(
+                layer_control_0b2d6f898fcaa072b34be08c3dbd14c7.base_layers,
+                layer_control_0b2d6f898fcaa072b34be08c3dbd14c7.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_d5bc704c4ce740ab73883b161e9d010a);
+            feature_group_343e249cf74c9cdcb2bed2da80778636.remove();
+        
+</script>
