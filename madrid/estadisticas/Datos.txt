@@ -1,0 +1,5 @@
+Número total de rutas 
+
+Número total de trips 
+
+Número total de paradas
