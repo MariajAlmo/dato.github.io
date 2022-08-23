@@ -1,5 +1,5 @@
-Número total de rutas 
+Número total de rutas es 219
 
-Número total de trips 
+Número total de trips es 39466
 
-Número total de paradas
+Número total de paradas es 4771
