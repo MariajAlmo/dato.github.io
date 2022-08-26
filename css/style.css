@@ -1,0 +1,326 @@
+/*=============================================================
+    Authour URI: www.binarytheme.com
+    License: Commons Attribution 3.0
+
+    http://creativecommons.org/licenses/by/3.0/
+
+    100% To use For Personal And Commercial Use.
+    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
+   
+    ========================================================  */
+/*==========================================
+    CUSTOM STYLESHEET FOR TEMPLATE BY BINARYTHEME
+    =====================================================*/
+
+
+
+/*==========================================
+    GENERAL  STYLES
+    =====================================================*/
+
+body {
+    font-family:'Open Sans', sans-serif;
+    font-size:14px;
+    font-weight:400;
+  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000;
+  font-weight: 500;
+    font-family:'Open Sans', sans-serif;
+}
+
+.flot-nav {
+    float:right;
+}
+
+.icon-round {
+    margin-top:30px;
+  font-size: 24px;
+  height: 68px;
+  width: 68px;
+  line-height: 68px;
+  color: #fff;
+  margin-right: 10px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 100%;
+  margin-bottom: 10px;
+}
+
+.wrap-pad {
+  position: relative;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.color-red {
+    color:#ff0000;
+}
+
+.color-green {
+    color:#07BB00;
+}
+
+.color-light-blue {
+    color:#BB00BB;
+}
+
+.color-blue {
+    color:#0052FF;
+}
+.color-brown {
+    color:#EB8F2D;
+}
+.color-black {
+    color:#000000;
+}
+.bk-color-red {
+    background-color:#ff0000;
+}
+
+.bk-color-green {
+    background-color:#00aebb;
+}
+
+.bk-color-light-blue {
+    background-color:#BB00BB;
+}
+
+.bk-color-blue {
+    background-color:#0052FF;
+}
+.bk-color-brown {
+    background-color:#EB8F2D;
+}
+.bk-color-black {
+   background-color:#000000;
+}
+
+.margin-5 {
+    margin:5px;
+}
+.margin-top-20 {
+    margin-top:20px;
+}
+
+.margin-top-100 {
+    margin-top:100px;
+}
+.btn {
+  font-weight: 300;
+  border: 0;
+}
+.btn.btn-primary {
+  background-color: #52b6ec;
+}
+.btn.btn-primary:hover,
+.btn.btn-primary.active {
+  background-color: #1586c3;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+a:hover,
+a:focus {
+  color: #80c9f1;
+  text-decoration: none;
+  outline: none;
+}
+.small-icons {
+       margin-top:0px;
+  font-size: 24px;
+  height: 40px;
+  width: 40px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 100%;
+  margin-bottom: 10px;
+}
+/*==========================================
+    BOOTSTRAP  STYLES CHANGES
+    =====================================================*/
+
+#header-nav {
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 99999;
+}
+.navbar {
+    border-radius:0px;
+}
+
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    background-color:#156acb;
+    border-color:#156acb;
+}
+.navbar-default .navbar-brand {
+  margin-left: 30px;
+  margin-right:50px;
+  height: 56px;
+  font-size: 25px;
+font-weight: 900;
+color:#FFFFFF;
+ 
+}
+.navbar-default {
+  background-color:#175ba8;
+  border-color:#175ba8;
+}
+
+.navbar-default:hover .navbar-brand:hover {
+
+color:#FFFFFF;
+}
+
+.navbar-default .navbar-nav > li > a {
+  padding: 20px 10px;
+  font-size: 16px;
+  line-height: 17px;
+  color:rgb(255, 255, 255)
+}
+
+
+
+
+
+.navbar-default .navbar-nav > li > a > i {
+  display: inline-block;
+}
+
+
+
+/*==========================================
+   SOCIAL ICON STYLES
+    =====================================================*/
+
+.color-facebook {
+    color:#3B5998;
+}
+.color-twitter {
+     color:#00aced;
+}
+
+.color-linkedin {
+     color:#007bb6;
+}
+.color-pinterest {
+     color:#cb2027;
+}
+/*==========================================
+    FOOTER SECTION
+    =====================================================*/
+
+#footer {
+    padding:20px;
+    background-color:#156acb;
+    text-align:right;
+    padding-right:50px;
+    color:white;
+}
+/*==========================================
+    MEDIA QURIES
+    =====================================================*/
+@media (max-width: 847px) {
+    .flot-nav {
+    float:left;
+}
+     
+}
+
+@media (max-width: 1090px) {
+    .img-thumbnail {
+max-width: 50%;
+}
+}
+
+.map{
+
+min-width: 100%;
+min-height: 40%;
+
+
+
+
+
+
+}
+/*==========================================
+    BOTONES
+    =====================================================*/
+
+
+
+.button-66 {
+  background-color: #0a6bff;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: rgba(1,60,136,.5) 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inherit;
+  font-family: "Space Grotesk",-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 18px;
+  font-weight: 70;
+  line-height: 24px;
+  margin: 0;
+  min-height: 56px;
+  min-width: 12px;
+  padding: 10px 20px;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  transition: all .2s cubic-bezier(.22, .61, .36, 1);
+}
+
+.button-66:hover {
+  background-color: #065dd8;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 76px) {
+  .button-66 {
+    padding: 5px 18px;
+    min-width: 10px;
+  }
+}
+
+
+/*==========================================
+    BOTONES
+    =====================================================*/
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #065ed83f;
+}
