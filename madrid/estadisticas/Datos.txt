@@ -1,5 +1,3 @@
-NÃºmero total de rutas es 219
-
-NÃºmero total de trips es 39466
-
-NÃºmero total de paradas es 4771
+El número de routes es 219
+El número de trips es 39466
+El número de stops es 4771
