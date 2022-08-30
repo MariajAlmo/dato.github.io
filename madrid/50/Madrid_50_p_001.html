@@ -873,4 +873,29 @@
 
         
     
+    
+            var marker_cfbda31218b21dc59367f5d62f39377d = L.marker(
+                [40.4165, -3.80256],
+                {"name": "poi"}
+            ).addTo(map_223634ad5edc4772129b724711d80405);
+        
+    
+            var icon_16670986c843ba5170cca9de31da733c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_cfbda31218b21dc59367f5d62f39377d.setIcon(icon_16670986c843ba5170cca9de31da733c);
+        
+    
+        var popup_2deb2ca6ae853010efdac5750df231a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1333ec62a4fede2173c4c33bdac99d40 = $(`<div id="html_1333ec62a4fede2173c4c33bdac99d40" style="width: 100.0%; height: 100.0%;">prueba:Parada cercana</div>`)[0];
+            popup_2deb2ca6ae853010efdac5750df231a1.setContent(html_1333ec62a4fede2173c4c33bdac99d40);
+        
+
+        marker_cfbda31218b21dc59367f5d62f39377d.bindPopup(popup_2deb2ca6ae853010efdac5750df231a1)
+        ;
+
+        
+    
 </script>
