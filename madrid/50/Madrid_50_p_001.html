@@ -1098,4 +1098,29 @@
 
         
     
+    
+            var marker_70ba5c39ecb77fd227e15c1a2417169d = L.marker(
+                [40.4465, -3.75256],
+                {"name": "poi"}
+            ).addTo(map_223634ad5edc4772129b724711d80405);
+        
+    
+            var icon_a99212f144a98a7dbcdd35545c28187f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_70ba5c39ecb77fd227e15c1a2417169d.setIcon(icon_a99212f144a98a7dbcdd35545c28187f);
+        
+    
+        var popup_8a364bec21ab4702350d965e74e34cfb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa8eff9160b7f281c897f22769659850 = $(`<div id="html_fa8eff9160b7f281c897f22769659850" style="width: 100.0%; height: 100.0%;">Accesible desde la parada: prueba </div>`)[0];
+            popup_8a364bec21ab4702350d965e74e34cfb.setContent(html_fa8eff9160b7f281c897f22769659850);
+        
+
+        marker_70ba5c39ecb77fd227e15c1a2417169d.bindPopup(popup_8a364bec21ab4702350d965e74e34cfb)
+        ;
+
+        
+    
 </script>
