@@ -1,4 +1,3 @@
 ,archivo,problema,fila,tipo
 0,agency,agencia_url no válida; tal vez tiene caracteres de espacio extra,[0],error
 1,routes,La ruta no tiene viajes,"[161, 219]",warning
-------------------
