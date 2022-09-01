@@ -1,0 +1,1836 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_164122e778069da9e929add41f2bd719 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://unpkg.com/leaflet.featuregroup.subgroup@1.0.2/dist/leaflet.featuregroup.subgroup.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_164122e778069da9e929add41f2bd719" ></div>
+        
+</body>
+<script>    
+    
+            var map_164122e778069da9e929add41f2bd719 = L.map(
+                "map_164122e778069da9e929add41f2bd719",
+                {
+                    center: [40.4419333779764, -3.69751509191323],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a543dd47508401832ec0c728b2f4b088 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_164122e778069da9e929add41f2bd719);
+        
+    
+        function geo_json_28279757cc003ab8162bb39a4595dd75_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "red", "weight": 2};
+            }
+        }
+
+        function geo_json_28279757cc003ab8162bb39a4595dd75_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_28279757cc003ab8162bb39a4595dd75 = L.geoJson(null, {
+                onEachFeature: geo_json_28279757cc003ab8162bb39a4595dd75_onEachFeature,
+            
+                style: geo_json_28279757cc003ab8162bb39a4595dd75_styler,
+        });
+
+        function geo_json_28279757cc003ab8162bb39a4595dd75_add (data) {
+            geo_json_28279757cc003ab8162bb39a4595dd75
+                .addData(data)
+                .addTo(map_164122e778069da9e929add41f2bd719);
+        }
+            geo_json_28279757cc003ab8162bb39a4595dd75_add({"features": [{"geometry": {"coordinates": [[-3.6985781, 40.4180794], [-3.6986016, 40.4180917]], "type": "LineString"}, "id": "(21968131, 7537651760, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 2.414, "maxspeed": "50", "name": "Calle de Alcal\u00e1", "oneway": true, "osmid": 43759788, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6985781, 40.4180794], [-3.6985688, 40.4180943]], "type": "LineString"}, "id": "(21968131, 7537651769, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 1.834, "maxspeed": "50", "name": "Calle de Alcal\u00e1", "oneway": true, "osmid": 43759793, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6987412, 40.4181171], [-3.6987918, 40.4180984]], "type": "LineString"}, "id": "(21968132, 7537651754, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 4.762, "maxspeed": "50", "name": "Calle de Alcal\u00e1", "oneway": true, "osmid": 417019353, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.698568, 40.4180399], [-3.6985731, 40.4180599]], "type": "LineString"}, "id": "(2506478062, 9230911920, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 2.265, "maxspeed": "50", "name": "Calle de Cedaceros", "oneway": true, "osmid": 626418867, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6986424, 40.4181034], [-3.6986775, 40.4181116]], "type": "LineString"}, "id": "(3387688924, 7537651768, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 3.108, "maxspeed": "50", "name": "Calle de Alcal\u00e1", "oneway": true, "osmid": 43759788, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6985594, 40.4180047], [-3.698568, 40.4180399]], "type": "LineString"}, "id": "(3436803701, 2506478062, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "3", "length": 3.981, "maxspeed": "50", "name": "Calle de Cedaceros", "oneway": true, "osmid": 511895814, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6985564, 40.4181069], [-3.6983797, 40.4181652]], "type": "LineString"}, "id": "(7537651752, 4309854555, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 16.303, "maxspeed": "50", "name": "Calle de Alcal\u00e1", "oneway": true, "osmid": 43759793, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6986016, 40.4180917], [-3.6986424, 40.4181034]], "type": "LineString"}, "id": "(7537651760, 3387688924, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 3.691, "maxspeed": "50", "name": "Calle de Alcal\u00e1", "oneway": true, "osmid": 43759788, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6986775, 40.4181116], [-3.6987412, 40.4181171]], "type": "LineString"}, "id": "(7537651768, 21968132, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 5.427, "maxspeed": "50", "name": "Calle de Alcal\u00e1", "oneway": true, "osmid": 43759788, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6985688, 40.4180943], [-3.6985564, 40.4181069]], "type": "LineString"}, "id": "(7537651769, 7537651752, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 1.751, "maxspeed": "50", "name": "Calle de Alcal\u00e1", "oneway": true, "osmid": 43759793, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6985731, 40.4180599], [-3.6985781, 40.4180794]], "type": "LineString"}, "id": "(9230911920, 21968131, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 2.209, "maxspeed": "50", "name": "Calle de Cedaceros", "oneway": true, "osmid": 626418867, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6975428, 40.4183929], [-3.6973966, 40.4184342]], "type": "LineString"}, "id": "(4309854557, 4309854558, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 13.201, "maxspeed": "50", "name": "Calle de Alcal\u00e1", "oneway": true, "osmid": 43759793, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6973966, 40.4184342], [-3.6971786, 40.4184892]], "type": "LineString"}, "id": "(4309854558, 3597242745, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "3", "length": 19.442, "maxspeed": "50", "name": "Calle de Alcal\u00e1", "oneway": true, "osmid": 431767100, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6976939, 40.4183525], [-3.6975428, 40.4183929]], "type": "LineString"}, "id": "(5960796495, 4309854557, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 13.557, "maxspeed": "50", "name": "Calle de Alcal\u00e1", "oneway": true, "osmid": 43759793, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6958407, 40.4188362], [-3.6958187, 40.4187529]], "type": "LineString"}, "id": "(20953234, 2506478057, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 9.448, "maxspeed": null, "name": "Calle del Marqu\u00e9s de Cubas", "oneway": true, "osmid": 7971493, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6958187, 40.4187529], [-3.695799, 40.4186755]], "type": "LineString"}, "id": "(2506478057, 2005647254, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 8.767, "maxspeed": null, "name": "Calle del Marqu\u00e9s de Cubas", "oneway": true, "osmid": 7971493, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6961482, 40.4187663], [-3.6958407, 40.4188362]], "type": "LineString"}, "id": "(5960796494, 20953234, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 27.167, "maxspeed": "50", "name": "Calle de Alcal\u00e1", "oneway": true, "osmid": 4346299, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6922011, 40.4202822], [-3.6921135, 40.420482]], "type": "LineString"}, "id": "(2584446944, 25901826, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 23.422, "maxspeed": "50", "name": "Paseo de Recoletos", "oneway": true, "osmid": 252387586, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6897757, 40.4261601], [-3.6897369, 40.4263723]], "type": "LineString"}, "id": "(1493669241, 1493669242, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 23.823, "maxspeed": "50", "name": "Paseo de la Castellana", "oneway": true, "osmid": 136124312, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6889566, 40.4293618], [-3.6887863, 40.4293518]], "type": "LineString"}, "id": "(25902154, 1950481197, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 14.457, "maxspeed": "50", "name": "Calle del Marqu\u00e9s de Villamagna", "oneway": true, "osmid": 6601764, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6889566, 40.4293618], [-3.6889083, 40.4295583]], "type": "LineString"}, "id": "(25902154, 4349802667, 0)", "properties": {"access": null, "highway": "residential", "lanes": "3", "length": 22.229, "maxspeed": "50", "name": "Paseo de la Castellana", "oneway": true, "osmid": 164369277, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6889841, 40.4292252], [-3.6889566, 40.4293618]], "type": "LineString"}, "id": "(1760085688, 25902154, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 15.367, "maxspeed": null, "name": "Paseo de la Castellana", "oneway": true, "osmid": 164369271, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6880434, 40.4333296], [-3.688111, 40.4335294]], "type": "LineString"}, "id": "(1760085723, 1493669255, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 22.942, "maxspeed": "50", "name": "Paseo de la Castellana", "oneway": true, "osmid": 164369276, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6880029, 40.4331632], [-3.6880434, 40.4333296]], "type": "LineString"}, "id": "(1760085718, 1760085723, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 18.818, "maxspeed": "50", "name": "Paseo de la Castellana", "oneway": true, "osmid": 164369276, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6901531, 40.4351848], [-3.6901511, 40.4350808]], "type": "LineString"}, "id": "(25902434, 4416531499, 0)", "properties": {"access": null, "highway": "residential", "lanes": "1", "length": 11.566, "maxspeed": "50", "name": "Calle de Fortuny", "oneway": true, "osmid": 24536104, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6901531, 40.4351848], [-3.6896272, 40.4351976]], "type": "LineString"}, "id": "(25902434, 1223809798, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 44.532, "maxspeed": "50", "name": "Paseo del General Mart\u00ednez Campos", "oneway": false, "osmid": 43798349, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6901531, 40.4351848], [-3.6901827, 40.4351841]], "type": "LineString"}, "id": "(25902434, 5966607255, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 2.506, "maxspeed": "50", "name": "Paseo del General Mart\u00ednez Campos", "oneway": false, "osmid": 43798349, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6896272, 40.4351976], [-3.6901531, 40.4351848]], "type": "LineString"}, "id": "(1223809798, 25902434, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 44.532, "maxspeed": "50", "name": "Paseo del General Mart\u00ednez Campos", "oneway": false, "osmid": 43798349, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6901827, 40.4351841], [-3.6901531, 40.4351848]], "type": "LineString"}, "id": "(5966607255, 25902434, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 2.506, "maxspeed": "50", "name": "Paseo del General Mart\u00ednez Campos", "oneway": false, "osmid": 43798349, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6901827, 40.4351841], [-3.6905419, 40.4351753]], "type": "LineString"}, "id": "(5966607255, 5966607280, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 30.417, "maxspeed": "50", "name": "Paseo del General Mart\u00ednez Campos", "oneway": false, "osmid": 43798349, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6905419, 40.4351753], [-3.6901827, 40.4351841]], "type": "LineString"}, "id": "(5966607280, 5966607255, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 30.417, "maxspeed": "50", "name": "Paseo del General Mart\u00ednez Campos", "oneway": false, "osmid": 43798349, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6931402, 40.4351098], [-3.6926303, 40.4351228]], "type": "LineString"}, "id": "(60030728, 5966607282, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "6", "length": 43.18, "maxspeed": "50", "name": "Paseo del General Mart\u00ednez Campos", "oneway": false, "osmid": 83668212, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6921067, 40.4351346], [-3.6926058, 40.4351234]], "type": "LineString"}, "id": "(1011869675, 5966607281, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "6", "length": 42.26, "maxspeed": "50", "name": "Paseo del General Mart\u00ednez Campos", "oneway": false, "osmid": 83668212, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6926058, 40.4351234], [-3.6921067, 40.4351346]], "type": "LineString"}, "id": "(5966607281, 1011869675, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "6", "length": 42.26, "maxspeed": "50", "name": "Paseo del General Mart\u00ednez Campos", "oneway": false, "osmid": 83668212, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6926058, 40.4351234], [-3.6926303, 40.4351228]], "type": "LineString"}, "id": "(5966607281, 5966607282, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "6", "length": 2.075, "maxspeed": "50", "name": "Paseo del General Mart\u00ednez Campos", "oneway": false, "osmid": 83668212, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6926303, 40.4351228], [-3.6926058, 40.4351234]], "type": "LineString"}, "id": "(5966607282, 5966607281, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "6", "length": 2.075, "maxspeed": "50", "name": "Paseo del General Mart\u00ednez Campos", "oneway": false, "osmid": 83668212, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6926303, 40.4351228], [-3.6931402, 40.4351098]], "type": "LineString"}, "id": "(5966607282, 60030728, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "6", "length": 43.18, "maxspeed": "50", "name": "Paseo del General Mart\u00ednez Campos", "oneway": false, "osmid": 83668212, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6948234, 40.4350642], [-3.6949611, 40.4350606]], "type": "LineString"}, "id": "(60030729, 9672874691, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 11.661, "maxspeed": "50", "name": "Paseo del General Mart\u00ednez Campos", "oneway": false, "osmid": 43759960, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6952584, 40.4350528], [-3.6949611, 40.4350606]], "type": "LineString"}, "id": "(5966607254, 9672874691, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 25.177, "maxspeed": "50", "name": "Paseo del General Mart\u00ednez Campos", "oneway": false, "osmid": 43759960, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6949611, 40.4350606], [-3.6948234, 40.4350642]], "type": "LineString"}, "id": "(9672874691, 60030729, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 11.661, "maxspeed": "50", "name": "Paseo del General Mart\u00ednez Campos", "oneway": false, "osmid": 43759960, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6949611, 40.4350606], [-3.6952584, 40.4350528]], "type": "LineString"}, "id": "(9672874691, 5966607254, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 25.177, "maxspeed": "50", "name": "Paseo del General Mart\u00ednez Campos", "oneway": false, "osmid": 43759960, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6980881, 40.4349787], [-3.6976773, 40.434988]], "type": "LineString"}, "id": "(60030303, 5966607253, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "6", "length": 34.784, "maxspeed": "50", "name": "Paseo del General Mart\u00ednez Campos", "oneway": false, "osmid": 43759962, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6980881, 40.4349787], [-3.6980806, 40.4350691]], "type": "LineString"}, "id": "(60030303, 9468421738, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 10.072, "maxspeed": "30", "name": "Calle de Alonso Cano", "oneway": true, "osmid": 868615046, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6976773, 40.434988], [-3.6980881, 40.4349787]], "type": "LineString"}, "id": "(5966607253, 60030303, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "6", "length": 34.784, "maxspeed": "50", "name": "Paseo del General Mart\u00ednez Campos", "oneway": false, "osmid": 43759962, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.697522, 40.4416888], [-3.6975124, 40.4418024]], "type": "LineString"}, "id": "(1613048555, 1613048569, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 12.658, "maxspeed": "30", "name": "Calle de Alonso Cano", "oneway": true, "osmid": 14481788, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6975124, 40.4418024], [-3.6975027, 40.4419177]], "type": "LineString"}, "id": "(1613048569, 3258766782, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 12.847, "maxspeed": "30", "name": "Calle de Alonso Cano", "oneway": true, "osmid": 14481788, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6975396, 40.4414807], [-3.697522, 40.4416888]], "type": "LineString"}, "id": "(8427069644, 1613048555, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 23.188, "maxspeed": "30", "name": "Calle de Alonso Cano", "oneway": true, "osmid": 14481788, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6972773, 40.4445846], [-3.6971814, 40.4445811]], "type": "LineString"}, "id": "(569034140, 1654250193, 0)", "properties": {"access": null, "highway": "living_street", "lanes": null, "length": 8.125, "maxspeed": null, "name": "Calle de Mar\u00eda Pan\u00e9s", "oneway": true, "osmid": 44883920, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6972834, 40.4445114], [-3.6972773, 40.4445846]], "type": "LineString"}, "id": "(1654250191, 569034140, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 8.156, "maxspeed": "30", "name": "Calle de Alonso Cano", "oneway": true, "osmid": 14481788, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6973065, 40.4442264], [-3.6972834, 40.4445114]], "type": "LineString"}, "id": "(8427069643, 1654250191, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 31.751, "maxspeed": "30", "name": "Calle de Alonso Cano", "oneway": true, "osmid": 14481788, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6971197, 40.4464486], [-3.6969771, 40.4464412]], "type": "LineString"}, "id": "(98948614, 1654250232, 0)", "properties": {"access": null, "highway": "primary", "lanes": "5", "length": 12.095, "maxspeed": "50", "name": "Calle de Raimundo Fern\u00e1ndez Villaverde", "oneway": true, "osmid": 335720386, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6971521, 40.4461151], [-3.6971287, 40.446342]], "type": "LineString"}, "id": "(616263147, 1654250231, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 25.308, "maxspeed": "30", "name": "Calle de Alonso Cano", "oneway": true, "osmid": 14481788, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6971287, 40.446342], [-3.6971197, 40.4464486]], "type": "LineString"}, "id": "(1654250231, 98948614, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 11.878, "maxspeed": "30", "name": "Calle de Alonso Cano", "oneway": true, "osmid": 14481788, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6970166, 40.4476773], [-3.6969828, 40.4480236]], "type": "LineString"}, "id": "(8427069646, 98746809, 0)", "properties": {"access": null, "highway": "residential", "lanes": "2", "length": 38.613, "maxspeed": "50", "name": "Calle de Edgar Neville", "oneway": true, "osmid": 11072569, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6968565, 40.4492417], [-3.6968483, 40.4493211]], "type": "LineString"}, "id": "(28096049, 98746810, 0)", "properties": {"access": null, "highway": "residential", "lanes": "2", "length": 8.856, "maxspeed": "50", "name": "Calle de Edgar Neville", "oneway": true, "osmid": 11072569, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.696888, 40.4489369], [-3.6968565, 40.4492417]], "type": "LineString"}, "id": "(8427069645, 28096049, 0)", "properties": {"access": null, "highway": "residential", "lanes": "2", "length": 33.997, "maxspeed": "50", "name": "Calle de Edgar Neville", "oneway": true, "osmid": 11072569, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6965601, 40.4522562], [-3.6965464, 40.4523875]], "type": "LineString"}, "id": "(2533387853, 81473207, 0)", "properties": {"access": null, "highway": "residential", "lanes": "2", "length": 14.646, "maxspeed": "50", "name": "Calle de Edgar Neville", "oneway": true, "osmid": 506109724, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6965706, 40.4519787], [-3.6965601, 40.4522562]], "type": "LineString"}, "id": "(8427069654, 2533387853, 0)", "properties": {"access": null, "highway": "residential", "lanes": "2", "length": 30.869, "maxspeed": "50", "name": "Calle de Edgar Neville", "oneway": true, "osmid": 11072569, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6952496, 40.4559792], [-3.6952187, 40.4563162]], "type": "LineString"}, "id": "(8427069649, 8875682218, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 37.564, "maxspeed": null, "name": "Calle de Juli\u00e1n Besteiro", "oneway": true, "osmid": 238871455, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6952187, 40.4563162], [-3.6952111, 40.4563985]], "type": "LineString"}, "id": "(8875682218, 81478196, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 9.174, "maxspeed": null, "name": "Calle de Juli\u00e1n Besteiro", "oneway": true, "osmid": 238871455, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6922672, 40.4562413], [-3.6921189, 40.4562325]], "type": "LineString"}, "id": "(81468695, 2093697310, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 12.586, "maxspeed": null, "name": "Calle de San Germ\u00e1n", "oneway": false, "osmid": 9934175, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6922672, 40.4562413], [-3.6923972, 40.4562487]], "type": "LineString"}, "id": "(81468695, 2093697311, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 11.03, "maxspeed": null, "name": "Calle de San Germ\u00e1n", "oneway": false, "osmid": 257653664, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6922672, 40.4562413], [-3.6922442, 40.4564702]], "type": "LineString"}, "id": "(81468695, 8455404363, 0)", "properties": {"access": null, "highway": "residential", "lanes": "4", "length": 25.527, "maxspeed": null, "name": "Calle del Poeta Joan Maragall", "oneway": true, "osmid": 353271251, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6921189, 40.4562325], [-3.6922672, 40.4562413]], "type": "LineString"}, "id": "(2093697310, 81468695, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 12.586, "maxspeed": null, "name": "Calle de San Germ\u00e1n", "oneway": false, "osmid": 9934175, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6923972, 40.4562487], [-3.6925171, 40.456255]], "type": "LineString"}, "id": "(2093697311, 8427069625, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 10.169, "maxspeed": null, "name": "Calle de San Germ\u00e1n", "oneway": false, "osmid": 257653664, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6923972, 40.4562487], [-3.6922672, 40.4562413]], "type": "LineString"}, "id": "(2093697311, 81468695, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 11.03, "maxspeed": null, "name": "Calle de San Germ\u00e1n", "oneway": false, "osmid": 257653664, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6925171, 40.456255], [-3.6928221, 40.456273]], "type": "LineString"}, "id": "(8427069625, 8427069648, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 25.883, "maxspeed": null, "name": "Calle de San Germ\u00e1n", "oneway": false, "osmid": 257653664, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6925171, 40.456255], [-3.6923972, 40.4562487]], "type": "LineString"}, "id": "(8427069625, 2093697311, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 10.169, "maxspeed": null, "name": "Calle de San Germ\u00e1n", "oneway": false, "osmid": 257653664, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6928221, 40.456273], [-3.6925171, 40.456255]], "type": "LineString"}, "id": "(8427069648, 8427069625, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 25.883, "maxspeed": null, "name": "Calle de San Germ\u00e1n", "oneway": false, "osmid": 257653664, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6897587, 40.4561442], [-3.6897569, 40.456283]], "type": "LineString"}, "id": "(25906702, 1753722914, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 15.435, "maxspeed": null, "name": "Paseo de la Castellana", "oneway": true, "osmid": 7990961, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6897587, 40.4561442], [-3.6898766, 40.4562612]], "type": "LineString"}, "id": "(25906702, 6484517737, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 16.394, "maxspeed": null, "name": "Paseo de la Castellana", "oneway": true, "osmid": 308303716, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6897624, 40.4560663], [-3.6896676, 40.456109]], "type": "LineString"}, "id": "(25906708, 101211476, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 9.321, "maxspeed": null, "name": "Calle Profesor Waksman", "oneway": true, "osmid": 11381066, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6897624, 40.4560663], [-3.6897587, 40.4561442]], "type": "LineString"}, "id": "(25906708, 25906702, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 8.668, "maxspeed": null, "name": "Paseo de la Castellana", "oneway": true, "osmid": 303407864, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6898799, 40.4559963], [-3.6897624, 40.4560663]], "type": "LineString"}, "id": "(1752467738, 25906708, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 12.626, "maxspeed": null, "name": "Paseo de la Castellana", "oneway": true, "osmid": 43760196, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6899385, 40.4559579], [-3.6898799, 40.4559963]], "type": "LineString"}, "id": "(8427069658, 1752467738, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 6.543, "maxspeed": null, "name": "Paseo de la Castellana", "oneway": true, "osmid": 43760196, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6892118, 40.4619534], [-3.6890966, 40.4619463]], "type": "LineString"}, "id": "(1251024171, 1738553319, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 9.778, "maxspeed": null, "name": "Calle de Carlos Maurr\u00e1s", "oneway": true, "osmid": 321225331, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6892207, 40.4618265], [-3.6892118, 40.4619534]], "type": "LineString"}, "id": "(1738553317, 1251024171, 0)", "properties": {"access": null, "highway": "residential", "lanes": "2", "length": 14.131, "maxspeed": "50", "name": "Paseo de la Castellana", "oneway": true, "osmid": 7990964, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6892172, 40.465037], [-3.6891661, 40.4652636]], "type": "LineString"}, "id": "(8427069653, 1738553370, 0)", "properties": {"access": "no", "highway": "residential", "lanes": "1", "length": 25.565, "maxspeed": "50", "name": "Paseo de la Castellana", "oneway": true, "osmid": 131553938, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6885258, 40.4661817], [-3.688468, 40.4661944]], "type": "LineString"}, "id": "(31322827, 2637038913, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 5.089, "maxspeed": "50", "name": "Calle de Mateo Inurria", "oneway": false, "osmid": 4856374, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6885258, 40.4661817], [-3.6885873, 40.4661691]], "type": "LineString"}, "id": "(31322827, 4690575692, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 5.388, "maxspeed": "50", "name": "Calle de Mateo Inurria", "oneway": false, "osmid": 4856374, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6878295, 40.466327], [-3.6882096, 40.4662443]], "type": "LineString"}, "id": "(2493577861, 3701716714, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 33.444, "maxspeed": "50", "name": "Calle de Mateo Inurria", "oneway": false, "osmid": 4856374, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.688468, 40.4661944], [-3.6882096, 40.4662443]], "type": "LineString"}, "id": "(2637038913, 3701716714, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 22.553, "maxspeed": "50", "name": "Calle de Mateo Inurria", "oneway": false, "osmid": 4856374, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.688468, 40.4661944], [-3.6885258, 40.4661817]], "type": "LineString"}, "id": "(2637038913, 31322827, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 5.089, "maxspeed": "50", "name": "Calle de Mateo Inurria", "oneway": false, "osmid": 4856374, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6882096, 40.4662443], [-3.6878295, 40.466327]], "type": "LineString"}, "id": "(3701716714, 2493577861, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 33.444, "maxspeed": "50", "name": "Calle de Mateo Inurria", "oneway": false, "osmid": 4856374, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6882096, 40.4662443], [-3.688468, 40.4661944]], "type": "LineString"}, "id": "(3701716714, 2637038913, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 22.553, "maxspeed": "50", "name": "Calle de Mateo Inurria", "oneway": false, "osmid": 4856374, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6885873, 40.4661691], [-3.6885258, 40.4661817]], "type": "LineString"}, "id": "(4690575692, 31322827, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 5.388, "maxspeed": "50", "name": "Calle de Mateo Inurria", "oneway": false, "osmid": 4856374, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6866225, 40.4681825], [-3.6866702, 40.4683138]], "type": "LineString"}, "id": "(845455936, 8427069630, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 15.147, "maxspeed": "50", "name": "Calle de Enrique Larreta", "oneway": false, "osmid": 7701802, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.686724, 40.4684817], [-3.6866702, 40.4683138]], "type": "LineString"}, "id": "(2548094833, 8427069630, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 19.216, "maxspeed": "50", "name": "Calle de Enrique Larreta", "oneway": false, "osmid": 7701802, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6866702, 40.4683138], [-3.6866225, 40.4681825]], "type": "LineString"}, "id": "(8427069630, 845455936, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 15.147, "maxspeed": "50", "name": "Calle de Enrique Larreta", "oneway": false, "osmid": 7701802, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6866702, 40.4683138], [-3.686724, 40.4684817]], "type": "LineString"}, "id": "(8427069630, 2548094833, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 19.216, "maxspeed": "50", "name": "Calle de Enrique Larreta", "oneway": false, "osmid": 7701802, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6860793, 40.4695484], [-3.686154, 40.4694713]], "type": "LineString"}, "id": "(55967027, 2971902118, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 10.65, "maxspeed": "50", "name": "Calle de Agust\u00edn de Fox\u00e1", "oneway": false, "osmid": 7701503, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6860793, 40.4695484], [-3.685836, 40.4698119]], "type": "LineString"}, "id": "(55967027, 8427069652, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 35.806, "maxspeed": "50", "name": "Calle de Agust\u00edn de Fox\u00e1", "oneway": false, "osmid": 7701503, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6860793, 40.4695484], [-3.6859689, 40.4694899]], "type": "LineString"}, "id": "(55967027, 4457204517, 0)", "properties": {"access": null, "highway": "residential", "lanes": "1", "length": 11.381, "maxspeed": "50", "name": "Calle de Esteban Terradas", "oneway": true, "osmid": 24693779, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.686154, 40.4694713], [-3.6860793, 40.4695484]], "type": "LineString"}, "id": "(2971902118, 55967027, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 10.65, "maxspeed": "50", "name": "Calle de Agust\u00edn de Fox\u00e1", "oneway": false, "osmid": 7701503, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6855721, 40.4700921], [-3.685836, 40.4698119]], "type": "LineString"}, "id": "(8427069629, 8427069652, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 38.329, "maxspeed": "50", "name": "Calle de Agust\u00edn de Fox\u00e1", "oneway": false, "osmid": 7701503, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.685836, 40.4698119], [-3.6860793, 40.4695484]], "type": "LineString"}, "id": "(8427069652, 55967027, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 35.806, "maxspeed": "50", "name": "Calle de Agust\u00edn de Fox\u00e1", "oneway": false, "osmid": 7701503, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.685836, 40.4698119], [-3.6855721, 40.4700921]], "type": "LineString"}, "id": "(8427069652, 8427069629, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 38.329, "maxspeed": "50", "name": "Calle de Agust\u00edn de Fox\u00e1", "oneway": false, "osmid": 7701503, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6824168, 40.4716059], [-3.6825196, 40.4716298]], "type": "LineString"}, "id": "(1493669260, 3463280831, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "3", "length": 9.093, "maxspeed": "40", "name": null, "oneway": true, "osmid": 907548423, "reversed": false, "tunnel": "building_passage"}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6825196, 40.4716298], [-3.6827054, 40.4716751]], "type": "LineString"}, "id": "(3463280831, 6717442586, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "3", "length": 16.504, "maxspeed": "40", "name": null, "oneway": true, "osmid": 339140015, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6827054, 40.4716751], [-3.6828189, 40.4717028]], "type": "LineString"}, "id": "(6717442586, 3463280832, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "3", "length": 10.083, "maxspeed": "40", "name": null, "oneway": true, "osmid": 339140015, "reversed": false, "tunnel": null}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            var feature_group_739934ff0eb74788470c24ec7825f873 = L.featureGroup(
+                {}
+            ).addTo(map_164122e778069da9e929add41f2bd719);
+        
+    
+        function geo_json_123ecf5a1079b4c1dbd0eacfc85b0794_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "green", "weight": 7};
+            }
+        }
+
+        function geo_json_123ecf5a1079b4c1dbd0eacfc85b0794_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_123ecf5a1079b4c1dbd0eacfc85b0794 = L.geoJson(null, {
+                onEachFeature: geo_json_123ecf5a1079b4c1dbd0eacfc85b0794_onEachFeature,
+            
+                style: geo_json_123ecf5a1079b4c1dbd0eacfc85b0794_styler,
+        });
+
+        function geo_json_123ecf5a1079b4c1dbd0eacfc85b0794_add (data) {
+            geo_json_123ecf5a1079b4c1dbd0eacfc85b0794
+                .addData(data)
+                .addTo(feature_group_739934ff0eb74788470c24ec7825f873);
+        }
+            geo_json_123ecf5a1079b4c1dbd0eacfc85b0794_add({"features": [{"geometry": {"coordinates": [[-3.69848643077079, 40.418007966791], [-3.69856523146068, 40.4182935103231], [-3.69764232290745, 40.418310353438095], [-3.69712518255294, 40.4186735087566], [-3.69690517434711, 40.4187335088628], [-3.69665516643491, 40.4187935086724], [-3.69646515956744, 40.4188435079079], [-3.69607829125748, 40.418671117781], [-3.69601514499266, 40.4189635075464], [-3.69585513805352, 40.41900350702031], [-3.69554512781694, 40.419073506353506], [-3.69522511724204, 40.419133506155696], [-3.69422508223517, 40.419303504274495], [-3.69387507043957, 40.419233504410705], [-3.69373506838545, 40.419213504842894], [-3.69315504809324, 40.419223504456], [-3.69286503753432, 40.4192435049509], [-3.69273503451371, 40.4193035045971], [-3.69255502794247, 40.419413504081], [-3.69252502644238, 40.419463503201], [-3.69248502517527, 40.4196735017], [-3.69242502058909, 40.4199435015206], [-3.69214452424823, 40.420361368549905], [-3.69212500792146, 40.42062349676689], [-3.69194499890702, 40.421043494936704], [-3.69184499659918, 40.421283492849106], [-3.69180499327444, 40.4213734928324], [-3.69151498050471, 40.422013489711105], [-3.6913049725656, 40.4224634852708], [-3.69103496223838, 40.4230434824802], [-3.69095495850316, 40.4232234829087], [-3.69081495150949, 40.423563479406496], [-3.69052060156927, 40.4238845871756], [-3.69053493961431, 40.4241934773078], [-3.69043493591588, 40.4244134763122], [-3.6903249294948, 40.4246334749171], [-3.69026492863124, 40.4247934723679], [-3.69017492461661, 40.4250134725575], [-3.68997491461314, 40.4255034692762], [-3.68990491176627, 40.425683468712], [-3.6898649101253, 40.4258334678588], [-3.6899449111733, 40.425983467447296], [-3.68987341517404, 40.4261316934024], [-3.68990490947091, 40.4263334649732], [-3.6897449029609, 40.4264134632416], [-3.6896748998667, 40.42670346296], [-3.68931488199306, 40.4280834545116], [-3.68911487200525, 40.4288234499976], [-3.68921487591212, 40.4289034494374], [-3.68907087764756, 40.429262604324094], [-3.68902486602338, 40.429383448056704], [-3.68894486333768, 40.429493446620704], [-3.68867484932047, 40.4305434400221], [-3.68865484887325, 40.4306534400204], [-3.68862484572851, 40.4307934386634], [-3.68847483896662, 40.4313434361703], [-3.68833483168961, 40.4318534333045], [-3.68816482330556, 40.4325034298036], [-3.68806481881518, 40.432933426733], [-3.68805481863462, 40.432993426599296], [-3.68807582052125, 40.4332505092102], [-3.68806481663098, 40.4332634249856], [-3.68808481642507, 40.4333734252418], [-3.68809481835096, 40.4334734239881], [-3.68812481741024, 40.433733422385295], [-3.68817481688798, 40.4341034209849], [-3.68819481682568, 40.4342034213263], [-3.68827481640483, 40.434693418236], [-3.68814481070118, 40.4353334131954], [-3.68820481079202, 40.4355334131956], [-3.6882548139142, 40.43550341330231], [-3.68848482097048, 40.4355434118967], [-3.68870482842503, 40.435513413741], [-3.6890248402846, 40.435453414374095], [-3.68925484612971, 40.435383415010094], [-3.68943485334593, 40.4353134154096], [-3.69002310722513, 40.435387572459504], [-3.69016487820282, 40.43529341408], [-3.69118491207953, 40.4352534146934], [-3.69127491613946, 40.435253414086894], [-3.69139491964713, 40.435253414646894], [-3.6920749422853, 40.4352334155153], [-3.69260668643583, 40.435349625417], [-3.69314497674312, 40.4352034154706], [-3.69320497843904, 40.435203414795296], [-3.69427501526012, 40.4351834162426], [-3.69480503281829, 40.4351634156148], [-3.69492503615363, 40.435163416358], [-3.69525901953917, 40.4352976942766], [-3.69649508836169, 40.435123415463906], [-3.69772233959168, 40.4352108052776], [-3.69807514049281, 40.435073416105], [-3.69800513677344, 40.4358134129918], [-3.69797513318063, 40.436233410306], [-3.69792512951158, 40.4367934070002], [-3.69787512384737, 40.437383404341105], [-3.69776511641322, 40.438453397246896], [-3.69768887586698, 40.4388236202538], [-3.69770510913686, 40.4396233907699], [-3.69760510069754, 40.4407333839168], [-3.69745783236777, 40.4415727590024], [-3.69751509191323, 40.4419333779764], [-3.69743508493233, 40.4430433726796], [-3.6974150839547, 40.4432733706034], [-3.69733507641154, 40.4441233648422], [-3.69725035434018, 40.4443217541339], [-3.69728506901306, 40.4446833627516], [-3.69725506417742, 40.445193359075], [-3.6971650545708, 40.446203354197], [-3.69715505350794, 40.4463633526996], [-3.6971350519193, 40.4466133518098], [-3.69697046546368, 40.4477693806567], [-3.6970150366317, 40.4481133423661], [-3.69692502802263, 40.4488933386128], [-3.69680359423439, 40.4490271396316], [-3.69686502321495, 40.4493533354495], [-3.69683502088632, 40.4496233348878], [-3.69681501679098, 40.4498033326848], [-3.69671500481332, 40.45100332678609], [-3.69652685854072, 40.4520693389804], [-3.69659499020633, 40.4525433173902], [-3.69577496436484, 40.4524933182886], [-3.695624959106, 40.4524833191066], [-3.69558495583813, 40.452893314953506], [-3.6955649526365, 40.4530433156572], [-3.69552494951093, 40.453393314038], [-3.69546494195031, 40.4541233083184], [-3.69534971607731, 40.4544322645005], [-3.69534493006696, 40.4552533018024], [-3.69518968732528, 40.4560728604804], [-3.69524491736737, 40.45651329537], [-3.69463489732421, 40.4564832952707], [-3.69376486944161, 40.4564332960922], [-3.69359486443123, 40.4564232964677], [-3.69339485709987, 40.456413296472], [-3.69327485228247, 40.4564032960455], [-3.69255321750975, 40.4562778495309], [-3.69239482537043, 40.456353295826894], [-3.69226481908165, 40.4563432969752], [-3.69073477033681, 40.4562532962269], [-3.69068476891398, 40.456063297887695], [-3.69053476383665, 40.4559632990553], [-3.69033475846066, 40.4559232991726], [-3.69012475178657, 40.455953299152895], [-3.68995474535457, 40.4560332976851], [-3.68991802843891, 40.4560323216233], [-3.68982473988705, 40.4562032970494], [-3.68993474052479, 40.4564232968252], [-3.69004474543713, 40.456493295023904], [-3.69005474363684, 40.4567232944196], [-3.68989472469193, 40.45851328360511], [-3.68985472226905, 40.4587532837746], [-3.68980471539905, 40.4595032779106], [-3.68975471145179, 40.4598432776469], [-3.68972082738504, 40.459893844884306], [-3.68953401416295, 40.4618499055306], [-3.68955468903287, 40.4620532645885], [-3.6895146843263, 40.4624632616164], [-3.68947467924421, 40.4629132601188], [-3.68926465909859, 40.4649432481926], [-3.68919516042857, 40.4651266846777], [-3.68916465070898, 40.465353245805105], [-3.68913464840712, 40.4657432443265], [-3.68903464400516, 40.4657932426084], [-3.68889463931874, 40.4659232426195], [-3.68884463517709, 40.46620324157271], [-3.68852462376364, 40.466263240452705], [-3.68813420813401, 40.466241098726705], [-3.68803460666361, 40.4663632397272], [-3.6865445540119, 40.4666832388673], [-3.68602453552842, 40.4668032378108], [-3.68617454065444, 40.4669532364406], [-3.68640454381726, 40.467583234296704], [-3.68648384915913, 40.4683049407522], [-3.68672454678352, 40.4685732274551], [-3.68681454872115, 40.4687932257162], [-3.68672454498881, 40.468913225726894], [-3.68661453973371, 40.4690532251562], [-3.68646453287801, 40.469233223951505], [-3.68636452919928, 40.469343223214096], [-3.68619452165969, 40.4695332229216], [-3.68607451771994, 40.4696632218848], [-3.68570668814675, 40.469967195834], [-3.68558449789897, 40.470193219445505], [-3.6854244891721, 40.47037321835911], [-3.68527448354723, 40.4705332170404], [-3.68514447934256, 40.4706732162958], [-3.68481446476118, 40.471033214058], [-3.68421444178696, 40.4716632122681], [-3.68392443199789, 40.4718332115226], [-3.68377442592357, 40.471893210633695], [-3.68368442174924, 40.4719232104508], [-3.68339441457671, 40.4718732113262], [-3.68313440556904, 40.471803212994494], [-3.68295440080203, 40.4717432121061], [-3.68273439397798, 40.4716832125973], [-3.68263439041143, 40.4716532133844], [-3.68237438351944, 40.4715732151564], [-3.68210437540327, 40.471493215879505], [-3.6820443730867, 40.4716832150705], [-3.68211437497787, 40.4717032152385], [-3.68236209866559, 40.4718022627815]], "type": "LineString"}, "id": "8", "properties": {"shape_id": "005_A"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            var marker_b88e32c83d4081139e40b1ad858318c9 = L.marker(
+                [40.41796, -3.69849],
+                {"name": "paradas"}
+            ).addTo(feature_group_739934ff0eb74788470c24ec7825f873);
+        
+    
+            var icon_ad7fc0b3459a23b427b5bd21c296177f = L.AwesomeMarkers.icon(
+                {"colorIcon": "green", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_b88e32c83d4081139e40b1ad858318c9.setIcon(icon_ad7fc0b3459a23b427b5bd21c296177f);
+        
+    
+        var popup_41a91dc399749d3a003d9c124705e11d = L.popup({"maxWidth": 300});
+
+        
+            var html_24387f881e81bb1d2fcac2cd2d84ce2e = $(`<div id="html_24387f881e81bb1d2fcac2cd2d84ce2e" style="width: 100.0%; height: 100.0%;">Sol - Sevilla</div>`)[0];
+            popup_41a91dc399749d3a003d9c124705e11d.setContent(html_24387f881e81bb1d2fcac2cd2d84ce2e);
+        
+
+        marker_b88e32c83d4081139e40b1ad858318c9.bindPopup(popup_41a91dc399749d3a003d9c124705e11d)
+        ;
+
+        
+    
+    
+            var marker_db6a9303ff5b23ce12ab29b42ce7d68f = L.marker(
+                [40.41826, -3.69764],
+                {"name": "paradas"}
+            ).addTo(feature_group_739934ff0eb74788470c24ec7825f873);
+        
+    
+            var icon_8520744f377afaf8bae7b036e9e3dc77 = L.AwesomeMarkers.icon(
+                {"colorIcon": "green", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_db6a9303ff5b23ce12ab29b42ce7d68f.setIcon(icon_8520744f377afaf8bae7b036e9e3dc77);
+        
+    
+        var popup_09c6c66113d7812c7739850b3081110c = L.popup({"maxWidth": 300});
+
+        
+            var html_371334799b83937ca32184211537542f = $(`<div id="html_371334799b83937ca32184211537542f" style="width: 100.0%; height: 100.0%;">Metro Sevilla</div>`)[0];
+            popup_09c6c66113d7812c7739850b3081110c.setContent(html_371334799b83937ca32184211537542f);
+        
+
+        marker_db6a9303ff5b23ce12ab29b42ce7d68f.bindPopup(popup_09c6c66113d7812c7739850b3081110c)
+        ;
+
+        
+    
+    
+            var marker_b4e1db8dfd9a90198ad0eb228d2dee8d = L.marker(
+                [40.41862, -3.69608],
+                {"name": "paradas"}
+            ).addTo(feature_group_739934ff0eb74788470c24ec7825f873);
+        
+    
+            var icon_97afba30f988ff64ddacfd55fcc2928f = L.AwesomeMarkers.icon(
+                {"colorIcon": "green", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_b4e1db8dfd9a90198ad0eb228d2dee8d.setIcon(icon_97afba30f988ff64ddacfd55fcc2928f);
+        
+    
+        var popup_035d6e92b481a1e8b812a85348ac3b92 = L.popup({"maxWidth": 300});
+
+        
+            var html_545bec96df1d21a0f320590b0b7e4b2d = $(`<div id="html_545bec96df1d21a0f320590b0b7e4b2d" style="width: 100.0%; height: 100.0%;">Círculo De Bellas Artes</div>`)[0];
+            popup_035d6e92b481a1e8b812a85348ac3b92.setContent(html_545bec96df1d21a0f320590b0b7e4b2d);
+        
+
+        marker_b4e1db8dfd9a90198ad0eb228d2dee8d.bindPopup(popup_035d6e92b481a1e8b812a85348ac3b92)
+        ;
+
+        
+    
+    
+            var marker_c437fc15a562579103768ddb7805ea34 = L.marker(
+                [40.42031, -3.69214],
+                {"name": "paradas"}
+            ).addTo(feature_group_739934ff0eb74788470c24ec7825f873);
+        
+    
+            var icon_eb91b44c52d16e42a3c54c94c6f9ed43 = L.AwesomeMarkers.icon(
+                {"colorIcon": "green", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c437fc15a562579103768ddb7805ea34.setIcon(icon_eb91b44c52d16e42a3c54c94c6f9ed43);
+        
+    
+        var popup_56a51ecf4c483bac7f68482f1917c82c = L.popup({"maxWidth": 300});
+
+        
+            var html_46b1f0c6d1dccf3d4f1b6fec3e7d012c = $(`<div id="html_46b1f0c6d1dccf3d4f1b6fec3e7d012c" style="width: 100.0%; height: 100.0%;">Cibeles - Casa De América</div>`)[0];
+            popup_56a51ecf4c483bac7f68482f1917c82c.setContent(html_46b1f0c6d1dccf3d4f1b6fec3e7d012c);
+        
+
+        marker_c437fc15a562579103768ddb7805ea34.bindPopup(popup_56a51ecf4c483bac7f68482f1917c82c)
+        ;
+
+        
+    
+    
+            var marker_3e469da63251a079b3a65b5950df8ca5 = L.marker(
+                [40.42384, -3.69052],
+                {"name": "paradas"}
+            ).addTo(feature_group_739934ff0eb74788470c24ec7825f873);
+        
+    
+            var icon_006cc66e55aeb7df752abf13776abdbb = L.AwesomeMarkers.icon(
+                {"colorIcon": "green", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_3e469da63251a079b3a65b5950df8ca5.setIcon(icon_006cc66e55aeb7df752abf13776abdbb);
+        
+    
+        var popup_5dc39f34cebcf354bbb8224737bc4334 = L.popup({"maxWidth": 300});
+
+        
+            var html_11ed5bc70b3b1d51ba5fdf8c6c835e66 = $(`<div id="html_11ed5bc70b3b1d51ba5fdf8c6c835e66" style="width: 100.0%; height: 100.0%;">Biblioteca Nacional</div>`)[0];
+            popup_5dc39f34cebcf354bbb8224737bc4334.setContent(html_11ed5bc70b3b1d51ba5fdf8c6c835e66);
+        
+
+        marker_3e469da63251a079b3a65b5950df8ca5.bindPopup(popup_5dc39f34cebcf354bbb8224737bc4334)
+        ;
+
+        
+    
+    
+            var marker_b0a1e25fcaa055c8581b9f8e7353b9f9 = L.marker(
+                [40.42608, -3.68987],
+                {"name": "paradas"}
+            ).addTo(feature_group_739934ff0eb74788470c24ec7825f873);
+        
+    
+            var icon_22efde6e342a58f7eea4dd19672f59ee = L.AwesomeMarkers.icon(
+                {"colorIcon": "green", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_b0a1e25fcaa055c8581b9f8e7353b9f9.setIcon(icon_22efde6e342a58f7eea4dd19672f59ee);
+        
+    
+        var popup_094519dcb881f6bc5179382e91df663f = L.popup({"maxWidth": 300});
+
+        
+            var html_9b1f88de6701429fabb1a972267e2323 = $(`<div id="html_9b1f88de6701429fabb1a972267e2323" style="width: 100.0%; height: 100.0%;">Colón</div>`)[0];
+            popup_094519dcb881f6bc5179382e91df663f.setContent(html_9b1f88de6701429fabb1a972267e2323);
+        
+
+        marker_b0a1e25fcaa055c8581b9f8e7353b9f9.bindPopup(popup_094519dcb881f6bc5179382e91df663f)
+        ;
+
+        
+    
+    
+            var marker_242e1c46d585c0944401e0b2fdaa692c = L.marker(
+                [40.42921, -3.68907],
+                {"name": "paradas"}
+            ).addTo(feature_group_739934ff0eb74788470c24ec7825f873);
+        
+    
+            var icon_c63ef5880e9fa356b27e1dcc78a5700c = L.AwesomeMarkers.icon(
+                {"colorIcon": "green", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_242e1c46d585c0944401e0b2fdaa692c.setIcon(icon_c63ef5880e9fa356b27e1dcc78a5700c);
+        
+    
+        var popup_9ea8f15719e428ba819eb2905e801b08 = L.popup({"maxWidth": 300});
+
+        
+            var html_32cc60c6a6b495b881e6b0bdcd6ed842 = $(`<div id="html_32cc60c6a6b495b881e6b0bdcd6ed842" style="width: 100.0%; height: 100.0%;">Castellana - Ministerio Interior</div>`)[0];
+            popup_9ea8f15719e428ba819eb2905e801b08.setContent(html_32cc60c6a6b495b881e6b0bdcd6ed842);
+        
+
+        marker_242e1c46d585c0944401e0b2fdaa692c.bindPopup(popup_9ea8f15719e428ba819eb2905e801b08)
+        ;
+
+        
+    
+    
+            var marker_dd9ce6a91dbd3822c98a6e12be9e9eca = L.marker(
+                [40.4332, -3.68808],
+                {"name": "paradas"}
+            ).addTo(feature_group_739934ff0eb74788470c24ec7825f873);
+        
+    
+            var icon_bf828d7b09c568e514def73e6bfcd92e = L.AwesomeMarkers.icon(
+                {"colorIcon": "green", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_dd9ce6a91dbd3822c98a6e12be9e9eca.setIcon(icon_bf828d7b09c568e514def73e6bfcd92e);
+        
+    
+        var popup_2b100f3a8b0563c35b4539b31314c6b4 = L.popup({"maxWidth": 300});
+
+        
+            var html_273927057fdd07d2c04abf2455ad914f = $(`<div id="html_273927057fdd07d2c04abf2455ad914f" style="width: 100.0%; height: 100.0%;">Castellana - Rubén Darío</div>`)[0];
+            popup_2b100f3a8b0563c35b4539b31314c6b4.setContent(html_273927057fdd07d2c04abf2455ad914f);
+        
+
+        marker_dd9ce6a91dbd3822c98a6e12be9e9eca.bindPopup(popup_2b100f3a8b0563c35b4539b31314c6b4)
+        ;
+
+        
+    
+    
+            var marker_7c4d24629e7e870cb9c1bd396789041e = L.marker(
+                [40.43534, -3.69002],
+                {"name": "paradas"}
+            ).addTo(feature_group_739934ff0eb74788470c24ec7825f873);
+        
+    
+            var icon_2fc71b5074e9bc9a774647d3ed989a49 = L.AwesomeMarkers.icon(
+                {"colorIcon": "green", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7c4d24629e7e870cb9c1bd396789041e.setIcon(icon_2fc71b5074e9bc9a774647d3ed989a49);
+        
+    
+        var popup_0c16306844d2ff79f6c49a7c96d11cb2 = L.popup({"maxWidth": 300});
+
+        
+            var html_2077bb0cbceb1afad74e2e1adc38ceba = $(`<div id="html_2077bb0cbceb1afad74e2e1adc38ceba" style="width: 100.0%; height: 100.0%;">Emilio Castelar</div>`)[0];
+            popup_0c16306844d2ff79f6c49a7c96d11cb2.setContent(html_2077bb0cbceb1afad74e2e1adc38ceba);
+        
+
+        marker_7c4d24629e7e870cb9c1bd396789041e.bindPopup(popup_0c16306844d2ff79f6c49a7c96d11cb2)
+        ;
+
+        
+    
+    
+            var marker_55908a2a5d30e0c08105beead2243113 = L.marker(
+                [40.4353, -3.69261],
+                {"name": "paradas"}
+            ).addTo(feature_group_739934ff0eb74788470c24ec7825f873);
+        
+    
+            var icon_311a5c421b0e72be6652b95973d4bb36 = L.AwesomeMarkers.icon(
+                {"colorIcon": "green", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_55908a2a5d30e0c08105beead2243113.setIcon(icon_311a5c421b0e72be6652b95973d4bb36);
+        
+    
+        var popup_be9175462b276658a8f512b0bee7d27a = L.popup({"maxWidth": 300});
+
+        
+            var html_4034fa3848ba782c09a7b951244e24a6 = $(`<div id="html_4034fa3848ba782c09a7b951244e24a6" style="width: 100.0%; height: 100.0%;">Museo Sorolla</div>`)[0];
+            popup_be9175462b276658a8f512b0bee7d27a.setContent(html_4034fa3848ba782c09a7b951244e24a6);
+        
+
+        marker_55908a2a5d30e0c08105beead2243113.bindPopup(popup_be9175462b276658a8f512b0bee7d27a)
+        ;
+
+        
+    
+    
+            var marker_54164d064eba4ee3ffd76f98231421a0 = L.marker(
+                [40.43525, -3.69526],
+                {"name": "paradas"}
+            ).addTo(feature_group_739934ff0eb74788470c24ec7825f873);
+        
+    
+            var icon_0968d4c3202949bd7fc23961d394c9f5 = L.AwesomeMarkers.icon(
+                {"colorIcon": "green", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_54164d064eba4ee3ffd76f98231421a0.setIcon(icon_0968d4c3202949bd7fc23961d394c9f5);
+        
+    
+        var popup_ee97634e82f1ad1a015ba09c7bf6244a = L.popup({"maxWidth": 300});
+
+        
+            var html_5c7c6b3eed0c22abf0226b10635bce8f = $(`<div id="html_5c7c6b3eed0c22abf0226b10635bce8f" style="width: 100.0%; height: 100.0%;">Martínez Campos</div>`)[0];
+            popup_ee97634e82f1ad1a015ba09c7bf6244a.setContent(html_5c7c6b3eed0c22abf0226b10635bce8f);
+        
+
+        marker_54164d064eba4ee3ffd76f98231421a0.bindPopup(popup_ee97634e82f1ad1a015ba09c7bf6244a)
+        ;
+
+        
+    
+    
+            var marker_d19cabaf56a0d707097e830d749ef844 = L.marker(
+                [40.43516, -3.69772],
+                {"name": "paradas"}
+            ).addTo(feature_group_739934ff0eb74788470c24ec7825f873);
+        
+    
+            var icon_001fa8f8425b9c3be9f777576439b625 = L.AwesomeMarkers.icon(
+                {"colorIcon": "green", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_d19cabaf56a0d707097e830d749ef844.setIcon(icon_001fa8f8425b9c3be9f777576439b625);
+        
+    
+        var popup_4f1730164ca061f52856d77534558800 = L.popup({"maxWidth": 300});
+
+        
+            var html_f5845b3181d9a8b837a9c38eed356122 = $(`<div id="html_f5845b3181d9a8b837a9c38eed356122" style="width: 100.0%; height: 100.0%;">Iglesia - Alonso Cano</div>`)[0];
+            popup_4f1730164ca061f52856d77534558800.setContent(html_f5845b3181d9a8b837a9c38eed356122);
+        
+
+        marker_d19cabaf56a0d707097e830d749ef844.bindPopup(popup_4f1730164ca061f52856d77534558800)
+        ;
+
+        
+    
+    
+            var marker_91251108a4223c6bc343cc59c967c8d7 = L.marker(
+                [40.43878, -3.69769],
+                {"name": "paradas"}
+            ).addTo(feature_group_739934ff0eb74788470c24ec7825f873);
+        
+    
+            var icon_821bb38a21c420d5d0c9f322e7a2743f = L.AwesomeMarkers.icon(
+                {"colorIcon": "green", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_91251108a4223c6bc343cc59c967c8d7.setIcon(icon_821bb38a21c420d5d0c9f322e7a2743f);
+        
+    
+        var popup_6f7b55c03b3656e7e2de02feb1b71980 = L.popup({"maxWidth": 300});
+
+        
+            var html_555a23798d234553e98902121f07b3ff = $(`<div id="html_555a23798d234553e98902121f07b3ff" style="width: 100.0%; height: 100.0%;">Metro Alonso Cano</div>`)[0];
+            popup_6f7b55c03b3656e7e2de02feb1b71980.setContent(html_555a23798d234553e98902121f07b3ff);
+        
+
+        marker_91251108a4223c6bc343cc59c967c8d7.bindPopup(popup_6f7b55c03b3656e7e2de02feb1b71980)
+        ;
+
+        
+    
+    
+            var marker_d01efb89ed46281ce7c93416152bc98d = L.marker(
+                [40.44153, -3.69746],
+                {"name": "paradas"}
+            ).addTo(feature_group_739934ff0eb74788470c24ec7825f873);
+        
+    
+            var icon_a0a7c94091d39ca96abb2a445c8598dd = L.AwesomeMarkers.icon(
+                {"colorIcon": "green", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_d01efb89ed46281ce7c93416152bc98d.setIcon(icon_a0a7c94091d39ca96abb2a445c8598dd);
+        
+    
+        var popup_dc546249caa7add60b14cb5d8fc2de7f = L.popup({"maxWidth": 300});
+
+        
+            var html_51a0e5db3411ebe44781488cdd112e6c = $(`<div id="html_51a0e5db3411ebe44781488cdd112e6c" style="width: 100.0%; height: 100.0%;">Alonso Cano - Ríos Rosas</div>`)[0];
+            popup_dc546249caa7add60b14cb5d8fc2de7f.setContent(html_51a0e5db3411ebe44781488cdd112e6c);
+        
+
+        marker_d01efb89ed46281ce7c93416152bc98d.bindPopup(popup_dc546249caa7add60b14cb5d8fc2de7f)
+        ;
+
+        
+    
+    
+            var marker_1a7c151bec563cab9ef9302a3fc1d82a = L.marker(
+                [40.44427, -3.69725],
+                {"name": "paradas"}
+            ).addTo(feature_group_739934ff0eb74788470c24ec7825f873);
+        
+    
+            var icon_7d7a99e013ba66fe55db13c218e504af = L.AwesomeMarkers.icon(
+                {"colorIcon": "green", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_1a7c151bec563cab9ef9302a3fc1d82a.setIcon(icon_7d7a99e013ba66fe55db13c218e504af);
+        
+    
+        var popup_3d3224126026b2515e39ee3b3c10bc40 = L.popup({"maxWidth": 300});
+
+        
+            var html_46bf07989d06758c6552413d5e6b0756 = $(`<div id="html_46bf07989d06758c6552413d5e6b0756" style="width: 100.0%; height: 100.0%;">Alonso Cano - María De Guzmán</div>`)[0];
+            popup_3d3224126026b2515e39ee3b3c10bc40.setContent(html_46bf07989d06758c6552413d5e6b0756);
+        
+
+        marker_1a7c151bec563cab9ef9302a3fc1d82a.bindPopup(popup_3d3224126026b2515e39ee3b3c10bc40)
+        ;
+
+        
+    
+    
+            var marker_afa5db12194fa4ee7449a21c1af9f034 = L.marker(
+                [40.44616, -3.69708],
+                {"name": "paradas"}
+            ).addTo(feature_group_739934ff0eb74788470c24ec7825f873);
+        
+    
+            var icon_fdc7f49241de30a94010724bcb290d0d = L.AwesomeMarkers.icon(
+                {"colorIcon": "green", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_afa5db12194fa4ee7449a21c1af9f034.setIcon(icon_fdc7f49241de30a94010724bcb290d0d);
+        
+    
+        var popup_f11687882d0cab9d6c1211d35ed90c8f = L.popup({"maxWidth": 300});
+
+        
+            var html_ebd2bc6ff6c21479d5677e396454d778 = $(`<div id="html_ebd2bc6ff6c21479d5677e396454d778" style="width: 100.0%; height: 100.0%;">Alonso Cano - Fernández Villaverde</div>`)[0];
+            popup_f11687882d0cab9d6c1211d35ed90c8f.setContent(html_ebd2bc6ff6c21479d5677e396454d778);
+        
+
+        marker_afa5db12194fa4ee7449a21c1af9f034.bindPopup(popup_f11687882d0cab9d6c1211d35ed90c8f)
+        ;
+
+        
+    
+    
+            var marker_2925a89f520a3b0869cdb6a152c80a26 = L.marker(
+                [40.44773, -3.69697],
+                {"name": "paradas"}
+            ).addTo(feature_group_739934ff0eb74788470c24ec7825f873);
+        
+    
+            var icon_1aec035ba239e61a80a695a94702e913 = L.AwesomeMarkers.icon(
+                {"colorIcon": "green", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_2925a89f520a3b0869cdb6a152c80a26.setIcon(icon_1aec035ba239e61a80a695a94702e913);
+        
+    
+        var popup_c419425125533d25f093f0cd1f10daca = L.popup({"maxWidth": 300});
+
+        
+            var html_aebf271e746c55f240bf20330cea2751 = $(`<div id="html_aebf271e746c55f240bf20330cea2751" style="width: 100.0%; height: 100.0%;">Hernani</div>`)[0];
+            popup_c419425125533d25f093f0cd1f10daca.setContent(html_aebf271e746c55f240bf20330cea2751);
+        
+
+        marker_2925a89f520a3b0869cdb6a152c80a26.bindPopup(popup_c419425125533d25f093f0cd1f10daca)
+        ;
+
+        
+    
+    
+            var marker_4e50b3920fb155e402f01bb9f14748c4 = L.marker(
+                [40.44898, -3.6968],
+                {"name": "paradas"}
+            ).addTo(feature_group_739934ff0eb74788470c24ec7825f873);
+        
+    
+            var icon_f46ae3ef88d5a46bc3fdcb0adcd23ac5 = L.AwesomeMarkers.icon(
+                {"colorIcon": "green", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_4e50b3920fb155e402f01bb9f14748c4.setIcon(icon_f46ae3ef88d5a46bc3fdcb0adcd23ac5);
+        
+    
+        var popup_4ca6e7e56caf3e9e61fcc4b13455da82 = L.popup({"maxWidth": 300});
+
+        
+            var html_bbb5117da0b528d5c0a82a78cd87eb86 = $(`<div id="html_bbb5117da0b528d5c0a82a78cd87eb86" style="width: 100.0%; height: 100.0%;">Basílica</div>`)[0];
+            popup_4ca6e7e56caf3e9e61fcc4b13455da82.setContent(html_bbb5117da0b528d5c0a82a78cd87eb86);
+        
+
+        marker_4e50b3920fb155e402f01bb9f14748c4.bindPopup(popup_4ca6e7e56caf3e9e61fcc4b13455da82)
+        ;
+
+        
+    
+    
+            var marker_6533c538b9ce62b9e5ef249c1e22de51 = L.marker(
+                [40.45203, -3.69653],
+                {"name": "paradas"}
+            ).addTo(feature_group_739934ff0eb74788470c24ec7825f873);
+        
+    
+            var icon_9ebbaf5c3a366da8fcf79c43f8ffecd6 = L.AwesomeMarkers.icon(
+                {"colorIcon": "green", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_6533c538b9ce62b9e5ef249c1e22de51.setIcon(icon_9ebbaf5c3a366da8fcf79c43f8ffecd6);
+        
+    
+        var popup_613ae3e142e52b11cf350217cd6599fc = L.popup({"maxWidth": 300});
+
+        
+            var html_57bd2d8332c9a209f1ca9098841ab73c = $(`<div id="html_57bd2d8332c9a209f1ca9098841ab73c" style="width: 100.0%; height: 100.0%;">Edgar Neville</div>`)[0];
+            popup_613ae3e142e52b11cf350217cd6599fc.setContent(html_57bd2d8332c9a209f1ca9098841ab73c);
+        
+
+        marker_6533c538b9ce62b9e5ef249c1e22de51.bindPopup(popup_613ae3e142e52b11cf350217cd6599fc)
+        ;
+
+        
+    
+    
+            var marker_36edf9c702cd37b20263672b5a257436 = L.marker(
+                [40.45438, -3.69535],
+                {"name": "paradas"}
+            ).addTo(feature_group_739934ff0eb74788470c24ec7825f873);
+        
+    
+            var icon_371d36abb7a7fd2c4d6a483cec8c7c36 = L.AwesomeMarkers.icon(
+                {"colorIcon": "green", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_36edf9c702cd37b20263672b5a257436.setIcon(icon_371d36abb7a7fd2c4d6a483cec8c7c36);
+        
+    
+        var popup_183f2d362a39f10a4da8d3d27eaf543e = L.popup({"maxWidth": 300});
+
+        
+            var html_fb4492a56edab45835f2f10df3f40678 = $(`<div id="html_fb4492a56edab45835f2f10df3f40678" style="width: 100.0%; height: 100.0%;">Julián Besteiro - Fortunata Y Jacinta</div>`)[0];
+            popup_183f2d362a39f10a4da8d3d27eaf543e.setContent(html_fb4492a56edab45835f2f10df3f40678);
+        
+
+        marker_36edf9c702cd37b20263672b5a257436.bindPopup(popup_183f2d362a39f10a4da8d3d27eaf543e)
+        ;
+
+        
+    
+    
+            var marker_db4853de03218f302bad232e50ecccdd = L.marker(
+                [40.45603, -3.69519],
+                {"name": "paradas"}
+            ).addTo(feature_group_739934ff0eb74788470c24ec7825f873);
+        
+    
+            var icon_580c6e2ad3daa7957a22a1862f99f2a8 = L.AwesomeMarkers.icon(
+                {"colorIcon": "green", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_db4853de03218f302bad232e50ecccdd.setIcon(icon_580c6e2ad3daa7957a22a1862f99f2a8);
+        
+    
+        var popup_1b68d2c0a30d891089a58f3020dcd368 = L.popup({"maxWidth": 300});
+
+        
+            var html_cce5d013a6640e80f7bfa0ca2fbb35d3 = $(`<div id="html_cce5d013a6640e80f7bfa0ca2fbb35d3" style="width: 100.0%; height: 100.0%;">Julián Besteiro - San Germán</div>`)[0];
+            popup_1b68d2c0a30d891089a58f3020dcd368.setContent(html_cce5d013a6640e80f7bfa0ca2fbb35d3);
+        
+
+        marker_db4853de03218f302bad232e50ecccdd.bindPopup(popup_1b68d2c0a30d891089a58f3020dcd368)
+        ;
+
+        
+    
+    
+            var marker_2c297cf8e2ee2cbe2334d6be41518180 = L.marker(
+                [40.45623, -3.69255],
+                {"name": "paradas"}
+            ).addTo(feature_group_739934ff0eb74788470c24ec7825f873);
+        
+    
+            var icon_eaa03f87064e91386dcbe4e2863f34fd = L.AwesomeMarkers.icon(
+                {"colorIcon": "green", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_2c297cf8e2ee2cbe2334d6be41518180.setIcon(icon_eaa03f87064e91386dcbe4e2863f34fd);
+        
+    
+        var popup_04c3b76a6072d5ae5ae3d44eadd4ee6c = L.popup({"maxWidth": 300});
+
+        
+            var html_4b8e1163bf4c970f6114b847f6a93a03 = $(`<div id="html_4b8e1163bf4c970f6114b847f6a93a03" style="width: 100.0%; height: 100.0%;">Joan Maragall - San Germán</div>`)[0];
+            popup_04c3b76a6072d5ae5ae3d44eadd4ee6c.setContent(html_4b8e1163bf4c970f6114b847f6a93a03);
+        
+
+        marker_2c297cf8e2ee2cbe2334d6be41518180.bindPopup(popup_04c3b76a6072d5ae5ae3d44eadd4ee6c)
+        ;
+
+        
+    
+    
+            var marker_2c9436470ea1cae898ca7a29acbfe265 = L.marker(
+                [40.45598, -3.68992],
+                {"name": "paradas"}
+            ).addTo(feature_group_739934ff0eb74788470c24ec7825f873);
+        
+    
+            var icon_812e0a0d43e7f07036563ba9aa83784d = L.AwesomeMarkers.icon(
+                {"colorIcon": "green", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_2c9436470ea1cae898ca7a29acbfe265.setIcon(icon_812e0a0d43e7f07036563ba9aa83784d);
+        
+    
+        var popup_e78a373e0c1f410a2ec621911cfb9983 = L.popup({"maxWidth": 300});
+
+        
+            var html_25044d4cb197a427216fcade30bb4523 = $(`<div id="html_25044d4cb197a427216fcade30bb4523" style="width: 100.0%; height: 100.0%;">Castellana - San Germán</div>`)[0];
+            popup_e78a373e0c1f410a2ec621911cfb9983.setContent(html_25044d4cb197a427216fcade30bb4523);
+        
+
+        marker_2c9436470ea1cae898ca7a29acbfe265.bindPopup(popup_e78a373e0c1f410a2ec621911cfb9983)
+        ;
+
+        
+    
+    
+            var marker_0eaa960b7230bd174bc5fbc5acc1f6f5 = L.marker(
+                [40.45985, -3.68972],
+                {"name": "paradas"}
+            ).addTo(feature_group_739934ff0eb74788470c24ec7825f873);
+        
+    
+            var icon_850b15de2609274054fcd53d2231b2e0 = L.AwesomeMarkers.icon(
+                {"colorIcon": "green", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_0eaa960b7230bd174bc5fbc5acc1f6f5.setIcon(icon_850b15de2609274054fcd53d2231b2e0);
+        
+    
+        var popup_b81a2a33ad8ebedc02f8bdadb2724130 = L.popup({"maxWidth": 300});
+
+        
+            var html_bc96b9ca9a8f7aef6494791f008984e7 = $(`<div id="html_bc96b9ca9a8f7aef6494791f008984e7" style="width: 100.0%; height: 100.0%;">Cuzco</div>`)[0];
+            popup_b81a2a33ad8ebedc02f8bdadb2724130.setContent(html_bc96b9ca9a8f7aef6494791f008984e7);
+        
+
+        marker_0eaa960b7230bd174bc5fbc5acc1f6f5.bindPopup(popup_b81a2a33ad8ebedc02f8bdadb2724130)
+        ;
+
+        
+    
+    
+            var marker_279445cc5c109c90e684fbf0021d6cae = L.marker(
+                [40.46181, -3.68953],
+                {"name": "paradas"}
+            ).addTo(feature_group_739934ff0eb74788470c24ec7825f873);
+        
+    
+            var icon_ff34c46de114f7b2e8b58bc6ccc2a3e9 = L.AwesomeMarkers.icon(
+                {"colorIcon": "green", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_279445cc5c109c90e684fbf0021d6cae.setIcon(icon_ff34c46de114f7b2e8b58bc6ccc2a3e9);
+        
+    
+        var popup_aa3146dc44c83193234947f6a97cafa8 = L.popup({"maxWidth": 300});
+
+        
+            var html_c47c655ce274ecce974f8a66738def2d = $(`<div id="html_c47c655ce274ecce974f8a66738def2d" style="width: 100.0%; height: 100.0%;">Castellana - Rosario Pino</div>`)[0];
+            popup_aa3146dc44c83193234947f6a97cafa8.setContent(html_c47c655ce274ecce974f8a66738def2d);
+        
+
+        marker_279445cc5c109c90e684fbf0021d6cae.bindPopup(popup_aa3146dc44c83193234947f6a97cafa8)
+        ;
+
+        
+    
+    
+            var marker_61b6cff3ea234c3aad45a0dd4b82be64 = L.marker(
+                [40.46508, -3.6892],
+                {"name": "paradas"}
+            ).addTo(feature_group_739934ff0eb74788470c24ec7825f873);
+        
+    
+            var icon_2371db4829cea591c6cdbe847149eec9 = L.AwesomeMarkers.icon(
+                {"colorIcon": "green", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_61b6cff3ea234c3aad45a0dd4b82be64.setIcon(icon_2371db4829cea591c6cdbe847149eec9);
+        
+    
+        var popup_20f7d3a790ee7be6cd1af96d26447b4b = L.popup({"maxWidth": 300});
+
+        
+            var html_415427116ce8e816cc461fd9a4edabea = $(`<div id="html_415427116ce8e816cc461fd9a4edabea" style="width: 100.0%; height: 100.0%;">Juzgados Plaza Castilla</div>`)[0];
+            popup_20f7d3a790ee7be6cd1af96d26447b4b.setContent(html_415427116ce8e816cc461fd9a4edabea);
+        
+
+        marker_61b6cff3ea234c3aad45a0dd4b82be64.bindPopup(popup_20f7d3a790ee7be6cd1af96d26447b4b)
+        ;
+
+        
+    
+    
+            var marker_d4f9431c44617b01b9ae413d62bbbaa3 = L.marker(
+                [40.46619, -3.68813],
+                {"name": "paradas"}
+            ).addTo(feature_group_739934ff0eb74788470c24ec7825f873);
+        
+    
+            var icon_8e70ba1a2cc764444b62c09d567056d5 = L.AwesomeMarkers.icon(
+                {"colorIcon": "green", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_d4f9431c44617b01b9ae413d62bbbaa3.setIcon(icon_8e70ba1a2cc764444b62c09d567056d5);
+        
+    
+        var popup_f5965682a305d3d22a1a877a439f156a = L.popup({"maxWidth": 300});
+
+        
+            var html_868a0bfab45c2142fe4c74b37a381805 = $(`<div id="html_868a0bfab45c2142fe4c74b37a381805" style="width: 100.0%; height: 100.0%;">Plaza Castilla</div>`)[0];
+            popup_f5965682a305d3d22a1a877a439f156a.setContent(html_868a0bfab45c2142fe4c74b37a381805);
+        
+
+        marker_d4f9431c44617b01b9ae413d62bbbaa3.bindPopup(popup_f5965682a305d3d22a1a877a439f156a)
+        ;
+
+        
+    
+    
+            var marker_be644f6b5a8b758eb1436ec8429993c5 = L.marker(
+                [40.46826, -3.68648],
+                {"name": "paradas"}
+            ).addTo(feature_group_739934ff0eb74788470c24ec7825f873);
+        
+    
+            var icon_fd869f399b88db7e3ecb64fbad5a66af = L.AwesomeMarkers.icon(
+                {"colorIcon": "green", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_be644f6b5a8b758eb1436ec8429993c5.setIcon(icon_fd869f399b88db7e3ecb64fbad5a66af);
+        
+    
+        var popup_b7a93d11b4c9a2c2c48676c9df0b235b = L.popup({"maxWidth": 300});
+
+        
+            var html_35b7e4f636d6ae88e6c1aca7bb26ecdf = $(`<div id="html_35b7e4f636d6ae88e6c1aca7bb26ecdf" style="width: 100.0%; height: 100.0%;">Enrique Larreta</div>`)[0];
+            popup_b7a93d11b4c9a2c2c48676c9df0b235b.setContent(html_35b7e4f636d6ae88e6c1aca7bb26ecdf);
+        
+
+        marker_be644f6b5a8b758eb1436ec8429993c5.bindPopup(popup_b7a93d11b4c9a2c2c48676c9df0b235b)
+        ;
+
+        
+    
+    
+            var marker_3c01c01f104e8bd8a908319e6ac461ab = L.marker(
+                [40.46992, -3.68571],
+                {"name": "paradas"}
+            ).addTo(feature_group_739934ff0eb74788470c24ec7825f873);
+        
+    
+            var icon_bba0e3dd5c77c7ecdcb41a0267939b80 = L.AwesomeMarkers.icon(
+                {"colorIcon": "green", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_3c01c01f104e8bd8a908319e6ac461ab.setIcon(icon_bba0e3dd5c77c7ecdcb41a0267939b80);
+        
+    
+        var popup_22feb8da29da6e606a16bb5eb601c593 = L.popup({"maxWidth": 300});
+
+        
+            var html_7ed9f76e4376212fcb95a3a81bfbb5af = $(`<div id="html_7ed9f76e4376212fcb95a3a81bfbb5af" style="width: 100.0%; height: 100.0%;">Agustín De Foxá</div>`)[0];
+            popup_22feb8da29da6e606a16bb5eb601c593.setContent(html_7ed9f76e4376212fcb95a3a81bfbb5af);
+        
+
+        marker_3c01c01f104e8bd8a908319e6ac461ab.bindPopup(popup_22feb8da29da6e606a16bb5eb601c593)
+        ;
+
+        
+    
+    
+            var marker_233ced4f7bedcb7499ac04a4cd329bb0 = L.marker(
+                [40.47176, -3.68236],
+                {"name": "paradas"}
+            ).addTo(feature_group_739934ff0eb74788470c24ec7825f873);
+        
+    
+            var icon_cf9da0324b1511b535f66dc128817a86 = L.AwesomeMarkers.icon(
+                {"colorIcon": "green", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_233ced4f7bedcb7499ac04a4cd329bb0.setIcon(icon_cf9da0324b1511b535f66dc128817a86);
+        
+    
+        var popup_6b590967515ab8f10bc7bfd537034b70 = L.popup({"maxWidth": 300});
+
+        
+            var html_e393340bc4be359b89f2954afaf43b9b = $(`<div id="html_e393340bc4be359b89f2954afaf43b9b" style="width: 100.0%; height: 100.0%;">Chamartín</div>`)[0];
+            popup_6b590967515ab8f10bc7bfd537034b70.setContent(html_e393340bc4be359b89f2954afaf43b9b);
+        
+
+        marker_233ced4f7bedcb7499ac04a4cd329bb0.bindPopup(popup_6b590967515ab8f10bc7bfd537034b70)
+        ;
+
+        
+    
+    
+            var feature_group_sub_group_a77a86ebc391d60472f525c9a72ed586 = L.featureGroup.subGroup(
+                feature_group_739934ff0eb74788470c24ec7825f873
+            );
+            feature_group_sub_group_a77a86ebc391d60472f525c9a72ed586.addTo(map_164122e778069da9e929add41f2bd719);
+        
+    
+            var marker_eb319068d95ac04d3b3ea6c57d7311eb = L.marker(
+                [40.4181568747982, -3.6989139415409262],
+                {"name": "poi"}
+            ).addTo(feature_group_sub_group_a77a86ebc391d60472f525c9a72ed586);
+        
+    
+            var icon_c46817fed4b0207bc0182cd1dfba1659 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_eb319068d95ac04d3b3ea6c57d7311eb.setIcon(icon_c46817fed4b0207bc0182cd1dfba1659);
+        
+    
+        var popup_c197cc2fc81f71e323bdc58ebccbb598 = L.popup({"maxWidth": 300});
+
+        
+            var html_71be53b484263ea84e1fb999de0c265b = $(`<div id="html_71be53b484263ea84e1fb999de0c265b" style="width: 100.0%; height: 100.0%;">Accesible desde la parada: Sol - Sevilla Distancia: 42.09m<br>Tipo: parking<br> Parking: nan</div>`)[0];
+            popup_c197cc2fc81f71e323bdc58ebccbb598.setContent(html_71be53b484263ea84e1fb999de0c265b);
+        
+
+        marker_eb319068d95ac04d3b3ea6c57d7311eb.bindPopup(popup_c197cc2fc81f71e323bdc58ebccbb598)
+        ;
+
+        
+    
+    
+            var marker_b5cf74c78dd1b8d0da0636364a9aefe7 = L.marker(
+                [40.42383503301697, -3.6903855095568385],
+                {"name": "poi"}
+            ).addTo(feature_group_sub_group_a77a86ebc391d60472f525c9a72ed586);
+        
+    
+            var icon_7826e846f9393cdd3bcdd8dc7396e259 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b5cf74c78dd1b8d0da0636364a9aefe7.setIcon(icon_7826e846f9393cdd3bcdd8dc7396e259);
+        
+    
+        var popup_02004008618692e2ba1748b8ec904d2e = L.popup({"maxWidth": 300});
+
+        
+            var html_f4ec5e2e2f4d147ee9ad73d5e4e69bd8 = $(`<div id="html_f4ec5e2e2f4d147ee9ad73d5e4e69bd8" style="width: 100.0%; height: 100.0%;">Accesible desde la parada: Biblioteca Nacional Distancia: 11.42m<br>Tipo: parking<br> Parking: Sin nombre</div>`)[0];
+            popup_02004008618692e2ba1748b8ec904d2e.setContent(html_f4ec5e2e2f4d147ee9ad73d5e4e69bd8);
+        
+
+        marker_b5cf74c78dd1b8d0da0636364a9aefe7.bindPopup(popup_02004008618692e2ba1748b8ec904d2e)
+        ;
+
+        
+    
+    
+            var marker_43a11a9d8adc53ca0aa136da930e4043 = L.marker(
+                [40.455780500484934, -3.6896791000049873],
+                {"name": "poi"}
+            ).addTo(feature_group_sub_group_a77a86ebc391d60472f525c9a72ed586);
+        
+    
+            var icon_866675325e3e0d5525e8de59fef200b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_43a11a9d8adc53ca0aa136da930e4043.setIcon(icon_866675325e3e0d5525e8de59fef200b2);
+        
+    
+        var popup_9285f3c6f3954787609255d104f0ca87 = L.popup({"maxWidth": 300});
+
+        
+            var html_f4c1dc0e0e5a054c3a085d55ba81af8a = $(`<div id="html_f4c1dc0e0e5a054c3a085d55ba81af8a" style="width: 100.0%; height: 100.0%;">Accesible desde la parada: Castellana - San Germán Distancia: 30.13m<br>Tipo: parking<br> Parking: Garaje Avenida</div>`)[0];
+            popup_9285f3c6f3954787609255d104f0ca87.setContent(html_f4c1dc0e0e5a054c3a085d55ba81af8a);
+        
+
+        marker_43a11a9d8adc53ca0aa136da930e4043.bindPopup(popup_9285f3c6f3954787609255d104f0ca87)
+        ;
+
+        
+    
+    
+            var marker_ee199f7e120eca400f8ba5412ba2d4bf = L.marker(
+                [40.471441800486524, -3.682600400004954],
+                {"name": "poi"}
+            ).addTo(feature_group_sub_group_a77a86ebc391d60472f525c9a72ed586);
+        
+    
+            var icon_41df5b5b10718e552a2943100bd47dac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ee199f7e120eca400f8ba5412ba2d4bf.setIcon(icon_41df5b5b10718e552a2943100bd47dac);
+        
+    
+        var popup_943f45062e22f3653706d0ca2e1e49c8 = L.popup({"maxWidth": 300});
+
+        
+            var html_6def6a9e86f15498a92cf43289c595e2 = $(`<div id="html_6def6a9e86f15498a92cf43289c595e2" style="width: 100.0%; height: 100.0%;">Accesible desde la parada: Chamartín Distancia: 40.78m<br>Tipo: parking<br> Parking: nan</div>`)[0];
+            popup_943f45062e22f3653706d0ca2e1e49c8.setContent(html_6def6a9e86f15498a92cf43289c595e2);
+        
+
+        marker_ee199f7e120eca400f8ba5412ba2d4bf.bindPopup(popup_943f45062e22f3653706d0ca2e1e49c8)
+        ;
+
+        
+    
+    
+        function geo_json_f1abe9e792ed4b48df240609fc49b7ac_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "orange", "weight": 2};
+            }
+        }
+
+        function geo_json_f1abe9e792ed4b48df240609fc49b7ac_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_f1abe9e792ed4b48df240609fc49b7ac = L.geoJson(null, {
+                onEachFeature: geo_json_f1abe9e792ed4b48df240609fc49b7ac_onEachFeature,
+            
+                style: geo_json_f1abe9e792ed4b48df240609fc49b7ac_styler,
+        });
+
+        function geo_json_f1abe9e792ed4b48df240609fc49b7ac_add (data) {
+            geo_json_f1abe9e792ed4b48df240609fc49b7ac
+                .addData(data)
+                .addTo(map_164122e778069da9e929add41f2bd719);
+        }
+            geo_json_f1abe9e792ed4b48df240609fc49b7ac_add({"features": [{"geometry": {"coordinates": [[-3.6824168, 40.4716059], [-3.6825196, 40.4716298]], "type": "LineString"}, "id": "(1493669260, 3463280831, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "3", "length": 9.093, "maxspeed": "40", "name": null, "oneway": true, "osmid": 907548423, "reversed": false, "tunnel": "building_passage"}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6825196, 40.4716298], [-3.6827054, 40.4716751]], "type": "LineString"}, "id": "(3463280831, 6717442586, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "3", "length": 16.504, "maxspeed": "40", "name": null, "oneway": true, "osmid": 339140015, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6827054, 40.4716751], [-3.6828189, 40.4717028]], "type": "LineString"}, "id": "(6717442586, 3463280832, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "3", "length": 10.083, "maxspeed": "40", "name": null, "oneway": true, "osmid": 339140015, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6852644, 40.4704271], [-3.6855721, 40.4700921]], "type": "LineString"}, "id": "(6717442601, 8427069629, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 45.443, "maxspeed": "50", "name": "Calle de Agust\u00edn de Fox\u00e1", "oneway": false, "osmid": 7701503, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6855721, 40.4700921], [-3.685836, 40.4698119]], "type": "LineString"}, "id": "(8427069629, 8427069652, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 38.329, "maxspeed": "50", "name": "Calle de Agust\u00edn de Fox\u00e1", "oneway": false, "osmid": 7701503, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6855721, 40.4700921], [-3.6852644, 40.4704271]], "type": "LineString"}, "id": "(8427069629, 6717442601, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 45.443, "maxspeed": "50", "name": "Calle de Agust\u00edn de Fox\u00e1", "oneway": false, "osmid": 7701503, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.685836, 40.4698119], [-3.6855721, 40.4700921]], "type": "LineString"}, "id": "(8427069652, 8427069629, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 38.329, "maxspeed": "50", "name": "Calle de Agust\u00edn de Fox\u00e1", "oneway": false, "osmid": 7701503, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6867959, 40.4686622], [-3.686735, 40.4687424]], "type": "LineString"}, "id": "(55968516, 2548094823, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 10.299, "maxspeed": "50", "name": "Calle de Agust\u00edn de Fox\u00e1", "oneway": true, "osmid": 43760416, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6869872, 40.4684602], [-3.6867959, 40.4686622]], "type": "LineString"}, "id": "(2548094832, 55968516, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 27.684, "maxspeed": "50", "name": "Calle de Agust\u00edn de Fox\u00e1", "oneway": true, "osmid": 37972417, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6870239, 40.4684215], [-3.6869872, 40.4684602]], "type": "LineString"}, "id": "(6855239022, 2548094832, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 5.306, "maxspeed": "50", "name": "Calle de Agust\u00edn de Fox\u00e1", "oneway": true, "osmid": 37972417, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6885258, 40.4661817], [-3.688468, 40.4661944]], "type": "LineString"}, "id": "(31322827, 2637038913, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 5.089, "maxspeed": "50", "name": "Calle de Mateo Inurria", "oneway": false, "osmid": 4856374, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6885258, 40.4661817], [-3.6885873, 40.4661691]], "type": "LineString"}, "id": "(31322827, 4690575692, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 5.388, "maxspeed": "50", "name": "Calle de Mateo Inurria", "oneway": false, "osmid": 4856374, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6878295, 40.466327], [-3.6882096, 40.4662443]], "type": "LineString"}, "id": "(2493577861, 3701716714, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 33.444, "maxspeed": "50", "name": "Calle de Mateo Inurria", "oneway": false, "osmid": 4856374, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.688468, 40.4661944], [-3.6882096, 40.4662443]], "type": "LineString"}, "id": "(2637038913, 3701716714, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 22.553, "maxspeed": "50", "name": "Calle de Mateo Inurria", "oneway": false, "osmid": 4856374, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.688468, 40.4661944], [-3.6885258, 40.4661817]], "type": "LineString"}, "id": "(2637038913, 31322827, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 5.089, "maxspeed": "50", "name": "Calle de Mateo Inurria", "oneway": false, "osmid": 4856374, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6882096, 40.4662443], [-3.6878295, 40.466327]], "type": "LineString"}, "id": "(3701716714, 2493577861, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 33.444, "maxspeed": "50", "name": "Calle de Mateo Inurria", "oneway": false, "osmid": 4856374, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6882096, 40.4662443], [-3.688468, 40.4661944]], "type": "LineString"}, "id": "(3701716714, 2637038913, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 22.553, "maxspeed": "50", "name": "Calle de Mateo Inurria", "oneway": false, "osmid": 4856374, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6885873, 40.4661691], [-3.6885258, 40.4661817]], "type": "LineString"}, "id": "(4690575692, 31322827, 0)", "properties": {"access": null, "highway": "secondary", "lanes": "6", "length": 5.388, "maxspeed": "50", "name": "Calle de Mateo Inurria", "oneway": false, "osmid": 4856374, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6896461, 40.464868], [-3.6897026, 40.4648582]], "type": "LineString"}, "id": "(55991703, 1738553352, 0)", "properties": {"access": null, "highway": "residential", "lanes": "2", "length": 4.902, "maxspeed": "50", "name": "Paseo de la Castellana", "oneway": true, "osmid": 7704270, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6897026, 40.4648582], [-3.6898468, 40.4647723]], "type": "LineString"}, "id": "(1738553352, 55991704, 0)", "properties": {"access": null, "highway": "residential", "lanes": "2", "length": 15.494, "maxspeed": "50", "name": "Paseo de la Castellana", "oneway": true, "osmid": 7704270, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.689647, 40.4649869], [-3.6896461, 40.464868]], "type": "LineString"}, "id": "(8427069631, 55991703, 0)", "properties": {"access": "no", "highway": "residential", "lanes": "1", "length": 13.221, "maxspeed": "50", "name": "Paseo de la Castellana", "oneway": true, "osmid": 44536986, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6907036, 40.4562901], [-3.6908105, 40.4562087]], "type": "LineString"}, "id": "(25906718, 3135968136, 0)", "properties": {"access": null, "highway": "residential", "lanes": "2", "length": 12.796, "maxspeed": null, "name": "Calle de San Germ\u00e1n", "oneway": true, "osmid": 9934195, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6907036, 40.4562901], [-3.690721, 40.4561513]], "type": "LineString"}, "id": "(25906718, 1752467739, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 15.504, "maxspeed": null, "name": "Paseo de la Castellana", "oneway": true, "osmid": 43760194, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6904692, 40.4564588], [-3.690613, 40.4563618]], "type": "LineString"}, "id": "(565714251, 1752467745, 0)", "properties": {"access": null, "highway": "residential", "lanes": "2", "length": 16.259, "maxspeed": null, "name": "Paseo de la Castellana", "oneway": true, "osmid": 44536991, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.690613, 40.4563618], [-3.6907036, 40.4562901]], "type": "LineString"}, "id": "(1752467745, 25906718, 0)", "properties": {"access": null, "highway": "residential", "lanes": "2", "length": 11.06, "maxspeed": null, "name": "Paseo de la Castellana", "oneway": true, "osmid": 44536991, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6908105, 40.4562087], [-3.690901, 40.4561702]], "type": "LineString"}, "id": "(3135968136, 81478195, 0)", "properties": {"access": null, "highway": "residential", "lanes": "2", "length": 8.773, "maxspeed": null, "name": "Calle de San Germ\u00e1n", "oneway": true, "osmid": 9934195, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6922672, 40.4562413], [-3.6923972, 40.4562487]], "type": "LineString"}, "id": "(81468695, 2093697311, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 11.03, "maxspeed": null, "name": "Calle de San Germ\u00e1n", "oneway": false, "osmid": 257653664, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6932191, 40.4562963], [-3.6928221, 40.456273]], "type": "LineString"}, "id": "(1430279728, 8427069648, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 33.689, "maxspeed": null, "name": "Calle de San Germ\u00e1n", "oneway": false, "osmid": 257653664, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6923972, 40.4562487], [-3.6925171, 40.456255]], "type": "LineString"}, "id": "(2093697311, 8427069625, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 10.169, "maxspeed": null, "name": "Calle de San Germ\u00e1n", "oneway": false, "osmid": 257653664, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6923972, 40.4562487], [-3.6922672, 40.4562413]], "type": "LineString"}, "id": "(2093697311, 81468695, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 11.03, "maxspeed": null, "name": "Calle de San Germ\u00e1n", "oneway": false, "osmid": 257653664, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6925171, 40.456255], [-3.6928221, 40.456273]], "type": "LineString"}, "id": "(8427069625, 8427069648, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 25.883, "maxspeed": null, "name": "Calle de San Germ\u00e1n", "oneway": false, "osmid": 257653664, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6925171, 40.456255], [-3.6923972, 40.4562487]], "type": "LineString"}, "id": "(8427069625, 2093697311, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 10.169, "maxspeed": null, "name": "Calle de San Germ\u00e1n", "oneway": false, "osmid": 257653664, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6928221, 40.456273], [-3.6932191, 40.4562963]], "type": "LineString"}, "id": "(8427069648, 1430279728, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 33.689, "maxspeed": null, "name": "Calle de San Germ\u00e1n", "oneway": false, "osmid": 257653664, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6928221, 40.456273], [-3.6925171, 40.456255]], "type": "LineString"}, "id": "(8427069648, 8427069625, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 25.883, "maxspeed": null, "name": "Calle de San Germ\u00e1n", "oneway": false, "osmid": 257653664, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6946469, 40.4561042], [-3.6946766, 40.4558515]], "type": "LineString"}, "id": "(8427069624, 4260073767, 0)", "properties": {"access": null, "highway": "residential", "lanes": "3", "length": 28.211, "maxspeed": "50", "name": "Calle de Orense", "oneway": true, "osmid": 43760126, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6950007, 40.4523024], [-3.6950088, 40.4522084]], "type": "LineString"}, "id": "(81466848, 340228197, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "6", "length": 10.475, "maxspeed": "50", "name": "Calle de Orense", "oneway": false, "osmid": 32025212, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6950088, 40.4522084], [-3.6950159, 40.4521263]], "type": "LineString"}, "id": "(340228197, 1728461275, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "6", "length": 9.149, "maxspeed": "50", "name": "Calle de Orense", "oneway": false, "osmid": 32025212, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6950088, 40.4522084], [-3.6950007, 40.4523024]], "type": "LineString"}, "id": "(340228197, 81466848, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "6", "length": 10.475, "maxspeed": "50", "name": "Calle de Orense", "oneway": false, "osmid": 32025212, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6950159, 40.4521263], [-3.6950248, 40.4520281]], "type": "LineString"}, "id": "(1728461275, 8427069632, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "6", "length": 10.945, "maxspeed": "50", "name": "Calle de Orense", "oneway": false, "osmid": 32025212, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6950159, 40.4521263], [-3.6950088, 40.4522084]], "type": "LineString"}, "id": "(1728461275, 340228197, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "6", "length": 9.149, "maxspeed": "50", "name": "Calle de Orense", "oneway": false, "osmid": 32025212, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6950248, 40.4520281], [-3.6950159, 40.4521263]], "type": "LineString"}, "id": "(8427069632, 1728461275, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "6", "length": 10.945, "maxspeed": "50", "name": "Calle de Orense", "oneway": false, "osmid": 32025212, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6954848, 40.4472868], [-3.6954943, 40.4471861]], "type": "LineString"}, "id": "(989204862, 8427069633, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "5", "length": 11.226, "maxspeed": "50", "name": "Calle de Orense", "oneway": false, "osmid": 238871459, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6954943, 40.4471861], [-3.6954848, 40.4472868]], "type": "LineString"}, "id": "(8427069633, 989204862, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "5", "length": 11.226, "maxspeed": "50", "name": "Calle de Orense", "oneway": false, "osmid": 238871459, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6958089, 40.4439678], [-3.6958394, 40.4439614]], "type": "LineString"}, "id": "(98945971, 8807066161, 0)", "properties": {"access": null, "highway": "residential", "lanes": "1", "length": 2.677, "maxspeed": "30", "name": "Calle de Mar\u00eda de Guzm\u00e1n", "oneway": true, "osmid": 4339401, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6957935, 40.4440808], [-3.6957749, 40.4440688]], "type": "LineString"}, "id": "(989205076, 8807066158, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 2.063, "maxspeed": null, "name": "Calle de Mar\u00eda de Guzm\u00e1n", "oneway": true, "osmid": 85328249, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6957935, 40.4440808], [-3.6958048, 40.4440178]], "type": "LineString"}, "id": "(989205076, 1613048663, 0)", "properties": {"access": null, "highway": "residential", "lanes": "2", "length": 7.07, "maxspeed": null, "name": "Calle de Modesto Lafuente", "oneway": true, "osmid": 303407853, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6958048, 40.4440178], [-3.6958089, 40.4439678]], "type": "LineString"}, "id": "(1613048663, 98945971, 0)", "properties": {"access": null, "highway": "residential", "lanes": "2", "length": 5.571, "maxspeed": null, "name": "Calle de Modesto Lafuente", "oneway": true, "osmid": 303407853, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.695784, 40.4442322], [-3.6957935, 40.4440808]], "type": "LineString"}, "id": "(8427069638, 989205076, 0)", "properties": {"access": null, "highway": "residential", "lanes": "2", "length": 16.854, "maxspeed": null, "name": "Calle de Modesto Lafuente", "oneway": true, "osmid": 303407853, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6957749, 40.4440688], [-3.6957493, 40.4440624]], "type": "LineString"}, "id": "(8807066158, 8807066159, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 2.28, "maxspeed": null, "name": "Calle de Mar\u00eda de Guzm\u00e1n", "oneway": true, "osmid": 85328249, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6957493, 40.4440624], [-3.6956944, 40.4440602]], "type": "LineString"}, "id": "(8807066159, 1613048680, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 4.652, "maxspeed": null, "name": "Calle de Mar\u00eda de Guzm\u00e1n", "oneway": true, "osmid": 85328249, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6958681, 40.4439596], [-3.6959224, 40.4439619]], "type": "LineString"}, "id": "(8807066160, 1613048661, 0)", "properties": {"access": null, "highway": "residential", "lanes": "1", "length": 4.602, "maxspeed": "30", "name": "Calle de Mar\u00eda de Guzm\u00e1n", "oneway": true, "osmid": 4339401, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6958394, 40.4439614], [-3.6958681, 40.4439596]], "type": "LineString"}, "id": "(8807066161, 8807066160, 0)", "properties": {"access": null, "highway": "residential", "lanes": "1", "length": 2.437, "maxspeed": "30", "name": "Calle de Mar\u00eda de Guzm\u00e1n", "oneway": true, "osmid": 4339401, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6962795, 40.438402], [-3.696289, 40.4382817]], "type": "LineString"}, "id": "(5069264837, 60030259, 0)", "properties": {"access": null, "highway": "residential", "lanes": "2", "length": 13.401, "maxspeed": "30", "name": "Calle de Modesto Lafuente", "oneway": true, "osmid": 303407852, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6962652, 40.438579], [-3.6962795, 40.438402]], "type": "LineString"}, "id": "(8427069637, 5069264837, 0)", "properties": {"access": null, "highway": "residential", "lanes": "2", "length": 19.719, "maxspeed": "30", "name": "Calle de Modesto Lafuente", "oneway": true, "osmid": 303407852, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6965469, 40.4350224], [-3.6960576, 40.4350323]], "type": "LineString"}, "id": "(60030302, 5966607283, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 41.427, "maxspeed": "50", "name": "Paseo del General Mart\u00ednez Campos", "oneway": false, "osmid": 43759960, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6965469, 40.4350224], [-3.6966266, 40.43502]], "type": "LineString"}, "id": "(60030302, 9672874690, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "6", "length": 6.751, "maxspeed": "50", "name": "Paseo del General Mart\u00ednez Campos", "oneway": false, "osmid": 43759962, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6960576, 40.4350323], [-3.6965469, 40.4350224]], "type": "LineString"}, "id": "(5966607283, 60030302, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "4", "length": 41.427, "maxspeed": "50", "name": "Paseo del General Mart\u00ednez Campos", "oneway": false, "osmid": 43759960, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6966266, 40.43502], [-3.6965469, 40.4350224]], "type": "LineString"}, "id": "(9672874690, 60030302, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "6", "length": 6.751, "maxspeed": "50", "name": "Paseo del General Mart\u00ednez Campos", "oneway": false, "osmid": 43759962, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6931402, 40.4351098], [-3.6926303, 40.4351228]], "type": "LineString"}, "id": "(60030728, 5966607282, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "6", "length": 43.18, "maxspeed": "50", "name": "Paseo del General Mart\u00ednez Campos", "oneway": false, "osmid": 83668212, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6921067, 40.4351346], [-3.6926058, 40.4351234]], "type": "LineString"}, "id": "(1011869675, 5966607281, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "6", "length": 42.26, "maxspeed": "50", "name": "Paseo del General Mart\u00ednez Campos", "oneway": false, "osmid": 83668212, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6926058, 40.4351234], [-3.6921067, 40.4351346]], "type": "LineString"}, "id": "(5966607281, 1011869675, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "6", "length": 42.26, "maxspeed": "50", "name": "Paseo del General Mart\u00ednez Campos", "oneway": false, "osmid": 83668212, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6926058, 40.4351234], [-3.6926303, 40.4351228]], "type": "LineString"}, "id": "(5966607281, 5966607282, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "6", "length": 2.075, "maxspeed": "50", "name": "Paseo del General Mart\u00ednez Campos", "oneway": false, "osmid": 83668212, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6926303, 40.4351228], [-3.6926058, 40.4351234]], "type": "LineString"}, "id": "(5966607282, 5966607281, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "6", "length": 2.075, "maxspeed": "50", "name": "Paseo del General Mart\u00ednez Campos", "oneway": false, "osmid": 83668212, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6926303, 40.4351228], [-3.6931402, 40.4351098]], "type": "LineString"}, "id": "(5966607282, 60030728, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "6", "length": 43.18, "maxspeed": "50", "name": "Paseo del General Mart\u00ednez Campos", "oneway": false, "osmid": 83668212, "reversed": true, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6891218, 40.434687], [-3.6890698, 40.4346057]], "type": "LineString"}, "id": "(25902432, 1223809819, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 10.055, "maxspeed": null, "name": "Paseo de la Castellana", "oneway": true, "osmid": 252387372, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6892642, 40.4348093], [-3.6891218, 40.434687]], "type": "LineString"}, "id": "(25902433, 25902432, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 18.171, "maxspeed": null, "name": "Paseo de la Castellana", "oneway": true, "osmid": 43759953, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6893736, 40.4349713], [-3.6893241, 40.4348747]], "type": "LineString"}, "id": "(1223809785, 1969162855, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 11.53, "maxspeed": null, "name": "Paseo de la Castellana", "oneway": true, "osmid": 43759953, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6893241, 40.4348747], [-3.6892642, 40.4348093]], "type": "LineString"}, "id": "(1969162855, 25902433, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 8.865, "maxspeed": null, "name": "Paseo de la Castellana", "oneway": true, "osmid": 43759953, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6888347, 40.4329162], [-3.6889003, 40.4325645]], "type": "LineString"}, "id": "(25902233, 25902231, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 39.499, "maxspeed": "50", "name": "Paseo de la Castellana", "oneway": true, "osmid": 136124308, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6907592, 40.4255185], [-3.6909233, 40.4255012]], "type": "LineString"}, "id": "(25901936, 7549719186, 0)", "properties": {"access": null, "highway": "primary", "lanes": "3", "length": 14.023, "maxspeed": "50", "name": "Calle de G\u00e9nova", "oneway": true, "osmid": 4291303, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6907592, 40.4255185], [-3.6908007, 40.4254932]], "type": "LineString"}, "id": "(25901936, 7549719187, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 4.5, "maxspeed": "50", "name": "Plaza de Col\u00f3n", "oneway": true, "osmid": 4334163, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6907112, 40.4256933], [-3.6907592, 40.4255185]], "type": "LineString"}, "id": "(1760085654, 25901936, 0)", "properties": {"access": null, "highway": "residential", "lanes": "2", "length": 19.857, "maxspeed": "50", "name": "Paseo de la Castellana", "oneway": true, "osmid": 164369269, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6908526, 40.4254583], [-3.6909019, 40.4254187]], "type": "LineString"}, "id": "(3418035844, 554166725, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 6.067, "maxspeed": "50", "name": "Plaza de Col\u00f3n", "oneway": true, "osmid": 4334163, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6909233, 40.4255012], [-3.6910753, 40.4254968]], "type": "LineString"}, "id": "(7549719186, 25901937, 0)", "properties": {"access": null, "highway": "primary", "lanes": "3", "length": 12.876, "maxspeed": "50", "name": "Calle de G\u00e9nova", "oneway": true, "osmid": 4291303, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6908007, 40.4254932], [-3.6908526, 40.4254583]], "type": "LineString"}, "id": "(7549719187, 3418035844, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 5.862, "maxspeed": "50", "name": "Plaza de Col\u00f3n", "oneway": true, "osmid": 4334163, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6907533, 40.423998], [-3.6905934, 40.4243467]], "type": "LineString"}, "id": "(25903299, 1915012227, 0)", "properties": {"access": null, "highway": "primary", "lanes": "3", "length": 41.068, "maxspeed": "50", "name": "Paseo de Recoletos", "oneway": true, "osmid": 334731365, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6914459, 40.4227874], [-3.6916197, 40.422425]], "type": "LineString"}, "id": "(8436098464, 25903324, 0)", "properties": {"access": null, "highway": "primary", "lanes": "3", "length": 42.899, "maxspeed": "50", "name": "Paseo de Recoletos", "oneway": true, "osmid": 44737269, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6926812, 40.4201066], [-3.6927569, 40.4199605]], "type": "LineString"}, "id": "(2508927633, 3068279553, 0)", "properties": {"access": null, "highway": "primary", "lanes": "3", "length": 17.464, "maxspeed": "50", "name": "Paseo de Recoletos", "oneway": true, "osmid": 243496118, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6928199, 40.4198816], [-3.6929122, 40.4197833]], "type": "LineString"}, "id": "(3068279550, 3068279554, 0)", "properties": {"access": null, "highway": "primary", "lanes": "3", "length": 13.436, "maxspeed": "50", "name": "Paseo de Recoletos", "oneway": true, "osmid": 243496118, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6927569, 40.4199605], [-3.6928003, 40.4199052]], "type": "LineString"}, "id": "(3068279553, 6141051014, 0)", "properties": {"access": null, "highway": "primary", "lanes": "3", "length": 7.163, "maxspeed": "50", "name": "Paseo de Recoletos", "oneway": true, "osmid": 243496118, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6928003, 40.4199052], [-3.6928199, 40.4198816]], "type": "LineString"}, "id": "(6141051014, 3068279550, 0)", "properties": {"access": null, "highway": "primary", "lanes": "3", "length": 3.105, "maxspeed": "50", "name": "Paseo de Recoletos", "oneway": true, "osmid": 243496118, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6979093, 40.418297], [-3.6978969, 40.4183005]], "type": "LineString"}, "id": "(7829029477, 4309854556, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 1.12, "maxspeed": "50", "name": "Calle de Alcal\u00e1", "oneway": true, "osmid": 43759793, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6979394, 40.4182886], [-3.6979093, 40.418297]], "type": "LineString"}, "id": "(7829029484, 7829029477, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 2.714, "maxspeed": "50", "name": "Calle de Alcal\u00e1", "oneway": true, "osmid": 43759793, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6976939, 40.4183525], [-3.6975428, 40.4183929]], "type": "LineString"}, "id": "(5960796495, 4309854557, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 13.557, "maxspeed": "50", "name": "Calle de Alcal\u00e1", "oneway": true, "osmid": 43759793, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6978969, 40.4183005], [-3.6976939, 40.4183525]], "type": "LineString"}, "id": "(4309854556, 5960796495, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 18.132, "maxspeed": "50", "name": "Calle de Alcal\u00e1", "oneway": true, "osmid": 43759793, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6985781, 40.4180794], [-3.6986016, 40.4180917]], "type": "LineString"}, "id": "(21968131, 7537651760, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 2.414, "maxspeed": "50", "name": "Calle de Alcal\u00e1", "oneway": true, "osmid": 43759788, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6985781, 40.4180794], [-3.6985688, 40.4180943]], "type": "LineString"}, "id": "(21968131, 7537651769, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 1.834, "maxspeed": "50", "name": "Calle de Alcal\u00e1", "oneway": true, "osmid": 43759793, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6987412, 40.4181171], [-3.6987918, 40.4180984]], "type": "LineString"}, "id": "(21968132, 7537651754, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 4.762, "maxspeed": "50", "name": "Calle de Alcal\u00e1", "oneway": true, "osmid": 417019353, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.698568, 40.4180399], [-3.6985731, 40.4180599]], "type": "LineString"}, "id": "(2506478062, 9230911920, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 2.265, "maxspeed": "50", "name": "Calle de Cedaceros", "oneway": true, "osmid": 626418867, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6986424, 40.4181034], [-3.6986775, 40.4181116]], "type": "LineString"}, "id": "(3387688924, 7537651768, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 3.108, "maxspeed": "50", "name": "Calle de Alcal\u00e1", "oneway": true, "osmid": 43759788, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6985594, 40.4180047], [-3.698568, 40.4180399]], "type": "LineString"}, "id": "(3436803701, 2506478062, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "3", "length": 3.981, "maxspeed": "50", "name": "Calle de Cedaceros", "oneway": true, "osmid": 511895814, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6985564, 40.4181069], [-3.6983797, 40.4181652]], "type": "LineString"}, "id": "(7537651752, 4309854555, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 16.303, "maxspeed": "50", "name": "Calle de Alcal\u00e1", "oneway": true, "osmid": 43759793, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6986016, 40.4180917], [-3.6986424, 40.4181034]], "type": "LineString"}, "id": "(7537651760, 3387688924, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 3.691, "maxspeed": "50", "name": "Calle de Alcal\u00e1", "oneway": true, "osmid": 43759788, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6986775, 40.4181116], [-3.6987412, 40.4181171]], "type": "LineString"}, "id": "(7537651768, 21968132, 0)", "properties": {"access": null, "highway": "residential", "lanes": null, "length": 5.427, "maxspeed": "50", "name": "Calle de Alcal\u00e1", "oneway": true, "osmid": 43759788, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6985688, 40.4180943], [-3.6985564, 40.4181069]], "type": "LineString"}, "id": "(7537651769, 7537651752, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 1.751, "maxspeed": "50", "name": "Calle de Alcal\u00e1", "oneway": true, "osmid": 43759793, "reversed": false, "tunnel": null}, "type": "Feature"}, {"geometry": {"coordinates": [[-3.6985731, 40.4180599], [-3.6985781, 40.4180794]], "type": "LineString"}, "id": "(9230911920, 21968131, 0)", "properties": {"access": null, "highway": "tertiary", "lanes": "2", "length": 2.209, "maxspeed": "50", "name": "Calle de Cedaceros", "oneway": true, "osmid": 626418867, "reversed": false, "tunnel": null}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            var feature_group_327137c1efe06888a2e3d7abb86be088 = L.featureGroup(
+                {}
+            ).addTo(map_164122e778069da9e929add41f2bd719);
+        
+    
+        function geo_json_a110252a9e5a27c00bcb1c124656100a_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "blue", "weight": 7};
+            }
+        }
+
+        function geo_json_a110252a9e5a27c00bcb1c124656100a_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_a110252a9e5a27c00bcb1c124656100a = L.geoJson(null, {
+                onEachFeature: geo_json_a110252a9e5a27c00bcb1c124656100a_onEachFeature,
+            
+                style: geo_json_a110252a9e5a27c00bcb1c124656100a_styler,
+        });
+
+        function geo_json_a110252a9e5a27c00bcb1c124656100a_add (data) {
+            geo_json_a110252a9e5a27c00bcb1c124656100a
+                .addData(data)
+                .addTo(feature_group_327137c1efe06888a2e3d7abb86be088);
+        }
+            geo_json_a110252a9e5a27c00bcb1c124656100a_add({"features": [{"geometry": {"coordinates": [[-3.68236209866559, 40.4718022627815], [-3.68255438659395, 40.4718232123623], [-3.68266439154639, 40.4718532120557], [-3.68288439783252, 40.4719032118828], [-3.68306440332436, 40.471953210859], [-3.68330441009866, 40.4720132104653], [-3.68336441113474, 40.4720232113474], [-3.68368442174924, 40.4719232104508], [-3.68377442592357, 40.471893210633695], [-3.68392443199789, 40.4718332115226], [-3.68421444178696, 40.4716632122681], [-3.68481446476118, 40.471033214058], [-3.68514447934256, 40.4706732162958], [-3.68527448354723, 40.4705332170404], [-3.6854244891721, 40.47037321835911], [-3.68558449789897, 40.470193219445505], [-3.68574472836598, 40.4702282304646], [-3.68607451771994, 40.4696632218848], [-3.68619452165969, 40.4695332229216], [-3.68636452919928, 40.469343223214096], [-3.68646453287801, 40.469233223951505], [-3.68664454072374, 40.4691632250412], [-3.68686454776794, 40.469023225160306], [-3.68690454943748, 40.4689532260906], [-3.68693455299408, 40.468873227125], [-3.68681454872115, 40.4687932257162], [-3.68672454678352, 40.4685732274551], [-3.68687157854664, 40.46837020832071], [-3.68640454381726, 40.467583234296704], [-3.68617454065444, 40.4669532364406], [-3.68602453552842, 40.4668032378108], [-3.6865445540119, 40.4666832388673], [-3.68803460666361, 40.4663632397272], [-3.68832522654066, 40.4664651874285], [-3.68852462376364, 40.466263240452705], [-3.68884463517709, 40.46620324157271], [-3.68894463797808, 40.466373240671906], [-3.68907464197927, 40.4664632395964], [-3.68928464754826, 40.466533239735696], [-3.68961465878233, 40.466503240239696], [-3.6897446643614, 40.4664332390399], [-3.68987466933619, 40.4662532401984], [-3.68987467113767, 40.4660732428267], [-3.68976466769566, 40.465833243212], [-3.68967466546708, 40.465763242859], [-3.68960466481231, 40.4657332435639], [-3.68965466687568, 40.4654032462584], [-3.68972639781606, 40.4650604583015], [-3.68966467145955, 40.4649632482672], [-3.68982468916817, 40.4631132574173], [-3.68989469773339, 40.4624032631838], [-3.68992470101681, 40.4620732637788], [-3.68999243036924, 40.4618742013768], [-3.6901347229672, 40.4598632760119], [-3.69015472697142, 40.4595332788262], [-3.69025473565174, 40.458743283497], [-3.69028473730468, 40.4585332834892], [-3.6903181502783, 40.4583272271004], [-3.69043475557705, 40.4567632937222], [-3.69048636484967, 40.4566100130494], [-3.6904647581445, 40.4565232951767], [-3.69052476018147, 40.456493296331], [-3.69073477033681, 40.4562532962269], [-3.69226481908165, 40.4563432969752], [-3.69239482537043, 40.456353295826894], [-3.69272583976545, 40.45647050996671], [-3.69327485228247, 40.4564032960455], [-3.69339485709987, 40.456413296472], [-3.69359486443123, 40.4564232964677], [-3.69376486944161, 40.4564332960922], [-3.69463489732421, 40.4564832952707], [-3.69478010369417, 40.456205949313], [-3.69466490266974, 40.4559232991596], [-3.69470490935925, 40.4552333027969], [-3.69478491913209, 40.4541633082136], [-3.69484492351645, 40.453743311616], [-3.69507004174768, 40.4536141261455], [-3.69491492928746, 40.453313313923694], [-3.69496493434282, 40.4529933157235], [-3.69503494034353, 40.4524433181222], [-3.69520805851144, 40.4521268146236], [-3.6950849468453, 40.4517833223238], [-3.69511495021055, 40.4513633251717], [-3.69511495101082, 40.451253325205904], [-3.69515495437126, 40.4509133272326], [-3.69517495715392, 40.4506633286224], [-3.69521496212258, 40.4501933303592], [-3.69542055214621, 40.4498552730408], [-3.69525496608599, 40.4498133323428], [-3.69527496731547, 40.449603335276095], [-3.69530497017303, 40.449323335825106], [-3.69532497402725, 40.4491033366674], [-3.69536497860408, 40.448643340833904], [-3.69538497905797, 40.4484633416166], [-3.69542498364019, 40.4479933436624], [-3.69542498456087, 40.4479333434446], [-3.695484989707, 40.447373348142705], [-3.69563070989288, 40.447286447403], [-3.69563500275401, 40.4465333527778], [-3.69570501020125, 40.4456333564836], [-3.6957450154595, 40.4451233598685], [-3.69576501756964, 40.4449233607574], [-3.69578502089821, 40.444623363053], [-3.6959179310171, 40.444329770146496], [-3.69581502520474, 40.444163365232704], [-3.69582502566498, 40.444043366767694], [-3.6958850321075, 40.4433633709271], [-3.69593503570115, 40.4429733711262], [-3.69599504375055, 40.4418833791096], [-3.69612509233026, 40.441544743174305], [-3.69611505313163, 40.4406533843682], [-3.69619505949409, 40.4395533916018], [-3.69639072614927, 40.4387143178468], [-3.69625506680302, 40.4383533986345], [-3.69638507417779, 40.43727340406409], [-3.69640507737454, 40.4369834062926], [-3.69640507760213, 40.43676340638591], [-3.69646508531274, 40.4357334122361], [-3.69649508836169, 40.435123415463906], [-3.69605794266702, 40.43502262407689], [-3.69492503615363, 40.435163416358], [-3.69480503281829, 40.4351634156148], [-3.69427501526012, 40.4351834162426], [-3.69320497843904, 40.435203414795296], [-3.69314497674312, 40.4352034154706], [-3.69261616937194, 40.4351243433176], [-3.6920749422853, 40.4352334155153], [-3.69139491964713, 40.435253414646894], [-3.69127491613946, 40.435253414086894], [-3.69118491207953, 40.4352534146934], [-3.69016487820282, 40.43529341408], [-3.68943485334593, 40.4353134154096], [-3.68935485260344, 40.4352334137602], [-3.68926359716893, 40.43501371722311], [-3.68907484523367, 40.4347334171536], [-3.68899484500667, 40.4342134206351], [-3.68897484304458, 40.4340934206913], [-3.68887484390596, 40.4335334236322], [-3.68885484358035, 40.433443423830305], [-3.68872484032984, 40.4331334255515], [-3.68880999822339, 40.433020918832], [-3.68888484567999, 40.4327634283851], [-3.68914485953259, 40.4318934334308], [-3.68939487299054, 40.4308834390136], [-3.68944487452886, 40.43069344046351], [-3.68975488961001, 40.429543446293295], [-3.68971488847729, 40.429363447968896], [-3.68979795967654, 40.4291726897342], [-3.68981489453287, 40.4289834499072], [-3.68989489646355, 40.4288834506269], [-3.69004490517546, 40.42833345327129], [-3.69010490757447, 40.4281134555876], [-3.690394922579, 40.42690346087289], [-3.69046492654178, 40.4266734628202], [-3.69057493148865, 40.426263465688], [-3.69055493104282, 40.426103465732304], [-3.69057493387426, 40.4259634667412], [-3.69062450098304, 40.4259064951886], [-3.69063493518968, 40.4257734667338], [-3.69069493798528, 40.4256434693319], [-3.69078494008064, 40.4256334692562], [-3.69093494771241, 40.4253134707566], [-3.69089494578578, 40.4252234712004], [-3.69082494389794, 40.4251534711297], [-3.6907249415394, 40.4250734708154], [-3.69040493196926, 40.4249434725031], [-3.69057493983366, 40.4246134740677], [-3.69063494172351, 40.424483474479], [-3.6908149488766, 40.42410347759711], [-3.69103495834725, 40.4236334807484], [-3.69107496110393, 40.423543479415], [-3.69118496552052, 40.423323481726], [-3.69151842065154, 40.4228966482418], [-3.69155498082285, 40.4225234864491], [-3.69163498433052, 40.4223434877899], [-3.69180499237897, 40.421973488934], [-3.69198499915292, 40.4215734914016], [-3.69212500472656, 40.421273493547], [-3.69257502345719, 40.42030349886831], [-3.69280593946565, 40.4202357914327], [-3.69264502596341, 40.4201534995814], [-3.69278503283616, 40.420033499626], [-3.69298504059559, 40.4198435007676], [-3.69305504204114, 40.4197835014402], [-3.69314504577949, 40.4197135028674], [-3.69325504921277, 40.4196235018172], [-3.69366506355615, 40.4195035039912], [-3.69391507237642, 40.4194235047906], [-3.69422508223517, 40.419303504274495], [-3.69522511724204, 40.419133506155696], [-3.69554512781694, 40.419073506353506], [-3.69585513805352, 40.41900350702031], [-3.69601514499266, 40.4189635075464], [-3.69646515956744, 40.4188435079079], [-3.69665516643491, 40.4187935086724], [-3.69690517434711, 40.4187335088628], [-3.69712518255294, 40.4186735087566], [-3.69804604865514, 40.4185962097791], [-3.69856523146068, 40.4182935103231], [-3.69867523450639, 40.4182535118717], [-3.69890524196417, 40.4181035121664], [-3.69933525810987, 40.4179435141188], [-3.69962526836808, 40.4177735148105], [-3.69970527055709, 40.4176835140083], [-3.70016528951154, 40.41709351886409], [-3.7003552957102, 40.4168235200726], [-3.70044530047173, 40.416713519481505], [-3.70027529319717, 40.41670352060849], [-3.69963527420414, 40.416683520996095], [-3.69884524760338, 40.416673519666894], [-3.6987052433228, 40.416663519424], [-3.69841523348634, 40.4167335196024], [-3.69838523245613, 40.416783518602], [-3.6983952306695, 40.4168735184786], [-3.69842523151056, 40.417193517026], [-3.69848523027127, 40.41760351519729], [-3.69852523082425, 40.4179235127472], [-3.69848643077079, 40.418007966791]], "type": "LineString"}, "id": "9", "properties": {"shape_id": "005_B"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            var marker_ed1613bf373beae216ba513507b3c5c6 = L.marker(
+                [40.47176, -3.68236],
+                {"name": "paradas"}
+            ).addTo(feature_group_327137c1efe06888a2e3d7abb86be088);
+        
+    
+            var icon_780d5599db7d990574683f2d93d51c68 = L.AwesomeMarkers.icon(
+                {"colorIcon": "blue", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ed1613bf373beae216ba513507b3c5c6.setIcon(icon_780d5599db7d990574683f2d93d51c68);
+        
+    
+        var popup_fb905293603583a77585341b20036936 = L.popup({"maxWidth": 300});
+
+        
+            var html_137ec2fa8d0f2691e3e50f115af50a13 = $(`<div id="html_137ec2fa8d0f2691e3e50f115af50a13" style="width: 100.0%; height: 100.0%;">Chamartín</div>`)[0];
+            popup_fb905293603583a77585341b20036936.setContent(html_137ec2fa8d0f2691e3e50f115af50a13);
+        
+
+        marker_ed1613bf373beae216ba513507b3c5c6.bindPopup(popup_fb905293603583a77585341b20036936)
+        ;
+
+        
+    
+    
+            var marker_6c6b88eda3e73538b722f4b5e117576a = L.marker(
+                [40.47018, -3.68574],
+                {"name": "paradas"}
+            ).addTo(feature_group_327137c1efe06888a2e3d7abb86be088);
+        
+    
+            var icon_f7d322f48d945f53a7ad069241a5e87c = L.AwesomeMarkers.icon(
+                {"colorIcon": "blue", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6c6b88eda3e73538b722f4b5e117576a.setIcon(icon_f7d322f48d945f53a7ad069241a5e87c);
+        
+    
+        var popup_e3e840013735b82cbeaaf54f2ad69d85 = L.popup({"maxWidth": 300});
+
+        
+            var html_a29574b2283b7b9b593fff255d5627d2 = $(`<div id="html_a29574b2283b7b9b593fff255d5627d2" style="width: 100.0%; height: 100.0%;">Agustín De Foxá</div>`)[0];
+            popup_e3e840013735b82cbeaaf54f2ad69d85.setContent(html_a29574b2283b7b9b593fff255d5627d2);
+        
+
+        marker_6c6b88eda3e73538b722f4b5e117576a.bindPopup(popup_e3e840013735b82cbeaaf54f2ad69d85)
+        ;
+
+        
+    
+    
+            var marker_1184a87a2d745f28f386198e78fa1769 = L.marker(
+                [40.46833, -3.68687],
+                {"name": "paradas"}
+            ).addTo(feature_group_327137c1efe06888a2e3d7abb86be088);
+        
+    
+            var icon_ec386d7e30d30fa152ae39024ae511ab = L.AwesomeMarkers.icon(
+                {"colorIcon": "blue", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1184a87a2d745f28f386198e78fa1769.setIcon(icon_ec386d7e30d30fa152ae39024ae511ab);
+        
+    
+        var popup_04716baec0a77a347d9f294c0c1f71f7 = L.popup({"maxWidth": 300});
+
+        
+            var html_59fce7789d93798c84ea6361986f6aba = $(`<div id="html_59fce7789d93798c84ea6361986f6aba" style="width: 100.0%; height: 100.0%;">Enrique Larreta</div>`)[0];
+            popup_04716baec0a77a347d9f294c0c1f71f7.setContent(html_59fce7789d93798c84ea6361986f6aba);
+        
+
+        marker_1184a87a2d745f28f386198e78fa1769.bindPopup(popup_04716baec0a77a347d9f294c0c1f71f7)
+        ;
+
+        
+    
+    
+            var marker_904bdd9bbd8f8133a59f7c8b7ef05e7b = L.marker(
+                [40.46642, -3.68833],
+                {"name": "paradas"}
+            ).addTo(feature_group_327137c1efe06888a2e3d7abb86be088);
+        
+    
+            var icon_9a208c6f0a4cba296aa2fb9b88e29a5e = L.AwesomeMarkers.icon(
+                {"colorIcon": "blue", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_904bdd9bbd8f8133a59f7c8b7ef05e7b.setIcon(icon_9a208c6f0a4cba296aa2fb9b88e29a5e);
+        
+    
+        var popup_2bdf6ddba6ec37bb7c2e8a9c9ea43757 = L.popup({"maxWidth": 300});
+
+        
+            var html_0e4cb01bf9ed72bab6f5374e5a9ac769 = $(`<div id="html_0e4cb01bf9ed72bab6f5374e5a9ac769" style="width: 100.0%; height: 100.0%;">Plaza Castilla</div>`)[0];
+            popup_2bdf6ddba6ec37bb7c2e8a9c9ea43757.setContent(html_0e4cb01bf9ed72bab6f5374e5a9ac769);
+        
+
+        marker_904bdd9bbd8f8133a59f7c8b7ef05e7b.bindPopup(popup_2bdf6ddba6ec37bb7c2e8a9c9ea43757)
+        ;
+
+        
+    
+    
+            var marker_af975b33717e1065f1105fedeb4d0c2b = L.marker(
+                [40.46501, -3.68973],
+                {"name": "paradas"}
+            ).addTo(feature_group_327137c1efe06888a2e3d7abb86be088);
+        
+    
+            var icon_33ffb92f23f8200dd66d6306249002ad = L.AwesomeMarkers.icon(
+                {"colorIcon": "blue", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_af975b33717e1065f1105fedeb4d0c2b.setIcon(icon_33ffb92f23f8200dd66d6306249002ad);
+        
+    
+        var popup_07689be0f321d482093e3011cff7fd13 = L.popup({"maxWidth": 300});
+
+        
+            var html_db49c1b3ff357bcfb4201a80a1ce6814 = $(`<div id="html_db49c1b3ff357bcfb4201a80a1ce6814" style="width: 100.0%; height: 100.0%;">Juzgados Plaza Castilla</div>`)[0];
+            popup_07689be0f321d482093e3011cff7fd13.setContent(html_db49c1b3ff357bcfb4201a80a1ce6814);
+        
+
+        marker_af975b33717e1065f1105fedeb4d0c2b.bindPopup(popup_07689be0f321d482093e3011cff7fd13)
+        ;
+
+        
+    
+    
+            var marker_d187ad00348a3f7b012afc0f8c431c42 = L.marker(
+                [40.46183, -3.68999],
+                {"name": "paradas"}
+            ).addTo(feature_group_327137c1efe06888a2e3d7abb86be088);
+        
+    
+            var icon_50639fdce859dd8e4e603ce40f285163 = L.AwesomeMarkers.icon(
+                {"colorIcon": "blue", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d187ad00348a3f7b012afc0f8c431c42.setIcon(icon_50639fdce859dd8e4e603ce40f285163);
+        
+    
+        var popup_d328878f510fdccc36624d6f714b1dee = L.popup({"maxWidth": 300});
+
+        
+            var html_7753f81812890f8b95709f60fda1297d = $(`<div id="html_7753f81812890f8b95709f60fda1297d" style="width: 100.0%; height: 100.0%;">Castellana - Rosario Pino</div>`)[0];
+            popup_d328878f510fdccc36624d6f714b1dee.setContent(html_7753f81812890f8b95709f60fda1297d);
+        
+
+        marker_d187ad00348a3f7b012afc0f8c431c42.bindPopup(popup_d328878f510fdccc36624d6f714b1dee)
+        ;
+
+        
+    
+    
+            var marker_b0e67a69defc6756baa47dfa4774beec = L.marker(
+                [40.45828, -3.69032],
+                {"name": "paradas"}
+            ).addTo(feature_group_327137c1efe06888a2e3d7abb86be088);
+        
+    
+            var icon_7f1898abc20c9a14834adf9543667a60 = L.AwesomeMarkers.icon(
+                {"colorIcon": "blue", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b0e67a69defc6756baa47dfa4774beec.setIcon(icon_7f1898abc20c9a14834adf9543667a60);
+        
+    
+        var popup_35cb5a90dec0e6e654819e148a3b9972 = L.popup({"maxWidth": 300});
+
+        
+            var html_87c75439408c39af2121dcc7b02e6838 = $(`<div id="html_87c75439408c39af2121dcc7b02e6838" style="width: 100.0%; height: 100.0%;">Cuzco</div>`)[0];
+            popup_35cb5a90dec0e6e654819e148a3b9972.setContent(html_87c75439408c39af2121dcc7b02e6838);
+        
+
+        marker_b0e67a69defc6756baa47dfa4774beec.bindPopup(popup_35cb5a90dec0e6e654819e148a3b9972)
+        ;
+
+        
+    
+    
+            var marker_c37575c8a60a3495e6a3022d0c97e61f = L.marker(
+                [40.45657, -3.69049],
+                {"name": "paradas"}
+            ).addTo(feature_group_327137c1efe06888a2e3d7abb86be088);
+        
+    
+            var icon_132a84c30eaaee25cee8eecc72c51828 = L.AwesomeMarkers.icon(
+                {"colorIcon": "blue", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c37575c8a60a3495e6a3022d0c97e61f.setIcon(icon_132a84c30eaaee25cee8eecc72c51828);
+        
+    
+        var popup_e83ed65c97d8392e850271be6b992e90 = L.popup({"maxWidth": 300});
+
+        
+            var html_893be31efbe0c17b7c5e49d93f435498 = $(`<div id="html_893be31efbe0c17b7c5e49d93f435498" style="width: 100.0%; height: 100.0%;">Castellana - San Germán</div>`)[0];
+            popup_e83ed65c97d8392e850271be6b992e90.setContent(html_893be31efbe0c17b7c5e49d93f435498);
+        
+
+        marker_c37575c8a60a3495e6a3022d0c97e61f.bindPopup(popup_e83ed65c97d8392e850271be6b992e90)
+        ;
+
+        
+    
+    
+            var marker_a1db38c29bb3c7158123c45be88fc087 = L.marker(
+                [40.45643, -3.69273],
+                {"name": "paradas"}
+            ).addTo(feature_group_327137c1efe06888a2e3d7abb86be088);
+        
+    
+            var icon_4c89bb502835b2ac04864f903a461b8e = L.AwesomeMarkers.icon(
+                {"colorIcon": "blue", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a1db38c29bb3c7158123c45be88fc087.setIcon(icon_4c89bb502835b2ac04864f903a461b8e);
+        
+    
+        var popup_13c57418e921e072087745770d7a7460 = L.popup({"maxWidth": 300});
+
+        
+            var html_767b50398120e18d80e0f1ac8a1afed2 = $(`<div id="html_767b50398120e18d80e0f1ac8a1afed2" style="width: 100.0%; height: 100.0%;">Joan Maragall - San Germán</div>`)[0];
+            popup_13c57418e921e072087745770d7a7460.setContent(html_767b50398120e18d80e0f1ac8a1afed2);
+        
+
+        marker_a1db38c29bb3c7158123c45be88fc087.bindPopup(popup_13c57418e921e072087745770d7a7460)
+        ;
+
+        
+    
+    
+            var marker_f1c85812a0b9278da16fcdf624cc3133 = L.marker(
+                [40.45616, -3.69478],
+                {"name": "paradas"}
+            ).addTo(feature_group_327137c1efe06888a2e3d7abb86be088);
+        
+    
+            var icon_9fcd6d2a9085a59ad1b9e6734cec482a = L.AwesomeMarkers.icon(
+                {"colorIcon": "blue", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f1c85812a0b9278da16fcdf624cc3133.setIcon(icon_9fcd6d2a9085a59ad1b9e6734cec482a);
+        
+    
+        var popup_aa66b8902a11245322f70870148996f4 = L.popup({"maxWidth": 300});
+
+        
+            var html_86ad382ec47fafb4db8fce71d0498aed = $(`<div id="html_86ad382ec47fafb4db8fce71d0498aed" style="width: 100.0%; height: 100.0%;">Orense - San Germán</div>`)[0];
+            popup_aa66b8902a11245322f70870148996f4.setContent(html_86ad382ec47fafb4db8fce71d0498aed);
+        
+
+        marker_f1c85812a0b9278da16fcdf624cc3133.bindPopup(popup_aa66b8902a11245322f70870148996f4)
+        ;
+
+        
+    
+    
+            var marker_12448b84aa7db1577d7ea7f52d724bb5 = L.marker(
+                [40.45357, -3.69507],
+                {"name": "paradas"}
+            ).addTo(feature_group_327137c1efe06888a2e3d7abb86be088);
+        
+    
+            var icon_c9343e60414c7b33461188421ad3ee91 = L.AwesomeMarkers.icon(
+                {"colorIcon": "blue", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_12448b84aa7db1577d7ea7f52d724bb5.setIcon(icon_c9343e60414c7b33461188421ad3ee91);
+        
+    
+        var popup_ef1148d261ad99a9a18e8a8d13447b05 = L.popup({"maxWidth": 300});
+
+        
+            var html_912299d418f344e0994e57fc6e41006f = $(`<div id="html_912299d418f344e0994e57fc6e41006f" style="width: 100.0%; height: 100.0%;">Palacio De Congresos</div>`)[0];
+            popup_ef1148d261ad99a9a18e8a8d13447b05.setContent(html_912299d418f344e0994e57fc6e41006f);
+        
+
+        marker_12448b84aa7db1577d7ea7f52d724bb5.bindPopup(popup_ef1148d261ad99a9a18e8a8d13447b05)
+        ;
+
+        
+    
+    
+            var marker_cdd7f6b3c02e53fc5a5e74a6f2ae5d14 = L.marker(
+                [40.45208, -3.69521],
+                {"name": "paradas"}
+            ).addTo(feature_group_327137c1efe06888a2e3d7abb86be088);
+        
+    
+            var icon_5b86aee7b4303b0d2e60dfffc746fa84 = L.AwesomeMarkers.icon(
+                {"colorIcon": "blue", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_cdd7f6b3c02e53fc5a5e74a6f2ae5d14.setIcon(icon_5b86aee7b4303b0d2e60dfffc746fa84);
+        
+    
+        var popup_bc211ddfd2de4a96dbbbf53a1eeb0acf = L.popup({"maxWidth": 300});
+
+        
+            var html_b5c36ad319f7b01b4b0961e474fa5a3d = $(`<div id="html_b5c36ad319f7b01b4b0961e474fa5a3d" style="width: 100.0%; height: 100.0%;">Orense - General Perón</div>`)[0];
+            popup_bc211ddfd2de4a96dbbbf53a1eeb0acf.setContent(html_b5c36ad319f7b01b4b0961e474fa5a3d);
+        
+
+        marker_cdd7f6b3c02e53fc5a5e74a6f2ae5d14.bindPopup(popup_bc211ddfd2de4a96dbbbf53a1eeb0acf)
+        ;
+
+        
+    
+    
+            var marker_ee734e43037f24c09857be53cf5eb245 = L.marker(
+                [40.44981, -3.69542],
+                {"name": "paradas"}
+            ).addTo(feature_group_327137c1efe06888a2e3d7abb86be088);
+        
+    
+            var icon_32724468788374566f410b09854510f3 = L.AwesomeMarkers.icon(
+                {"colorIcon": "blue", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ee734e43037f24c09857be53cf5eb245.setIcon(icon_32724468788374566f410b09854510f3);
+        
+    
+        var popup_5a0a4711b087cba1fa4152dea8bb35d2 = L.popup({"maxWidth": 300});
+
+        
+            var html_ab4b279c6ac5de38f4020537c07ac0df = $(`<div id="html_ab4b279c6ac5de38f4020537c07ac0df" style="width: 100.0%; height: 100.0%;">Basílica</div>`)[0];
+            popup_5a0a4711b087cba1fa4152dea8bb35d2.setContent(html_ab4b279c6ac5de38f4020537c07ac0df);
+        
+
+        marker_ee734e43037f24c09857be53cf5eb245.bindPopup(popup_5a0a4711b087cba1fa4152dea8bb35d2)
+        ;
+
+        
+    
+    
+            var marker_3e24060f148cf2b4dc327b29b49940c7 = L.marker(
+                [40.44724, -3.69563],
+                {"name": "paradas"}
+            ).addTo(feature_group_327137c1efe06888a2e3d7abb86be088);
+        
+    
+            var icon_b14f4ad01db9b79047cede35815ba620 = L.AwesomeMarkers.icon(
+                {"colorIcon": "blue", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3e24060f148cf2b4dc327b29b49940c7.setIcon(icon_b14f4ad01db9b79047cede35815ba620);
+        
+    
+        var popup_514a3c7f9fe3c1d3d4e33f853f81189f = L.popup({"maxWidth": 300});
+
+        
+            var html_cf58aff835e62662159664827ec9f250 = $(`<div id="html_cf58aff835e62662159664827ec9f250" style="width: 100.0%; height: 100.0%;">Nuevos Ministerios</div>`)[0];
+            popup_514a3c7f9fe3c1d3d4e33f853f81189f.setContent(html_cf58aff835e62662159664827ec9f250);
+        
+
+        marker_3e24060f148cf2b4dc327b29b49940c7.bindPopup(popup_514a3c7f9fe3c1d3d4e33f853f81189f)
+        ;
+
+        
+    
+    
+            var marker_28a6376707b0c00dd8797f5864112986 = L.marker(
+                [40.44428, -3.69592],
+                {"name": "paradas"}
+            ).addTo(feature_group_327137c1efe06888a2e3d7abb86be088);
+        
+    
+            var icon_cabbb3eb03fb51ffdc4e5748696831b1 = L.AwesomeMarkers.icon(
+                {"colorIcon": "blue", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_28a6376707b0c00dd8797f5864112986.setIcon(icon_cabbb3eb03fb51ffdc4e5748696831b1);
+        
+    
+        var popup_04453d4fe813b4a671b70c1e9b1eaf1f = L.popup({"maxWidth": 300});
+
+        
+            var html_46430ae2f64525191a8e87984a7b0710 = $(`<div id="html_46430ae2f64525191a8e87984a7b0710" style="width: 100.0%; height: 100.0%;">Modesto Lafuente - María De Guzmán</div>`)[0];
+            popup_04453d4fe813b4a671b70c1e9b1eaf1f.setContent(html_46430ae2f64525191a8e87984a7b0710);
+        
+
+        marker_28a6376707b0c00dd8797f5864112986.bindPopup(popup_04453d4fe813b4a671b70c1e9b1eaf1f)
+        ;
+
+        
+    
+    
+            var marker_a8959ae99dd65820420627b6710232a5 = L.marker(
+                [40.4415, -3.69613],
+                {"name": "paradas"}
+            ).addTo(feature_group_327137c1efe06888a2e3d7abb86be088);
+        
+    
+            var icon_02c623707e3724a4b9ffe615edd651b0 = L.AwesomeMarkers.icon(
+                {"colorIcon": "blue", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a8959ae99dd65820420627b6710232a5.setIcon(icon_02c623707e3724a4b9ffe615edd651b0);
+        
+    
+        var popup_3c4e1fb35cc0de97b67e41de8ed253d2 = L.popup({"maxWidth": 300});
+
+        
+            var html_5c5bef591142ae5e7037890717499a5c = $(`<div id="html_5c5bef591142ae5e7037890717499a5c" style="width: 100.0%; height: 100.0%;">Modesto Lafuente - Ríos Rosas</div>`)[0];
+            popup_3c4e1fb35cc0de97b67e41de8ed253d2.setContent(html_5c5bef591142ae5e7037890717499a5c);
+        
+
+        marker_a8959ae99dd65820420627b6710232a5.bindPopup(popup_3c4e1fb35cc0de97b67e41de8ed253d2)
+        ;
+
+        
+    
+    
+            var marker_558e85d4fad71f4a31a4c86475fdfb9d = L.marker(
+                [40.43867, -3.69639],
+                {"name": "paradas"}
+            ).addTo(feature_group_327137c1efe06888a2e3d7abb86be088);
+        
+    
+            var icon_5dfc4ce643d30e57a0a92a594bdf7a84 = L.AwesomeMarkers.icon(
+                {"colorIcon": "blue", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_558e85d4fad71f4a31a4c86475fdfb9d.setIcon(icon_5dfc4ce643d30e57a0a92a594bdf7a84);
+        
+    
+        var popup_2c65808d21238e98cb99e06fe765bba0 = L.popup({"maxWidth": 300});
+
+        
+            var html_f82780abd77e077e2f73a83ff88b9bbd = $(`<div id="html_f82780abd77e077e2f73a83ff88b9bbd" style="width: 100.0%; height: 100.0%;">Modesto Lafuente - Jose Abascal</div>`)[0];
+            popup_2c65808d21238e98cb99e06fe765bba0.setContent(html_f82780abd77e077e2f73a83ff88b9bbd);
+        
+
+        marker_558e85d4fad71f4a31a4c86475fdfb9d.bindPopup(popup_2c65808d21238e98cb99e06fe765bba0)
+        ;
+
+        
+    
+    
+            var marker_85e5a1616ded5e764b4aeef3b78a89a6 = L.marker(
+                [40.43497, -3.69606],
+                {"name": "paradas"}
+            ).addTo(feature_group_327137c1efe06888a2e3d7abb86be088);
+        
+    
+            var icon_50974b077c5149a7c3571a28b2b5da33 = L.AwesomeMarkers.icon(
+                {"colorIcon": "blue", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_85e5a1616ded5e764b4aeef3b78a89a6.setIcon(icon_50974b077c5149a7c3571a28b2b5da33);
+        
+    
+        var popup_de5f143ba32efb6cfd6b7e2d6adf0f83 = L.popup({"maxWidth": 300});
+
+        
+            var html_dbf7ff46e7e88a7254fe854f5f3e6c86 = $(`<div id="html_dbf7ff46e7e88a7254fe854f5f3e6c86" style="width: 100.0%; height: 100.0%;">Martínez Campos</div>`)[0];
+            popup_de5f143ba32efb6cfd6b7e2d6adf0f83.setContent(html_dbf7ff46e7e88a7254fe854f5f3e6c86);
+        
+
+        marker_85e5a1616ded5e764b4aeef3b78a89a6.bindPopup(popup_de5f143ba32efb6cfd6b7e2d6adf0f83)
+        ;
+
+        
+    
+    
+            var marker_96a4c8a24058e84270e27dfd8edaad98 = L.marker(
+                [40.43508, -3.69262],
+                {"name": "paradas"}
+            ).addTo(feature_group_327137c1efe06888a2e3d7abb86be088);
+        
+    
+            var icon_248158850b6756d5612b6398b4e32077 = L.AwesomeMarkers.icon(
+                {"colorIcon": "blue", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_96a4c8a24058e84270e27dfd8edaad98.setIcon(icon_248158850b6756d5612b6398b4e32077);
+        
+    
+        var popup_38b86d98d93c638531f29eb5dc384915 = L.popup({"maxWidth": 300});
+
+        
+            var html_954ba4436f1de9efc56079e2c596e4d0 = $(`<div id="html_954ba4436f1de9efc56079e2c596e4d0" style="width: 100.0%; height: 100.0%;">Museo Sorolla</div>`)[0];
+            popup_38b86d98d93c638531f29eb5dc384915.setContent(html_954ba4436f1de9efc56079e2c596e4d0);
+        
+
+        marker_96a4c8a24058e84270e27dfd8edaad98.bindPopup(popup_38b86d98d93c638531f29eb5dc384915)
+        ;
+
+        
+    
+    
+            var marker_512d40afe0b2f0761174c862eb43eb43 = L.marker(
+                [40.43497, -3.68926],
+                {"name": "paradas"}
+            ).addTo(feature_group_327137c1efe06888a2e3d7abb86be088);
+        
+    
+            var icon_b5009756777dc9d974810251f9d65ea8 = L.AwesomeMarkers.icon(
+                {"colorIcon": "blue", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_512d40afe0b2f0761174c862eb43eb43.setIcon(icon_b5009756777dc9d974810251f9d65ea8);
+        
+    
+        var popup_e2fdd791502299633b43699e00000727 = L.popup({"maxWidth": 300});
+
+        
+            var html_eb822c856c5a1d84e34211614de1fc5a = $(`<div id="html_eb822c856c5a1d84e34211614de1fc5a" style="width: 100.0%; height: 100.0%;">Emilio Castelar</div>`)[0];
+            popup_e2fdd791502299633b43699e00000727.setContent(html_eb822c856c5a1d84e34211614de1fc5a);
+        
+
+        marker_512d40afe0b2f0761174c862eb43eb43.bindPopup(popup_e2fdd791502299633b43699e00000727)
+        ;
+
+        
+    
+    
+            var marker_83c5d3d183111c63454428e83ea399e5 = L.marker(
+                [40.43297, -3.68881],
+                {"name": "paradas"}
+            ).addTo(feature_group_327137c1efe06888a2e3d7abb86be088);
+        
+    
+            var icon_80dd64793516248490574327b21b637c = L.AwesomeMarkers.icon(
+                {"colorIcon": "blue", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_83c5d3d183111c63454428e83ea399e5.setIcon(icon_80dd64793516248490574327b21b637c);
+        
+    
+        var popup_361bb0690fd4670466763d3be213d436 = L.popup({"maxWidth": 300});
+
+        
+            var html_c91c390a5ed2fcc9b499c662208c973f = $(`<div id="html_c91c390a5ed2fcc9b499c662208c973f" style="width: 100.0%; height: 100.0%;">Castellana - Rubén Darío</div>`)[0];
+            popup_361bb0690fd4670466763d3be213d436.setContent(html_c91c390a5ed2fcc9b499c662208c973f);
+        
+
+        marker_83c5d3d183111c63454428e83ea399e5.bindPopup(popup_361bb0690fd4670466763d3be213d436)
+        ;
+
+        
+    
+    
+            var marker_35d34dc0f3b0f25b005de5c389d05c2c = L.marker(
+                [40.42913, -3.6898],
+                {"name": "paradas"}
+            ).addTo(feature_group_327137c1efe06888a2e3d7abb86be088);
+        
+    
+            var icon_24f64d07bab644af2f1891b4752a8051 = L.AwesomeMarkers.icon(
+                {"colorIcon": "blue", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_35d34dc0f3b0f25b005de5c389d05c2c.setIcon(icon_24f64d07bab644af2f1891b4752a8051);
+        
+    
+        var popup_60c624c05f63111f3ac0b93000beb10b = L.popup({"maxWidth": 300});
+
+        
+            var html_7502e012bdb67e27b97b376201cc5da6 = $(`<div id="html_7502e012bdb67e27b97b376201cc5da6" style="width: 100.0%; height: 100.0%;">Castellana - Ministerio Interior</div>`)[0];
+            popup_60c624c05f63111f3ac0b93000beb10b.setContent(html_7502e012bdb67e27b97b376201cc5da6);
+        
+
+        marker_35d34dc0f3b0f25b005de5c389d05c2c.bindPopup(popup_60c624c05f63111f3ac0b93000beb10b)
+        ;
+
+        
+    
+    
+            var marker_2e1635824b6695102792f452f1548d5a = L.marker(
+                [40.42586, -3.69063],
+                {"name": "paradas"}
+            ).addTo(feature_group_327137c1efe06888a2e3d7abb86be088);
+        
+    
+            var icon_31c274e3db4d3bc7b3f63cebfbea1c54 = L.AwesomeMarkers.icon(
+                {"colorIcon": "blue", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2e1635824b6695102792f452f1548d5a.setIcon(icon_31c274e3db4d3bc7b3f63cebfbea1c54);
+        
+    
+        var popup_61d4b809bbfcf5bf7ea51e398a301a2f = L.popup({"maxWidth": 300});
+
+        
+            var html_d3acc4df7659d64d2d6769c74001b43a = $(`<div id="html_d3acc4df7659d64d2d6769c74001b43a" style="width: 100.0%; height: 100.0%;">Colón</div>`)[0];
+            popup_61d4b809bbfcf5bf7ea51e398a301a2f.setContent(html_d3acc4df7659d64d2d6769c74001b43a);
+        
+
+        marker_2e1635824b6695102792f452f1548d5a.bindPopup(popup_61d4b809bbfcf5bf7ea51e398a301a2f)
+        ;
+
+        
+    
+    
+            var marker_d16502198612c2a7779a693fc46e3d52 = L.marker(
+                [40.4241, -3.69097],
+                {"name": "paradas"}
+            ).addTo(feature_group_327137c1efe06888a2e3d7abb86be088);
+        
+    
+            var icon_ef8a942ac062fb2f8b223a5dd04882b6 = L.AwesomeMarkers.icon(
+                {"colorIcon": "blue", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d16502198612c2a7779a693fc46e3d52.setIcon(icon_ef8a942ac062fb2f8b223a5dd04882b6);
+        
+    
+        var popup_b0e58cf4126549a41af288f5fa6b5ac3 = L.popup({"maxWidth": 300});
+
+        
+            var html_2fb093d7eb6b283444bc2de09e714bde = $(`<div id="html_2fb093d7eb6b283444bc2de09e714bde" style="width: 100.0%; height: 100.0%;">Biblioteca Nacional</div>`)[0];
+            popup_b0e58cf4126549a41af288f5fa6b5ac3.setContent(html_2fb093d7eb6b283444bc2de09e714bde);
+        
+
+        marker_d16502198612c2a7779a693fc46e3d52.bindPopup(popup_b0e58cf4126549a41af288f5fa6b5ac3)
+        ;
+
+        
+    
+    
+            var marker_7bdf35b6cb92f2c21f7c5ead46e9d662 = L.marker(
+                [40.42285, -3.69152],
+                {"name": "paradas"}
+            ).addTo(feature_group_327137c1efe06888a2e3d7abb86be088);
+        
+    
+            var icon_433662fd49f75846727235fb4f218002 = L.AwesomeMarkers.icon(
+                {"colorIcon": "blue", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7bdf35b6cb92f2c21f7c5ead46e9d662.setIcon(icon_433662fd49f75846727235fb4f218002);
+        
+    
+        var popup_4e6774ba049cb7b19cc06474430507ca = L.popup({"maxWidth": 300});
+
+        
+            var html_7748f833fc0f5bb32d5815ff85d56009 = $(`<div id="html_7748f833fc0f5bb32d5815ff85d56009" style="width: 100.0%; height: 100.0%;">Recoletos</div>`)[0];
+            popup_4e6774ba049cb7b19cc06474430507ca.setContent(html_7748f833fc0f5bb32d5815ff85d56009);
+        
+
+        marker_7bdf35b6cb92f2c21f7c5ead46e9d662.bindPopup(popup_4e6774ba049cb7b19cc06474430507ca)
+        ;
+
+        
+    
+    
+            var marker_9619b22b9a9de8a644d0da98be4ab861 = L.marker(
+                [40.42019, -3.69281],
+                {"name": "paradas"}
+            ).addTo(feature_group_327137c1efe06888a2e3d7abb86be088);
+        
+    
+            var icon_9fb654dec3df5cc148de1daec0ac1a16 = L.AwesomeMarkers.icon(
+                {"colorIcon": "blue", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9619b22b9a9de8a644d0da98be4ab861.setIcon(icon_9fb654dec3df5cc148de1daec0ac1a16);
+        
+    
+        var popup_6267de33bf737e926ce648a610caf597 = L.popup({"maxWidth": 300});
+
+        
+            var html_7eb0ad891748a76babe3b5dbe75f0598 = $(`<div id="html_7eb0ad891748a76babe3b5dbe75f0598" style="width: 100.0%; height: 100.0%;">Cibeles</div>`)[0];
+            popup_6267de33bf737e926ce648a610caf597.setContent(html_7eb0ad891748a76babe3b5dbe75f0598);
+        
+
+        marker_9619b22b9a9de8a644d0da98be4ab861.bindPopup(popup_6267de33bf737e926ce648a610caf597)
+        ;
+
+        
+    
+    
+            var marker_742c75427e693821ddacdc4b2b01cdf6 = L.marker(
+                [40.41855, -3.69805],
+                {"name": "paradas"}
+            ).addTo(feature_group_327137c1efe06888a2e3d7abb86be088);
+        
+    
+            var icon_c02de7686daf2f6b377c9be047ba99a2 = L.AwesomeMarkers.icon(
+                {"colorIcon": "blue", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_742c75427e693821ddacdc4b2b01cdf6.setIcon(icon_c02de7686daf2f6b377c9be047ba99a2);
+        
+    
+        var popup_8907cb3f9420c51c418d468d77734164 = L.popup({"maxWidth": 300});
+
+        
+            var html_b601f3352482c0bda8e2d89e293a96d5 = $(`<div id="html_b601f3352482c0bda8e2d89e293a96d5" style="width: 100.0%; height: 100.0%;">Sevilla</div>`)[0];
+            popup_8907cb3f9420c51c418d468d77734164.setContent(html_b601f3352482c0bda8e2d89e293a96d5);
+        
+
+        marker_742c75427e693821ddacdc4b2b01cdf6.bindPopup(popup_8907cb3f9420c51c418d468d77734164)
+        ;
+
+        
+    
+    
+            var marker_191f7deddec51deca9eb21164932ed4b = L.marker(
+                [40.41796, -3.69849],
+                {"name": "paradas"}
+            ).addTo(feature_group_327137c1efe06888a2e3d7abb86be088);
+        
+    
+            var icon_9100e54ea78ed73c9d2f2879d536c3a6 = L.AwesomeMarkers.icon(
+                {"colorIcon": "blue", "extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_191f7deddec51deca9eb21164932ed4b.setIcon(icon_9100e54ea78ed73c9d2f2879d536c3a6);
+        
+    
+        var popup_7e5285dc6dc87595f6cdbdb41f8a9907 = L.popup({"maxWidth": 300});
+
+        
+            var html_c83fdf740a9314bf6928a82864ecdc08 = $(`<div id="html_c83fdf740a9314bf6928a82864ecdc08" style="width: 100.0%; height: 100.0%;">Sol - Sevilla</div>`)[0];
+            popup_7e5285dc6dc87595f6cdbdb41f8a9907.setContent(html_c83fdf740a9314bf6928a82864ecdc08);
+        
+
+        marker_191f7deddec51deca9eb21164932ed4b.bindPopup(popup_7e5285dc6dc87595f6cdbdb41f8a9907)
+        ;
+
+        
+    
+    
+            var feature_group_sub_group_14e162a28564e8bd1b067a225747a93f = L.featureGroup.subGroup(
+                feature_group_327137c1efe06888a2e3d7abb86be088
+            );
+            feature_group_sub_group_14e162a28564e8bd1b067a225747a93f.addTo(map_164122e778069da9e929add41f2bd719);
+        
+    
+            var marker_80ec97f4007d15fa9595600ff6500499 = L.marker(
+                [40.471441800486524, -3.682600400004954],
+                {"name": "poi"}
+            ).addTo(feature_group_sub_group_14e162a28564e8bd1b067a225747a93f);
+        
+    
+            var icon_6ce1d4220437a54f99798c4e347caf47 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_80ec97f4007d15fa9595600ff6500499.setIcon(icon_6ce1d4220437a54f99798c4e347caf47);
+        
+    
+        var popup_3e45296f24842af14fa1d96ae9914f6a = L.popup({"maxWidth": 300});
+
+        
+            var html_95284d6e89b3777ff1c26296ceb2d34a = $(`<div id="html_95284d6e89b3777ff1c26296ceb2d34a" style="width: 100.0%; height: 100.0%;">Accesible desde la parada: Chamartín Distancia: 40.78m<br>Tipo: parking<br> Parking: nan</div>`)[0];
+            popup_3e45296f24842af14fa1d96ae9914f6a.setContent(html_95284d6e89b3777ff1c26296ceb2d34a);
+        
+
+        marker_80ec97f4007d15fa9595600ff6500499.bindPopup(popup_3e45296f24842af14fa1d96ae9914f6a)
+        ;
+
+        
+    
+    
+            var marker_8c0231a524db1d9b130ad5a11cd00fed = L.marker(
+                [40.42383503301697, -3.6903855095568385],
+                {"name": "poi"}
+            ).addTo(feature_group_sub_group_14e162a28564e8bd1b067a225747a93f);
+        
+    
+            var icon_47eccb7278adf3f37e0e01675d1668f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8c0231a524db1d9b130ad5a11cd00fed.setIcon(icon_47eccb7278adf3f37e0e01675d1668f7);
+        
+    
+        var popup_08b84ad4b62dfe86ebc732ff5d838573 = L.popup({"maxWidth": 300});
+
+        
+            var html_cdcff4eae9aa579cde132a14181520f6 = $(`<div id="html_cdcff4eae9aa579cde132a14181520f6" style="width: 100.0%; height: 100.0%;">Accesible desde la parada: Biblioteca Nacional Distancia: 57.65m<br>Tipo: parking<br> Parking: nan</div>`)[0];
+            popup_08b84ad4b62dfe86ebc732ff5d838573.setContent(html_cdcff4eae9aa579cde132a14181520f6);
+        
+
+        marker_8c0231a524db1d9b130ad5a11cd00fed.bindPopup(popup_08b84ad4b62dfe86ebc732ff5d838573)
+        ;
+
+        
+    
+    
+            var marker_7155dd5b7a4545e7a518ad0836ff32ea = L.marker(
+                [40.4181568747982, -3.6989139415409262],
+                {"name": "poi"}
+            ).addTo(feature_group_sub_group_14e162a28564e8bd1b067a225747a93f);
+        
+    
+            var icon_08bf82d1203ee4b93fcf0f5b31ecac11 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7155dd5b7a4545e7a518ad0836ff32ea.setIcon(icon_08bf82d1203ee4b93fcf0f5b31ecac11);
+        
+    
+        var popup_9397abc24eda7e92145fcfa2b1da0770 = L.popup({"maxWidth": 300});
+
+        
+            var html_9990bba30cc8ed42368ca7f11ade416e = $(`<div id="html_9990bba30cc8ed42368ca7f11ade416e" style="width: 100.0%; height: 100.0%;">Accesible desde la parada: Sol - Sevilla Distancia: 42.09m<br>Tipo: parking<br> Parking: nan</div>`)[0];
+            popup_9397abc24eda7e92145fcfa2b1da0770.setContent(html_9990bba30cc8ed42368ca7f11ade416e);
+        
+
+        marker_7155dd5b7a4545e7a518ad0836ff32ea.bindPopup(popup_9397abc24eda7e92145fcfa2b1da0770)
+        ;
+
+        
+    
+    
+            var layer_control_666257cf7b19176af413f6b9b771b1cb = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_a543dd47508401832ec0c728b2f4b088,
+                },
+                overlays :  {
+                    "\u003cspan style=\"color: red;\"\u003enetwork Ida\u003c/span\u003e" : geo_json_28279757cc003ab8162bb39a4595dd75,
+                    "\u003cspan style=\"color: green;\"\u003eLinea Ida\u003c/span\u003e" : feature_group_739934ff0eb74788470c24ec7825f873,
+                    "POI ida" : feature_group_sub_group_a77a86ebc391d60472f525c9a72ed586,
+                    "\u003cspan style=\"color: orange;\"\u003enetwork Vuelta\u003c/span\u003e" : geo_json_f1abe9e792ed4b48df240609fc49b7ac,
+                    "\u003cspan style=\"color: blue;\"\u003eLinea Vuelta\u003c/span\u003e" : feature_group_327137c1efe06888a2e3d7abb86be088,
+                    "POI vuelta" : feature_group_sub_group_14e162a28564e8bd1b067a225747a93f,
+                },
+            };
+            L.control.layers(
+                layer_control_666257cf7b19176af413f6b9b771b1cb.base_layers,
+                layer_control_666257cf7b19176af413f6b9b771b1cb.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_164122e778069da9e929add41f2bd719);
+            feature_group_327137c1efe06888a2e3d7abb86be088.remove();
+        
+</script>
