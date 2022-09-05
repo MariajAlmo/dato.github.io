@@ -1,9 +1,8 @@
 ,paradasRoute
-count,219.0
-mean,25.493150684931507
-std,9.690802346523824
+mean,25.45
+std,9.69
 min,2.0
-25%,19.5
-50%,27.0
-75%,33.0
+1 er cuantil,19.5
+2 º cuantil,27.0
+3 er cuantil,33.0
 max,45.0
